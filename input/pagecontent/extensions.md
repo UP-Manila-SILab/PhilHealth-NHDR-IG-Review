@@ -4,182 +4,53 @@ Extensions are typically designed and implemented to cater to the particular nee
 
 In the case of the PHCDI Implementation Guide, these extensions allow for the representation of country-specific data elements, regulatory requirements, or business rules that are critical for achieving the national health data repository's objectives, while still leveraging the global FHIR framework for data interoperability.
 
-### Extensions Identified:
+### Extensions:
+___
+
+|:------------------:|:---------------:|:-----------------------:|
+| **Extension Name** | **Description** | **Used in:** |
+|:-------------------|:----------------|:------------------------|
+|[AgeDays](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-AgeDays.html)| Age of the patient in days. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
+|[AgeMonths](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-AgeMonths.html)| Age of the patient in months. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
+|[AgeYears](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-AgeYears.html)| Age of the patient in years. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
+|[Barangay](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Barangay.html)| Code of the barangay from the Philippine Standard Geographic Code (PSGC) | [PH_Address](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Address.html) |
+|[CityMunicipality](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-CityMunicipality.html)| Code of the city/municipality from the Philippine Standard Geographic Code (PSGC) | [PH_Address](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Address.html) |
+|[Cost](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Cost.html)| Cost of the medication. | [PH_MedicationDispense](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-MedicationDispense.html)|
+|[DateInterview](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-DateInterview.html)| Date of interview. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
+|[DateInvestigation](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-DateInvestigation.html)| Date of investigation. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
+|[DateUpdated](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-DateUpdated.html)| Date of last update. | [PH_Medication](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Medication.html) |
+|[DosageInstruction](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-DosageInstruction.html)| Instruction on the medication dosage. | [PH_Medication](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Medication.html) |
+|[ExtAddress](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-ExtAddress.html)| Address where the observation was made. | [PH_Observation](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Observation.html) |
+|[ExtEncounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-ExtEncounter.html)| The encounter when the medicine was consumed or administered. | [PH_MedicationAdministration](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-MedicationAdministration.html) / [PH_MedicationStatement](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-MedicationStatement.html)|
+|[ExtOrganization](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-ExtOrganization.html)| Refers to a formally or informally recognized grouping of people or entities that are formed to achieve a common goal, particularly in healthcare. | [PH_AllergyIntolerance](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-AllergyIntolerance.html) / [PH_Condition](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Condition.html) / [PH_DiagnosticReport](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-DiagnosticReport.html) / [PH_Immunization](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Immunization.html) / [PH_MedicationAdministration](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-MedicationAdministration.html) / [PH_MedicationStatement](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-MedicationStatement.html) / [PH_Observation](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Observation.html) / [PH_Procedure](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Procedure.html) / [PH_Specimen](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Specimen.html) |
+|[FatherName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-FatherName.html)| Name of the patient's father. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html) |
+|[HeadName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-HeadName.html)| Name of the head of the facility. | [PH_Organization](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Organization.html) |
+|[HeadPosition](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-HeadPosition.html)| Position of the head of the facility. | [PH_Organization](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Organization.html) |
+|[IllnessClass](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-IllnessClass.html)| Illness code of the disease as listed in PhilHealth. | [PH_Procedure](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Procedure.html) |
+|[Illness_Class](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Illness-Class.html)| Classification of illness. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html)|
+|[Indigenous Group](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-IndigenousGroup.html)| Indigenous group that the patient belongs to. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html)|
+|[Indigenous People](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-IndigenousPeople.html)| If the patient is a member of an indigenous group. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html)|
+|[Interviewer](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Interviewer.html)| Name of the interviewer at first point of contact. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
+|[InvestigatorName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-InvestigatorName.html)| Name of the investigator/assessor. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html)|
+|[MiddleName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-MiddleName.html)| Person's middle name. | [PH_HumanName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-HumanName.html) |
+|[MotherName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-MotherName.html)| Name of the patient's mother. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html) |
+|[Nationality](http://hl7.org/fhir/StructureDefinition/patient-nationality)| The nationality of the patient. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html)|
+|[Occupation](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Occupation.html)| Patient's occupation. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html)|
+|[Packaging](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Packaging.html)| Detailed description on the medication packaging. | [PH_Medication](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Medication.html) |
+|[PatientClassification](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PatientClassification.html)| Classification of patient. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html)|
+|[Province](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Province.html)| Code of the province from the Philippine Standard Geographic Code (PSGC). | [PH_Address](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Address.html) |
+|[RecordedDate](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-RecordedDate.html)| Indicates the timestamp when the record was uploaded to the NHDR. | [PH_MedicationAdministration](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-MedicationAdministration.html) / [PH_Observation](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Observation.html) / [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html) / [PH_Procedure](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Procedure.html) / [PH_Specimen](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Specimen.html) |
+|[Region](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Region.html)| Code of the region from the Philippine Standard Geographic Code (PSGC). | [PH_Address](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Address.html) |
+|[ReleaseDate](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-ReleaseDate.html)| Date when the specimen was released. | [PH_Specimen](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Specimen.html)|
+|[Religion](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Religion.html)| Extension to capture the religious affiliation of a person. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html) |
+|[ReporterName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-ReporterName.html)| Name of the reporter of the encounter. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
+|[ResultDate](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-ResultDate.html)| The date on which the outcome of the particular specimen was recorded. | [PH_Specimen](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Specimen.html)|
+|[Sex](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Sex.html)| Extension to capture the sex at birth. | [PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html) / [PH_Person](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Person.html) / [PH_Practitioner](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Practitioner.html)|
+|[Species](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-Species.html)| Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]. | [PH_Specimen](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Specimen.html)|
+|[SpouseName](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-SpouseName.html)| Name of the patient's spouse. |[PH_Patient](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Patient.html)|
 
-[SpouseName](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/SpouseName.page.md?version=current)
 
-Resource Binding:
-- Patient
 
-[Interviewer](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Interviewe.page.md?version=current)
 
-Resource Binding:
-- Encounter
 
-[Nationality](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Nationality.page.md?version=current)
 
-Resource Binding:
-- Patient
-
-[Occupation](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Occupation.page.md?version=current)
-
-Resource Binding:
-- Patient
-
-[Indigeneous People](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/IndigeneousPeople.page.md?version=current)
-
-Resource Binding:
-- Patient
-
-[Indigenous Group](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/IndigeneousGroup.page.md?version=current)
-
-Resource Binding:
-- Patient
-
-[Identifier](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Identifier.page.md?version=current)
-
-Resource Binding:
-- Patient
-- Organization
-
-[Sex](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Sex.page.md?version=current)
-
-Resource Binding:
-- Person
-- Patient
-
-[Religion](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Religion.page.md?version=current)
-
-Resource Binding:
-- Patient
-
-[Mother's Name](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/MotherName.page.md?version=current)
-
-Resource Binding:
-- Patient
-
-[Father's Name](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/FatherName.page.md?version=current)
-
-Resource Binding:
-- Patient
-
-[Recorded Date](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/RecordedDate.page.md?version=current)
-
-Resource Binding:
-- Patient
-- Procedure
-- MedicationAdministration
-
-[Signature](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Signature.page.md?version=current)
-
-Resource Binding:
-- Patient
-- Practitioner
-
-[Head Name](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/HeadName.page.md?version=current)
-
-Resource Binding:
-- Organization
-
-[Head Position](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/HeadPosition.page.md?version=current)
-
-Resource Binding:
-- Organization
-
-[Organization Type](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/OrganizationType.page.md?version=current)
-
-Resource Binding:
-- Organization
-
-[Age Years](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/AgeYears.page.md?version=current)
-
-Resource Binding:
-- Encounter
-
-[Age Months](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/AgeMonths.page.md?version=current)
-
-Resource Binding:
-- Encounter
-
-[Age Days](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/AgeDays.page.md?version=current)
-
-Resource Binding:
-- Patien
-
-[Patient Classification](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/PatientClassification.page.md?version=current)
-
-Resource Binding:
-- Encounter
-
-[Investigator Name](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/InvestigatorName.page.md?version=current)
-
-Resource Binding:
-- Encounter
-
-[Date Interview](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/DateInterview.page.md?version=current)
-
-Resource Binding:
-- Encounter
-
-[Date Investigation](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Signature.page.md?version=current)
-
-Resource Binding:
-- Encounter
-
-[Illness Class](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/IllnessClass.page.md?version=current)
-
-Resource Binding:
-- Encounter
-- Procedure
-- Condition
-
-
-[ReleaseDate](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/ReleaseDate.page.md?version=current)
-
-Resource Binding:
-- Specimen
-
-[Species](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Species.page.md?version=current)
-
-Resource Binding:
-- Specimen
-
-[ResultDate](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/ResultDate.page.md?version=current)
-
-Resource Binding:
-- Specimen
-
-[DosageInstruction](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/DosageInstruction.page.md?version=current)
-
-Resource Binding:
-- Medication
-
-[DosageInstruction](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/DosageInstruction.page.md?version=current)
-
-Resource Binding:
-- Medication
-
-[DosageInstructionRoute](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/DosageInstruction.page.md?version=current)
-
-Resource Binding:
-- Medication
-
-
-[Packaging](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Packaging.page.md?version=current)
-
-Resource Binding:
-- Medication
-
-[Cost](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Cost.page.md?version=current)
-
-Resource Binding:
-- MedicationDispense
-
-[Organization](https://simplifier.net/guide/Implementation-Guide-for-Philippine-Core/Home/Extensions/Organization.page.md?version=current)
-
-Resource Binding:
-- Encounter
-- Observation
-- Condition
-- AllergyIntolerance
-- Diagnostic Report

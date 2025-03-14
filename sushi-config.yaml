@@ -52,7 +52,7 @@ pages:
   # base.md:
   #   title: Base Resources
   extensions.md:
-    title: Custom Extensions
+    title: Extensions
   search-parameters.md:
     title: Search Parameters
 #   implementation.xml:
