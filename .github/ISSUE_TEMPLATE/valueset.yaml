@@ -1,0 +1,123 @@
+name: ValueSet Review
+description: Template for reviewing local ValueSets.
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Local ValueSet Review
+
+        Use this template to review local ValueSets and ensure they meet the necessary standards and best practices.
+
+  - type: checkboxes
+    id: metadata
+    attributes:
+      label: Appropriate metadata? Including canonical URL, owner info, version info, etc.
+      options:
+        - label: Metadata is present and complete.
+
+  - type: checkboxes
+    id: hl7_vs
+    attributes:
+      label: No HL7 VS available?
+      options:
+        - label: No HL7 ValueSet is available.
+
+  - type: textarea
+    id: hl7_vs_note
+    attributes:
+      label: Note if there's a partial match it's better to constrain / extend the standard than to start completely from scratch.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: peer_countries
+    attributes:
+      label: Look at similar profiles from peer countries... is our VS in line with previous practices? If not... should it be?
+      options:
+        - label: Our ValueSet is in line with previous practices.
+        - label: Our ValueSet is not in line with previous practices.
+
+  - type: textarea
+    id: peer_countries_note
+    attributes:
+      label: If not, explain why it should be.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition
+    attributes:
+      label: Is the definition specified correctly (individual concepts vs whole trees)?
+      options:
+        - label: Definition is specified correctly.
+
+  - type: checkboxes
+    id: documentation
+    attributes:
+      label: Is documentation provided?
+      options:
+        - label: Documentation is provided.
+
+  - type: checkboxes
+    id: concept_standard
+    attributes:
+      label: For each concept in the VS, if it's from a standard, is it the right one (e.g., coming from the right tree in SNOMED)?
+      options:
+        - label: All concepts are from the correct standard.
+
+  - type: checkboxes
+    id: concept_local
+    attributes:
+      label: For each concept in the VS, if it's not from a standard, should it be requested, or is it really only useful in this context?
+      options:
+        - label: All local concepts are justified.
+
+  - type: checkboxes
+    id: designations
+    attributes:
+      label: For each concept in the VS, are the appropriate designations / synonyms available?
+      options:
+        - label: All concepts have appropriate designations / synonyms.
+
+  - type: checkboxes
+    id: hierarchy
+    attributes:
+      label: Does the VS have the appropriate hierarchy in place?
+      options:
+        - label: The ValueSet has the appropriate hierarchy.
+
+  - type: checkboxes
+    id: mappings
+    attributes:
+      label: If governance demands use of a local code but standards exist, are the appropriate mappings in place?
+      options:
+        - label: Appropriate mappings are in place.
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Notes
+      description: Add any other relevant information or comments.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Reviewer Information
+
+  - type: input
+    id: reviewer_name
+    attributes:
+      label: Reviewer Name
+    validations:
+      required: true
+
+  - type: input
+    id: review_date
+    attributes:
+      label: Review Date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true

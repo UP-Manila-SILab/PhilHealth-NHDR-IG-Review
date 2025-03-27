@@ -1,0 +1,89 @@
+name: Local Profile Review
+description: Template for reviewing local profiles.
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Local Profile Review
+
+        Use this template to review local profiles and ensure they meet the necessary standards and best practices.
+
+  - type: checkboxes
+    id: ig_location
+    attributes:
+      label: Living in the right IG (Base, Core, Use Case)?
+      options:
+        - label: Profile is in the correct IG.
+
+  - type: checkboxes
+    id: metadata_documentation
+    attributes:
+      label: Appropriate metadata and documentation in place?
+      options:
+        - label: Appropriate metadata and documentation are in place.
+
+  - type: checkboxes
+    id: overconstrained
+    attributes:
+      label: Not overconstrained?
+      options:
+        - label: Profile is not overconstrained.
+
+  - type: checkboxes
+    id: local_extensions
+    attributes:
+      label: "For any local extensions:"
+      options:
+        - label: Can the same goal be achieved without an extension (e.g., by linking to another resource)?
+        - label: No HL7 extension available?
+        - label: Value(x) element appropriately constrained?
+
+  - type: checkboxes
+    id: references
+    attributes:
+      label: References point to correct profile (e.g., point to PH Core rather than Int'l resource)?
+      options:
+        - label: References point to the correct profile.
+
+  - type: checkboxes
+    id: valueset_bindings
+    attributes:
+      label: ValueSet bindings correct (points to right VS, right strength)?
+      options:
+        - label: ValueSet bindings are correct.
+
+  - type: checkboxes
+    id: search_parameters
+    attributes:
+      label: Search parameters correct, including obligations?
+      options:
+        - label: Search parameters are correct, including obligations.
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Notes
+      description: Add any other relevant information or comments.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Reviewer Information
+
+  - type: input
+    id: reviewer_name
+    attributes:
+      label: Reviewer Name
+    validations:
+      required: true
+
+  - type: input
+    id: review_date
+    attributes:
+      label: Review Date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
