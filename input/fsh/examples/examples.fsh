@@ -586,45 +586,77 @@ InstanceOf: PH_Patient
 Usage: #example
 * meta.lastUpdated = "2024-07-12T14:07:16.25+00:00"
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
-* language = #en-IN
-* identifier[0].use = #official
-* identifier[=].type.coding.code = #NIIP
-* identifier[=].value = "PH12345"
-* identifier[+].use = #secondary
-* identifier[=].type.coding.code = #DL
-* identifier[=].value = "DL12345"
-* identifier[+].use = #secondary
-* identifier[=].type.coding.code = #PPN
-* identifier[=].value = "PPN25"
+* language = #en-US
+* identifier.type.coding.code = #NIIP
+* identifier.type.text = "PhilHealth Identification Number"
+* identifier.value = "PH12345"
 * active = true
-* name.text = "Example Patient"
-* name.family = "Patient"
-* name.given = "Example"
+* extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/IndigenousGroup"
+* extension[=].valueCodeableConcept.coding[0] = $IndigenousGroupCS#Kalinga "Kalinga"
+* extension[=].valueCodeableConcept.text = "Kalinga"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/IndigenousPeople"
+* extension[=].valueBoolean = true
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Occupation"
+* extension[=].valueCodeableConcept.coding[0] = https://psa.gov.ph/classification/psoc/unit#0110 "Commissioned Armed Forces Officers"
+* extension[=].valueCodeableConcept.text = "Commissioned Armed Forces Officers"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Occupation"
+* extension[=].valueInteger = 10
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Religion"
+* extension[=].valueCode = #1009 "Baptist"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/FatherName"
+* extension[=].valueHumanName.family = "Smith"
+* extension[=].valueHumanName.given[0] = "John"
+* extension[=].valueHumanName.given[=] = "Adams"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Race"
+* extension[=].valueCodeableConcept.coding[0] = https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html#2036-2 "Filipino"
+* extension[=].valueCodeableConcept.text = "Filipino"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/MemberType"
+* extension[=].valueCodeableConcept.coding[0] = https://nhdr.gov.ph/fhir/CodeSystem/MemberTypeCS#MM "Member"
+* extension[=].valueCodeableConcept.text = "Member"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/MemberCategory"
+* extension[=].valueCodeableConcept.coding[0] = https://nhdr.gov.ph/fhir/CodeSystem/MemberCategoryCS#90 "SOLO PARENT"
+* extension[=].valueCodeableConcept.text = "SOLO PARENT"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
+* extension[=].valueCode = #M "Male"
+// * name.text = "Example Patient"
+* name.family = "Smith"
+* name.given = "Avery"
 * telecom.system = #phone
-* telecom.value = "abc"
-* telecom.use = #home
+* telecom.value = "9121542"
+// * telecom.use = #home
 * deceasedBoolean = false
-* address.use = #home
-* address.type = #both
-* address.text = "137 Nowhere Street, Erewhon 9132"
+// * address.use = #home
+// * address.type = #both
+// * address.text = "137 Nowhere Street, Erewhon 9132"
 * address.line = "137 Nowhere Street"
-* address.city = "Erewhon"
-* address.district = "Madison"
-* address.state = "abc"
-* address.postalCode = "9132"
-* address.country = "abc"
-* maritalStatus.text = "abc"
-* birthDate = 2025-12-12
+// * address.city = "Erewhon"
+* address.district = "District III"
+// * address.state = "abc"
+* address.postalCode = "1110"
+* address.country = "Philippines"
+* address.extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Region"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1 "REGION I"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Province"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1028 "ILOCOS NORTE"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/CityMunicipality"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801 "ADAMS"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Barangay"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801001 "ADAMS"
+* maritalStatus.coding = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#W "Widowed"
+* maritalStatus.text = "Widowed"
+* birthDate = 1990-12-15
 // * managingOrganization = Reference(12345) "12345"
 
 Instance: Patient-2
 InstanceOf: PH_Patient
 Usage: #example
 * meta.lastUpdated = "2024-07-18T04:48:00.401+00:00"
-* identifier[0].use = #PhilhealthID
-* identifier[=].value = "12345"
-* identifier[+].use = #PhilsysID
-* identifier[=].value = "678910"
+// * identifier[0].use = #PhilhealthID
+// * identifier[=].value = "12345"
+// * identifier[+].use = #PhilsysID
+// * identifier[=].value = "678910"
+* identifier.type.coding.code = #DL
+* identifier.value = "DL12345"
 * active = true
 * name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
 * name.extension.valueString = "Rizal"
@@ -637,34 +669,31 @@ Usage: #example
 * telecom[=].value = "(03) 5555 6473"
 * telecom[+].system = #phone
 * telecom[=].value = "(0939) 929 3814"
-* telecom[=].use = #mobile
+// * telecom[=].use = #mobile
 
 Instance: Patient-3
 InstanceOf: PH_Patient
 Usage: #example
 * meta.lastUpdated = "2024-12-10T01:35:07.723+00:00"
-* meta.profile = "http://hl7.org.ph/fhir/StructureDefinition/PH_Patient"
-* identifier[0].system = "http://philsys.gov.ph/national-id"
-* identifier[=].value = "PH1234567890"
-* identifier[+].system = "http://hl7.org.ph/fhir/StructureDefinition/PhilHealthID"
-* identifier[=].value = "123456789012"
+* identifier.type.coding.code = #PDD
+* identifier.value = "PDD12435"
 // * name.use = #official
 * name.family = "Doe"
 * name.given[0] = "John"
 * name.given[+] = "A."
 * telecom[0].system = #phone
 * telecom[=].value = "+639171234567"
-* telecom[=].use = #mobile
+// * telecom[=].use = #mobile
 * telecom[+].system = #email
 * telecom[=].value = "john.doe@example.com"
-* telecom[=].use = #home
+// * telecom[=].use = #home
 // * gender = #male
 * birthDate = "1990-01-01"
-* address.use = #home
+// * address.use = #home
 * address.line = "123 Barangay Street"
-* address.city = "Quezon City"
+// * address.city = "Quezon City"
 * address.district = "District 1"
-* address.state = "Metro Manila"
+// * address.state = "Metro Manila"
 * address.postalCode = "1100"
 * address.country = "PH"
 * maritalStatus = $v3-MaritalStatus#M "Married"
@@ -675,8 +704,8 @@ Usage: #example
 * contact.telecom.value = "+639181234567"
 * contact.telecom.use = #mobile
 * contact.address.line = "456 Barangay Lane"
-* contact.address.city = "Pasig City"
-* contact.address.state = "Metro Manila"
+// * contact.address.city = "Pasig City"
+// * contact.address.state = "Metro Manila"
 * contact.address.postalCode = "1600"
 * contact.address.country = "PH"
 // * communication[0].language = urn:ietf:bcp:47#en "English"

@@ -3,7 +3,7 @@ Parent: CarePlan
 Id: PH-CarePlan
 Description: "Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-CarePlan"
-* ^status = #draft
+* insert MetaData
 * identifier ..0
 * instantiatesCanonical ..0
 * instantiatesUri ..0

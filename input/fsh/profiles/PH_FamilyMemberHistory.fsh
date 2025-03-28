@@ -3,7 +3,7 @@ Parent: FamilyMemberHistory
 Id: PH-FamilyMemberHistory
 Description: "Significant health conditions for a person related to the patient relevant in the context of care for the patient."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-FamilyMemberHistory"
-* ^status = #draft
+* insert MetaData
 * instantiatesCanonical ..0
 * instantiatesUri ..0
 * dataAbsentReason ..0

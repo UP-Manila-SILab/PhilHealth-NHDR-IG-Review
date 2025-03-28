@@ -1,135 +1,6 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "5792-7"
-}, "valueSet" :{
-  "resourceType" : "ValueSet"
-}, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"true", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "x-system-cache-id",
-    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
-  }]
-}}####
-v: {
-  "code" : "5792-7",
-  "system" : "http://loinc.org",
-  "severity" : "error",
-  "error" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'https://example.org/fhir/StructureDefinition/IndigenousGroupValueSet'",
-  "class" : "UNKNOWN",
-  "server" : "http://tx.fhir.org/r4",
-  "issues" : {
-  "resourceType" : "OperationOutcome",
-  "issue" : [{
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
-      "valueUrl" : "http://tx.fhir.org/r4"
-    }],
-    "severity" : "error",
-    "code" : "code-invalid",
-    "details" : {
-      "coding" : [{
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
-        "code" : "not-in-vs"
-      }],
-      "text" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'https://example.org/fhir/StructureDefinition/IndigenousGroupValueSet'"
-    },
-    "location" : ["Coding.code"],
-    "expression" : ["Coding.code"]
-  }]
-}
-
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "76689-9",
-  "display" : "Sex"
-}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "x-system-cache-id",
-    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
-  }]
-}}####
-v: {
-  "display" : "Sex assigned at birth",
-  "code" : "76689-9",
-  "system" : "http://loinc.org",
-  "version" : "2.78",
-  "severity" : "error",
-  "error" : "Wrong Display Name 'Sex' for http://loinc.org#76689-9. Valid display is one of 6 choices: 'Sex assigned at birth' (en-US), 'Sex assigned at birth' (en-US), 'Sex assigned at birth' (en-US), 'Sexo asignado : Paciente:Punto temporal:Tipo:Nominal:' (es-MX), 'Geschlecht, zugewiesen bei Geburt' (de-DE) or 'Geslacht toegewezen^bij geboorte [type]' (nl-NL) (for the language(s) '--')",
-  "class" : "UNKNOWN",
-  "server" : "http://tx.fhir.org/r4",
-  "issues" : {
-  "resourceType" : "OperationOutcome",
-  "issue" : [{
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
-      "valueUrl" : "http://tx.fhir.org/r4"
-    }],
-    "severity" : "error",
-    "code" : "invalid",
-    "details" : {
-      "coding" : [{
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
-        "code" : "invalid-display"
-      }],
-      "text" : "Wrong Display Name 'Sex' for http://loinc.org#76689-9. Valid display is one of 6 choices: 'Sex assigned at birth' (en-US), 'Sex assigned at birth' (en-US), 'Sex assigned at birth' (en-US), 'Sexo asignado : Paciente:Punto temporal:Tipo:Nominal:' (es-MX), 'Geschlecht, zugewiesen bei Geburt' (de-DE) or 'Geslacht toegewezen^bij geboorte [type]' (nl-NL) (for the language(s) '--')"
-    },
-    "location" : ["Coding.display"],
-    "expression" : ["Coding.display"]
-  }]
-}
-
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "76689-9"
-}, "valueSet" :null, "langs":"en-AU", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "x-system-cache-id",
-    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
-  }]
-}}####
-v: {
-  "display" : "Sex assigned at birth",
-  "code" : "76689-9",
-  "system" : "http://loinc.org",
-  "version" : "2.78",
-  "server" : "http://tx.fhir.org/r4",
-  "issues" : {
-  "resourceType" : "OperationOutcome"
-}
-
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "76689-9"
-}, "valueSet" :null, "langs":"en, en-US, en-AU", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "x-system-cache-id",
-    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
-  }]
-}}####
-v: {
-  "display" : "Sex assigned at birth",
-  "code" : "76689-9",
-  "system" : "http://loinc.org",
-  "version" : "2.78",
-  "server" : "http://tx.fhir.org/r4",
-  "issues" : {
-  "resourceType" : "OperationOutcome"
-}
-
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
   "code" : "76689-9"
 }, "valueSet" :null, "langs":"und", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
@@ -937,11 +808,36 @@ v: {
   }]
 }}####
 v: {
-  "severity" : "error",
-  "error" : "java.net.ConnectException: Failed to connect to tx.fhir.org/104.196.166.17:80",
-  "class" : "SERVER_ERROR",
+  "display" : "Rubella virus IgG Ab [Interpretation] in Serum",
+  "code" : "20458-6",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "severity" : "warning",
+  "error" : "There are no valid display names found for the code http://loinc.org#20458-6 for language(s) 'und'. The display is 'Rubella virus IgG Ab [Interpretation] in Serum' the default language display",
+  "server" : "http://tx.fhir.org/r4",
   "issues" : {
-  "resourceType" : "OperationOutcome"
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-display"
+      }],
+      "text" : "There are no valid display names found for the code http://loinc.org#20458-6 for language(s) 'und'. The display is 'Rubella virus IgG Ab [Interpretation] in Serum' the default language display"
+    },
+    "location" : ["Coding.display"],
+    "expression" : ["Coding.display"]
+  }]
 }
 
 }
@@ -978,8 +874,8 @@ e: {
   "experimental" : false,
   "date" : "2024-11-28",
   "expansion" : {
-    "identifier" : "urn:uuid:df2f663b-7250-4bbd-b26b-13c83123fd53",
-    "timestamp" : "2025-03-24T04:03:50.304Z",
+    "identifier" : "urn:uuid:07915d68-4a90-4fbd-aa4a-59ee733074a6",
+    "timestamp" : "2025-03-27T04:22:15.450Z",
     "offset" : 0,
     "parameter" : [{
       "name" : "limitedExpansion",
@@ -6060,7 +5956,7 @@ v: {
   "code" : "5792-7",
   "system" : "http://loinc.org",
   "severity" : "error",
-  "error" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'https://hl7.org/fhir/R4/valueset-immunization-origin.html'",
+  "error" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'https://psa.gov.ph/classification/psoc/unit'",
   "class" : "UNKNOWN",
   "server" : "http://tx.fhir.org/r4",
   "unknown-systems" : "",
@@ -6082,7 +5978,7 @@ v: {
         "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
         "code" : "not-in-vs"
       }],
-      "text" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'https://hl7.org/fhir/R4/valueset-immunization-origin.html'"
+      "text" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'https://psa.gov.ph/classification/psoc/unit'"
     },
     "location" : ["Coding.code"],
     "expression" : ["Coding.code"]

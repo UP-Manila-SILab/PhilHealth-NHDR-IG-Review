@@ -6,4 +6,4 @@ Description: "Code of the province from the standard geographic code."
 * ^status = #draft
 * url = "https://nhdr.gov.ph/fhir/StructureDefinition/Province" (exactly)
 * value[x] only Coding
-* value[x] from ProvinceVS (extensible)
+* value[x] from $ProvinceVS (extensible)

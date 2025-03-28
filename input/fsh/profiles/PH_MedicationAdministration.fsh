@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: PH-MedicationAdministration
 Description: "Describes the event of a patient consuming or otherwise being administered a medication."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationAdministration"
-* ^status = #draft
+* insert MetaData
 * extension contains
     ExtOrganization named extOrganization 0..* and
     ExtEncounter named extEncounter 0..* and

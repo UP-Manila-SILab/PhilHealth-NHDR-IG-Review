@@ -3,7 +3,7 @@ Parent: MedicationDispense
 Id: PH-MedicationDispense
 Description: "Indicates that a medication product is to be or has been dispensed for a named person/patient."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationDispense"
-* ^status = #draft
+* insert MetaData
 * extension contains Cost named cost 0..*
 * extension[cost] ^short = "Cost of the medication"
 * extension[cost] ^definition = "Cost of the medication"

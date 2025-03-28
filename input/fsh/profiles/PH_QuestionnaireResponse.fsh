@@ -3,7 +3,7 @@ Parent: QuestionnaireResponse
 Id: PH-QuestionnaireResponse
 Description: "A structured set of questions and their answers."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
-* ^status = #draft
+* insert MetaData
 * identifier ..0
 * basedOn ..0
 * partOf ..0

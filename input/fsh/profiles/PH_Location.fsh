@@ -3,7 +3,7 @@ Parent: Location
 Id: PH-Location
 Description: "Details and position information for a place where services are provided and resources and participants may be stored, found, contained, or accommodated."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Location"
-* ^status = #draft
+* insert MetaData
 * meta ..0
 * extension ..0
 * modifierExtension ..0

@@ -3,7 +3,7 @@ Parent: ServiceRequest
 Id: PH-ServiceRequest
 Description: "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-ServiceRequest"
-* ^status = #draft
+* insert MetaData
 * identifier ..0
 * instantiatesCanonical ..0
 * instantiatesUri ..0

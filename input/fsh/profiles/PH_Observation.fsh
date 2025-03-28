@@ -3,7 +3,7 @@ Parent: Observation
 Id: PH-Observation
 Description: "Measurements and simple assertions made about a patient, device or other subject."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Observation"
-* ^status = #draft
+* insert MetaData
 * . ^definition = "Measurements and simple assertions made about a patient, device or other subject.\nUses: Vital signs such as body weight, blood pressure, and temperature; Laboratory Data like blood glucose, or an estimated GFR; Imaging results like bone density or fetal measurements; Clinical Findings* such as abdominal tenderness; Device measurements such as EKG data or Pulse Oximetry data; Clinical assessment tools such as APGAR or a Glasgow Coma Score; Personal characteristics: such as eye-color; Social history like tobacco use, family support, or cognitive status; Core characteristics like pregnancy status, or a death assertion.\nAlternate Name: Vital Signs; Measurement; Results; Tests"
 * extension contains
     ExtAddress named address 0..* and

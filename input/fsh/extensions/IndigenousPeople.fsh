@@ -1,7 +1,8 @@
 Extension: IndigenousPeople
 Id: IndigenousPeople
+Title: "Is indigenous?"
 Context: Patient
 Description: "If the patient is a member of an indigenous group."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/IndigenousPeople"
-* ^status = #draft
+* insert MetaData
 * value[x] only boolean

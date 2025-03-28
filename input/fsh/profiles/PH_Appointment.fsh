@@ -3,7 +3,7 @@ Parent: Appointment
 Id: PH-Appointment
 Description: "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Appointment"
-* ^status = #draft
+* insert MetaData
 * identifier ..0
 * status from $YesNoVS (required)
 * status ^short = "Yes or No indicator if the patient have an appointment."

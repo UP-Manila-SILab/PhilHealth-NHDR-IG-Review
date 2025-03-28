@@ -3,7 +3,7 @@ Parent: Immunization
 Id: PH-Immunization
 Description: "Describes the event of a patient being administered a vaccine or a record of an immunization as reported by a patient, a clinician or another party."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Immunization"
-* ^status = #draft
+* insert MetaData
 * extension contains ExtOrganization named extOrganization 0..*
 * extension[extOrganization] ^short = "Organization where the immunization was conducted"
 * extension[extOrganization] ^definition = "Organization where the immunization was conducted."

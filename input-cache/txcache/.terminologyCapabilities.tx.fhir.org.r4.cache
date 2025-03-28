@@ -6,7 +6,7 @@
   "name" : "FHIRReferenceServerTerminologyCapabilities",
   "title" : "FHIR Reference Server Terminology Capability Statement",
   "status" : "active",
-  "date" : "2025-01-21T02:28:31.582Z",
+  "date" : "2025-03-24T16:46:19.616Z",
   "contact" : [{
     "telecom" : [{
       "system" : "other",
@@ -912,6 +912,9 @@
     "uri" : "http://standardterms.edqm.eu"
   },
   {
+    "uri" : "http://terminology.hl7.org/CodeSystem/accepting-patients"
+  },
+  {
     "uri" : "http://terminology.hl7.org/CodeSystem/action-type"
   },
   {
@@ -1006,6 +1009,9 @@
   },
   {
     "uri" : "http://terminology.hl7.org/CodeSystem/can-push-updates"
+  },
+  {
+    "uri" : "http://terminology.hl7.org/CodeSystem/care-service-accessibility"
   },
   {
     "uri" : "http://terminology.hl7.org/CodeSystem/catalogType"
@@ -1482,6 +1488,9 @@
     "uri" : "http://terminology.hl7.org/CodeSystem/name-assembly-order"
   },
   {
+    "uri" : "http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category"
+  },
+  {
     "uri" : "http://terminology.hl7.org/CodeSystem/need"
   },
   {
@@ -1498,6 +1507,12 @@
   },
   {
     "uri" : "http://terminology.hl7.org/CodeSystem/operation-outcome"
+  },
+  {
+    "uri" : "http://terminology.hl7.org/CodeSystem/organization-affiliation-role"
+  },
+  {
+    "uri" : "http://terminology.hl7.org/CodeSystem/organization-affiliation-role-for-hie"
   },
   {
     "uri" : "http://terminology.hl7.org/CodeSystem/organization-alias-type"
@@ -3604,6 +3619,9 @@
   },
   {
     "uri" : "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method"
+  },
+  {
+    "uri" : "http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method"
   },
   {
     "uri" : "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"

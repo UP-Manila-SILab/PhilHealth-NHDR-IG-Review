@@ -3,7 +3,7 @@ Parent: Person
 Id: PH-Person
 Description: "Demographics and administrative information about a person independent of a specific health-related context."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Person"
-* ^status = #draft
+* insert MetaData
 * extension contains Sex named sex 0..*
 * extension[sex] ^short = "Sex assigned at birth"
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"

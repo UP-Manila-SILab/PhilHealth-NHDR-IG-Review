@@ -3,7 +3,7 @@ Parent: Procedure
 Id: PH-Procedure
 Description: "An action that is or was performed on or for a patient, practitioner, device, organization, or location."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Procedure"
-* ^status = #draft
+* insert MetaData
 * extension contains
     ExtOrganization named extOrganization 0..* and
     RecordedDate named recordedDate 0..* and

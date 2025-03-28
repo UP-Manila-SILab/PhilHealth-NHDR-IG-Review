@@ -3,7 +3,7 @@ Parent: MedicationStatement
 Id: PH-MedicationStatement
 Description: "A record of a medication that is being consumed by a patient."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationStatement"
-* ^status = #draft
+* insert MetaData
 * extension contains
     ExtOrganization named extOrganization 0..* and
     ExtEncounter named extEncounter 0..*

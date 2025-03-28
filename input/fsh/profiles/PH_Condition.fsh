@@ -3,7 +3,7 @@ Parent: Condition
 Id: PH-Condition
 Description: "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Condition"
-* ^status = #draft
+* insert MetaData
 * extension contains ExtOrganization named extOrganization 0..*
 * extension[extOrganization] ^short = "Health facility where the encounter was"
 * extension[extOrganization] ^definition = "Health facility where the encounter was"

@@ -3,7 +3,7 @@ Parent: Specimen
 Id: PH-Specimen
 Description: "A sample to be used for analysis."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Specimen"
-* ^status = #draft
+* insert MetaData
 * extension contains
     RecordedDate named recordedDate 0..* and
     ResultDate named resultDate 0..* and

@@ -3,7 +3,7 @@ Parent: Practitioner
 Id: PH-Practitioner
 Description: "A person who is directly or indirectly involved in the provisioning of healthcare or related services."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Practitioner"
-* ^status = #draft
+* insert MetaData
 * . ^definition = "A person who is directly involved in the provisioning of healthcare."
 * extension contains
     Sex named sex 0..*

@@ -3,7 +3,7 @@ Parent: Address
 Id: PH-Address
 Description: "An address for the individual."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address"
-* ^status = #draft
+* insert MetaData
 * extension contains
     Region named region 0..* and
     Province named province 0..* and
@@ -13,3 +13,9 @@ Description: "An address for the individual."
 * extension[province] ^isModifier = false
 * extension[cityMunicipality] ^isModifier = false
 * extension[barangay] ^isModifier = false
+* use ..0
+* type ..0
+* text ..0
+* city ..0
+* state ..0
+* period ..0
