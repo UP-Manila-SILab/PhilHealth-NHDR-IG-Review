@@ -20,9 +20,9 @@ Description: "Captures key demographic and administrative information about indi
     Race named race 0..1 and
     MemberCategory named memberCategory 0..1 and
     MemberType named memberType 0..1 and
-    EducationalAttainment named educationalAttainment 0..1
-//     $Signature named signature 0..*
-// * extension[signature] ^isModifier = false
+    EducationalAttainment named educationalAttainment 0..1 and
+    $Signature named signature 0..*
+* extension[signature] ^isModifier = false
 * extension[nationality] ^definition = "Code representing nationality of patient."
 * extension[nationality] ^comment = "This is an extension"
 * extension[nationality] ^isModifier = false
@@ -74,7 +74,7 @@ Description: "Captures key demographic and administrative information about indi
 * extension[educationalAttainment] ^definition = "Patient's educational attainment."
 * extension[educationalAttainment] ^isModifier = false
 * extension[educationalAttainment] ^binding.description = "Educational attainment."
-* identifier only $PhilHealthID or $OtherID or $RegistrationNo
+* identifier only $PhilHealthID or $RegistrationNo or $OtherID 
 * identifier ^definition = "An identifier for this patient.\nA numeric or alphanumeric string that is associated with a single object or entity within a given system."
 * name only $SD_HumanName
 * name.id ..0
@@ -97,17 +97,20 @@ Description: "Captures key demographic and administrative information about indi
 * contact.name only $SD_HumanName
 * contact.relationship from ContactRelationshipVS (required)
 * contact.address only $SD_Address
-// * contact.extension contains $Signature named signature 0..*
-// * contact.extension[signature] ^isModifier = false
+* contact.extension contains $Signature named signature 0..*
+* contact.extension[signature] ^isModifier = false
 * generalPractitioner ^definition = "Patient's nominated care provider. Pertains to the Konsulta Health Care Provider"
 * link ..0
 * communication ..0
 * managingOrganization ..0
+// * id ..0
+* implicitRules ..0
+* language ..0
+* text ..0
+* contained ..0
 
 
 //  Notes:
 //      Patient.religion valueset to be discussed
-//      Signature is set up but doesn't seem functional. HL7 states that the Datatype is still 'Trial-Use'.
 //      Patient.memberType      -> patient.type in release 02
 //      Patient.memberCategory  -> membertype in release 02
-// Test Patient.occupation

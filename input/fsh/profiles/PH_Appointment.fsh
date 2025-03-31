@@ -17,12 +17,16 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * priority ..0
 * description ..0
 * supportingInformation ..0
-// * end ..0
+// * end ..0    Enabled to fulfill constraint. Re-mapped in the next release.
 * minutesDuration ..0
 * slot ..0
 * created ..0
 * comment ..0
 * patientInstruction ..0
 * basedOn ..0
-* participant ..1
 * requestedPeriod ..1
+// * id ..0
+* implicitRules ..0
+* language ..0
+* text ..0
+* contained ..0

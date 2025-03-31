@@ -22,6 +22,9 @@ Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatu
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
 
+
+
+
 Instance: Allergy-Intolerance-1
 InstanceOf: PH_AllergyIntolerance
 Usage: #example
@@ -106,6 +109,32 @@ Usage: #example
 * result = Reference(Observation/Observation-Rabies-Antibody-Test)
 * conclusion = "Positive for rabies virus antibodies"
 * conclusionCode = $sct#14168008 "Rabies"
+
+
+// Instance: Condition-1
+// InstanceOf: PH_Condition
+// Usage: #example
+// * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Ext_Organization"
+// * extension.valueReference.reference = "Organization/example"
+// * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
+// * clinicalStatus.coding.code = #active
+// * clinicalStatus.coding.display = "Active"
+// * verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+// * verificationStatus.coding.code = #confirmed
+// * verificationStatus.coding.display = "Confirmed"
+// * category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
+// * category.coding.code = #problem-list-item
+// * category.coding.display = "Problem List Item"
+// * severity.coding.system = "http://snomed.info/sct"
+// * severity.coding.code = #24484000
+// * severity.coding.display = "Severe"
+// * code.coding.system = "http://snomed.info/sct"
+// * code.coding.code = #44054006
+// * code.coding.display = "Diabetes mellitus type 2 (disorder)"
+// * code.text = "Diabetes mellitus type 2"
+// * subject.reference = "Patient/example"
+// * onsetDateTime = "2024-07-18T08:00:00+08:00"
+// * recordedDate = "2024-07-18T08:00:00+08:00"
 
 Instance: Encounter-1
 InstanceOf: PH_Encounter

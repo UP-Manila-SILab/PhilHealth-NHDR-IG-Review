@@ -1,16 +1,23 @@
-//  Profiles & Extensions
+//  Identifier Profiles
+Alias: $COVIDDataID = https://nhdr.gov.ph/fhir/StructureDefinition/COVIDDataID
+Alias: $COVIDPatientID = https://nhdr.gov.ph/fhir/StructureDefinition/COVIDPatientID
+Alias: $FHUDCode = https://nhdr.gov.ph/fhir/StructureDefinition/DOHfhudCode
 Alias: $OtherID = https://nhdr.gov.ph/fhir/StructureDefinition/OtherID
 Alias: $PhilHealthID = https://nhdr.gov.ph/fhir/StructureDefinition/PhilHealthID
 Alias: $RegistrationNo = https://nhdr.gov.ph/fhir/StructureDefinition/RegistrationNo
+
+//  DataType Profiles
 Alias: $SD_MiddleName = https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName
 Alias: $SD_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
 Alias: $SD_HumanName = https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName
-// Alias: $SD_Signature = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Signature
-// Alias: $Signature = https://nhdr.gov.ph/fhir/StructureDefinition/Signature
-// Alias: $SignaturePosition = https://nhdr.gov.ph/fhir/StructureDefinition/SignaturePosition
-// Alias: $SignatureReason = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureReason
-// Alias: $SignatureSubType = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureSubType
-// Alias: $SignatureThumbmark = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureThumbmark
+Alias: $SD_Signature = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Signature
+
+//  Extensions
+Alias: $Signature = https://nhdr.gov.ph/fhir/StructureDefinition/ExtSignature
+Alias: $SignaturePosition = https://nhdr.gov.ph/fhir/StructureDefinition/SignaturePosition
+Alias: $SignatureReason = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureReason
+Alias: $SignatureSubType = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureSubType
+Alias: $SignatureThumbmark = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureThumbmark
 
 // CodeSystems
 Alias: $AllergyIntoleranceClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical

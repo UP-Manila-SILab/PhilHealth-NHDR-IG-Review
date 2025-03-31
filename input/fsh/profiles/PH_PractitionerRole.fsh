@@ -18,3 +18,8 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * notAvailable ..0
 * availabilityExceptions ..0
 * endpoint ..0
+// * id ..0
+* implicitRules ..0
+* language ..0
+* text ..0
+* contained ..0

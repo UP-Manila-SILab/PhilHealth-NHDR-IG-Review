@@ -8,5 +8,5 @@ Description: "A value set representing clinical status options for patients in v
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* ^language = #en-US
+// * ^language = #en-US
 * include codes from system $ConditionClinicalStatusCS
