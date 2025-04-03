@@ -6,3 +6,7 @@ Description: "A name of a human."
 * insert MetaData
 * extension contains $SD_MiddleName named middleName 0..*
 * extension[middleName] ^isModifier = false
+* period ..0
+* prefix ..0
+* use ..0
+* text ..0

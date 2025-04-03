@@ -176,7 +176,6 @@ menu:
 groups:
   GroupA:
     name: Base Profiles
-    # description: Testing for Groups
     resources:
     - StructureDefinition/PH-Appointment
     - StructureDefinition/PH-Encounter
@@ -189,13 +188,13 @@ groups:
 
   GroupB:
     name: Clinical Profiles
-    # description: Testing for Groups
     resources:
     - StructureDefinition/PH-AllergyIntolerance
     - StructureDefinition/PH-CarePlan
     - StructureDefinition/PH-Condition
     - StructureDefinition/PH-DiagnosticReport
     - StructureDefinition/PH-FamilyMemberHistory
+    - StructureDefinition/PH-Goal
     - StructureDefinition/PH-Immunization
     - StructureDefinition/PH-Medication
     - StructureDefinition/PH-MedicationAdministration
@@ -208,14 +207,26 @@ groups:
     - StructureDefinition/PH-Specimen
 
   GroupC:
+    name: Financial Profiles
+    resources:
+    - StructureDefinition/PH-Claim
+    - StructureDefinition/PH-Coverage
+    - StructureDefinition/PH-CoverageEligibilityRequest
+    - StructureDefinition/PH-EnrollmentRequest
+
+  GroupD:
+    name: Specialized Profiles
+    resources:
+    - StructureDefinition/PH-Questionnaire
+
+  GroupE:
     name: Data Types
-    # description: Testing for Groups
     resources:
     - StructureDefinition/PH-Address
     - StructureDefinition/PH-HumanName
     - StructureDefinition/PH-Signature
 
-  GroupD:
+  GroupF:
     name: Identifier Profiles
     resources:
     - StructureDefinition/COVIDDataID

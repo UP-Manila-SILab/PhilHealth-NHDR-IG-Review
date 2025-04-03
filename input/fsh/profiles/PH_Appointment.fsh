@@ -4,6 +4,14 @@ Id: PH-Appointment
 Description: "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Appointment"
 * insert MetaData
+// * id ..0
+// * meta ..0
+* implicitRules ..0
+* language ..0
+* text ..0
+* contained ..0
+* extension ..0
+* modifierExtension ..0
 * identifier ..0
 * status from $YesNoVS (required)
 * status ^short = "Yes or No indicator if the patient have an appointment."
@@ -17,6 +25,7 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * priority ..0
 * description ..0
 * supportingInformation ..0
+// * start ..0
 // * end ..0    Enabled to fulfill constraint. Re-mapped in the next release.
 * minutesDuration ..0
 * slot ..0
@@ -24,9 +33,7 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * comment ..0
 * patientInstruction ..0
 * basedOn ..0
+// * participant ..0    Can't disable elements that are mandatory by default
+* participant.extension ..0
+* participant.modifierExtension ..0
 * requestedPeriod ..1
-// * id ..0
-* implicitRules ..0
-* language ..0
-* text ..0
-* contained ..0

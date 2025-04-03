@@ -84,6 +84,7 @@ Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
 Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
 Alias: $EducationalAttainmentVS = http://terminology.hl7.org/ValueSet/v3-EducationLevel
 Alias: $EncounterStatusVS = http://hl7.org/fhir/encounter-status
+Alias: $ICD10VS = https://nhdr.gov.ph/fhir/ValueSet/ICD10VS
 Alias: $ImmunizationOriginVS = http://hl7.org/fhir/ValueSet/immunization-origin
 Alias: $MaritalStatusVS = http://hl7.org/fhir/ValueSet/marital-status
 Alias: $MemberCategoryVS = https://nhdr.gov.ph/fhir/ValueSet/MemberCategoryVS

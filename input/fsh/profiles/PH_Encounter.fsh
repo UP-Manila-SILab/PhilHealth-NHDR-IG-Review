@@ -53,14 +53,37 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * extension[illnessClass] ^isModifier = false
 * extension[illnessClass] ^binding.description = "Valueset for case rates."
 * modifierExtension ..0
+// * id ..0
+* implicitRules ..0
+* language ..0
+* text ..0
+* contained ..0
 * identifier only $PhilHealthID or $COVIDDataID or $COVIDPatientID
 * status ^short = "NHDR will only use \"triaged\", \"in-progress\", \"cancelled\", and \"finished\"."
+* statusHistory ..0
+// * class ..0
+* classHistory ..0
+* type ..1
+* type from EncounterTypeVS (required)
+* serviceType from EncounterServiceTypeVS (required)
+* priority ..0
+// * subject ..0
+* episodeOfCare ..0
+* basedOn ..0
+* participant ..0
 * appointment ..0
+// * period ..0
+// * length ..0
+// * reasonCode ..0
 * reasonReference ..0
+* diagnosis.extension ..0
+* diagnosis.modifierExtension ..0
 * diagnosis.use ..0
 * diagnosis.rank ..0
 * diagnosis.id ..0
 * account ..0
+* hospitalization.extension ..0
+* hospitalization.modifierExtension ..0
 * hospitalization.id ..0
 * hospitalization.preAdmissionIdentifier ..0
 * hospitalization.admitSource ..0
@@ -69,22 +92,14 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * hospitalization.specialCourtesy ..0
 * hospitalization.specialArrangement ..0
 * hospitalization.dischargeDisposition from EncounterHospitalizationDischargeDispositionVS (required)
+* location.extension ..0
+* location.modifierExtension ..0
 * location.id ..0
 * location.status ..0
 * location.period ..0
 * location.physicalType from EncounterLocationPhysicalTypeVS (required)
-* statusHistory ..0
-* classHistory ..0
-* type ..1
-* type from EncounterTypeVS (required)
-* serviceType from EncounterServiceTypeVS (required)
-* priority ..0
-* episodeOfCare ..0
-* basedOn ..0
-* participant ..0
+
+
+
+
 * partOf ..0
-// * id ..0
-* implicitRules ..0
-* language ..0
-* text ..0
-* contained ..0

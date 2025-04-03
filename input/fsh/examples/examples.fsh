@@ -29,19 +29,19 @@ Usage: #example
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtOrganization"
 * extension.valueReference = Reference(Organization/Organization-Lucena-General-Hospital)
 * clinicalStatus = $allergyintolerance-clinical#active "Active"
-* verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
-* type = #allergy
+// * verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
+// * type = #allergy
 * category = #medication
 * code = $sct#764146007 "Penicillin"
 * code.text = "Penicillin"
 * patient = Reference(Patient/Patient-1)
-* onsetDateTime = "2024-07-01T10:00:00+08:00"
-* reaction.substance = $sct#91936005 "Allergy to Penicillin"
-* reaction.substance.text = "Allergy to Penicillin"
+// * onsetDateTime = "2024-07-01T10:00:00+08:00"
+// * reaction.substance = $sct#91936005 "Allergy to Penicillin"
+// * reaction.substance.text = "Allergy to Penicillin"
 * reaction.manifestation = $sct#271807003 "Rash"
 * reaction.manifestation.text = "Rash"
 * reaction.description = "Patient developed a rash after taking penicillin."
-* reaction.onset = "2024-07-01T11:00:00+08:00"
+// * reaction.onset = "2024-07-01T11:00:00+08:00"
 * reaction.severity = #moderate
 
 Instance: Appointment-1
@@ -314,7 +314,7 @@ Usage: #example
 * meta.lastUpdated = "2024-12-10T21:44:29.157+00:00"
 * extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/DateUpdated"
 * extension[=].valueDateTime = "2024-12-10T20:00:00.157+00:00"
-* code.text = "Amoxicillin 500mg Capsule"
+// * code.text = "Amoxicillin 500mg Capsule"
 
 Instance: MedicationAdministration-Amoxicillin
 InstanceOf: PH_MedicationAdministration
@@ -327,8 +327,9 @@ Usage: #example
 * extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate"
 * extension[=].valueDateTime = "2024-07-18T10:00:00+08:00"
 * status = #completed
-* medicationCodeableConcept = $rxnorm#860975 "Amoxicillin 250mg/5ml Suspension"
-* medicationCodeableConcept.text = "Amoxicillin 250mg/5ml Suspension"
+// * medicationCodeableConcept = $rxnorm#860975 "Amoxicillin 250mg/5ml Suspension"
+// * medicationCodeableConcept.text = "Amoxicillin 250mg/5ml Suspension"
+* medicationReference = Reference(Medication/Medication-Amoxicillin)
 * subject = Reference(Patient/Patient-1)
 * effectiveDateTime = "2024-07-18T09:00:00+08:00"
 * reasonCode = $sct#65363002 "Infection"
@@ -686,10 +687,10 @@ Usage: #example
 * meta.lastUpdated = "2024-07-18T07:21:35.241+00:00"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
 * extension.valueCode = #male
-* name.use = #official
+// * name.use = #official
 * name.family = "Garcia"
 * name.given = "Juan"
-* name.prefix = "Mr."
+// * name.prefix = "Mr."
 * telecom[0].system = #phone
 * telecom[=].value = "+1234567890"
 // * telecom[=].use = #mobile
@@ -709,7 +710,7 @@ Instance: Person-2
 InstanceOf: PH_Person
 Usage: #example
 * meta.lastUpdated = "2024-12-10T08:52:07.402+00:00"
-* name.use = #official
+// * name.use = #official
 * name.family = "Doe"
 * name.given = "Jane"
 * birthDate = "1995-05-15"
@@ -722,7 +723,7 @@ Usage: #example
 * identifier.value = "12345"
 * name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
 * name.extension.valueString = "Rizal"
-* name.use = #official
+// * name.use = #official
 * name.family = "Dela Cruz"
 * name.given[0] = "Juan"
 * name.given[+] = "Pedro"
@@ -743,7 +744,7 @@ Usage: #example
 * identifier.value = "12345"
 * name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
 * name.extension.valueString = "Rizal"
-* name.use = #official
+// * name.use = #official
 * name.family = "Dela Cruz"
 * name.given[0] = "Juan"
 * name.given[+] = "Pedro"
@@ -796,7 +797,7 @@ Usage: #example
 // * subject = Reference(Person/Person-1)
 // * authored = "2024-12-10T12:00:00Z"
 * item.linkId = "1"
-* item.text = "Person is the member?"
+// * item.text = "Person is the member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-2
@@ -806,7 +807,7 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Person/Person-2)
 * item.linkId = "philhealth-member"
-* item.text = "Is a PhilHealth member?"
+// * item.text = "Is a PhilHealth member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-3
@@ -826,7 +827,7 @@ Usage: #example
 // * authored = "2024-12-10T12:00:00Z"
 // * author = Reference(Organization/Organization-2)
 * item.linkId = "1"
-* item.text = "Patient is the member?"
+// * item.text = "Patient is the member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-5
@@ -836,7 +837,7 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Person/Person-1)
 * item.linkId = "philhealth-member"
-* item.text = "Is a PhilHealth member?"
+// * item.text = "Is a PhilHealth member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-6
@@ -863,7 +864,7 @@ Usage: #example
 * meta.lastUpdated = "2024-12-10T14:28:44.132+00:00"
 * status = #completed
 * item.linkId = "referral"
-* item.text = "Was the patient referred by another HCI?"
+// * item.text = "Was the patient referred by another HCI?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-9
@@ -883,13 +884,13 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient received recent vaccinations?"
+// * item[=].text = "Has the patient received recent vaccinations?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Was the patient recently exposed to any infectious diseases?"
+// * item[=].text = "Was the patient recently exposed to any infectious diseases?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-COVID
@@ -899,16 +900,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Does the patient have a fever, cough, or difficulty breathing?"
+// * item[=].text = "Does the patient have a fever, cough, or difficulty breathing?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient been in close contact with a confirmed COVID-19 case?"
+// * item[=].text = "Has the patient been in close contact with a confirmed COVID-19 case?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient experienced loss of taste or smell?"
+// * item[=].text = "Has the patient experienced loss of taste or smell?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-Diphtheria
@@ -918,16 +919,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient reported symptoms of sore throat or difficulty breathing?"
+// * item[=].text = "Has the patient reported symptoms of sore throat or difficulty breathing?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced swelling in the neck or hoarseness of voice?"
+// * item[=].text = "Has the patient experienced swelling in the neck or hoarseness of voice?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Was the patient exposed to anyone diagnosed with diphtheria?"
+// * item[=].text = "Was the patient exposed to anyone diagnosed with diphtheria?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-HFMD
@@ -937,16 +938,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Does the patient have a fever and sores in the mouth?"
+// * item[=].text = "Does the patient have a fever and sores in the mouth?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Are there rashes or blisters on the hands, feet, or buttocks?"
+// * item[=].text = "Are there rashes or blisters on the hands, feet, or buttocks?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient been in close contact with another case of HFMD?"
+// * item[=].text = "Has the patient been in close contact with another case of HFMD?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Influenza
@@ -956,13 +957,13 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Does the patient have a history of recent travel to high-risk areas?"
+// * item[=].text = "Does the patient have a history of recent travel to high-risk areas?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced fever, cough, or difficulty in breathing?"
+// * item[=].text = "Has the patient experienced fever, cough, or difficulty in breathing?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-Leptospirosis
@@ -972,16 +973,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient been exposed to floodwaters or contaminated water sources?"
+// * item[=].text = "Has the patient been exposed to floodwaters or contaminated water sources?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced symptoms like fever, muscle pain, or headache?"
+// * item[=].text = "Has the patient experienced symptoms like fever, muscle pain, or headache?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient reported jaundice, reduced urine output, or respiratory distress?"
+// * item[=].text = "Has the patient reported jaundice, reduced urine output, or respiratory distress?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Malaria
@@ -991,16 +992,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient traveled to malaria-endemic areas recently?"
+// * item[=].text = "Has the patient traveled to malaria-endemic areas recently?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced fever, chills, or night sweats?"
+// * item[=].text = "Has the patient experienced fever, chills, or night sweats?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient experienced any symptoms like vomiting, diarrhea, or headaches?"
+// * item[=].text = "Has the patient experienced any symptoms like vomiting, diarrhea, or headaches?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Meningococcal
@@ -1010,16 +1011,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Is the patient experiencing sudden fever, headache, or stiff neck?"
+// * item[=].text = "Is the patient experiencing sudden fever, headache, or stiff neck?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient been in close contact with a confirmed meningococcal case?"
+// * item[=].text = "Has the patient been in close contact with a confirmed meningococcal case?"
 * item[=].answer.valueBoolean = false
 * item[+].linkId = "4"
-* item[=].text = "Are there signs of rash or purpura on the patient?"
+// * item[=].text = "Are there signs of rash or purpura on the patient?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-NeonatalTetanus
@@ -1029,16 +1030,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Was the mother immunized with tetanus toxoid during pregnancy?"
+// * item[=].text = "Was the mother immunized with tetanus toxoid during pregnancy?"
 * item[=].answer.valueBoolean = false
 * item[+].linkId = "3"
-* item[=].text = "Was the delivery conducted under unhygienic conditions?"
+// * item[=].text = "Was the delivery conducted under unhygienic conditions?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Is the infant experiencing muscle stiffness or difficulty feeding?"
+// * item[=].text = "Is the infant experiencing muscle stiffness or difficulty feeding?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-NonNeonatalTetanus
@@ -1048,16 +1049,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Was the patient injured recently with potential exposure to contaminated objects?"
+// * item[=].text = "Was the patient injured recently with potential exposure to contaminated objects?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Is the patient experiencing muscle stiffness or spasms?"
+// * item[=].text = "Is the patient experiencing muscle stiffness or spasms?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient been vaccinated against tetanus?"
+// * item[=].text = "Has the patient been vaccinated against tetanus?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Pertussis
@@ -1067,16 +1068,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient reported prolonged coughing spells?"
+// * item[=].text = "Has the patient reported prolonged coughing spells?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Does the patient have a history of recent exposure to someone diagnosed with pertussis?"
+// * item[=].text = "Does the patient have a history of recent exposure to someone diagnosed with pertussis?"
 * item[=].answer.valueBoolean = false
 * item[+].linkId = "4"
-* item[=].text = "Is the patient experiencing symptoms like vomiting after coughing or difficulty breathing?"
+// * item[=].text = "Is the patient experiencing symptoms like vomiting after coughing or difficulty breathing?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-Rotavirus
@@ -1086,13 +1087,13 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient experienced diarrhea or vomiting?"
+// * item[=].text = "Has the patient experienced diarrhea or vomiting?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Is the patient currently dehydrated?"
+// * item[=].text = "Is the patient currently dehydrated?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-SARI
@@ -1102,7 +1103,7 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item.linkId = "1"
-* item.text = "Has the specimen been sent to RITM?"
+// * item.text = "Has the specimen been sent to RITM?"
 * item.answer.valueBoolean = true
 
 Instance: Service-Request-Fluid-Analysis
@@ -1261,7 +1262,7 @@ Instance: Specimen-Saliva
 InstanceOf: PH_Specimen
 Usage: #example
 * meta.lastUpdated = "2024-12-11T05:00:31.874+00:00"
-* status = #available
+// * status = #available
 * type = $sct#122555007 "Saliva specimen"
 * type.text = "Saliva specimen"
 * subject = Reference(Patient/Patient-3)
