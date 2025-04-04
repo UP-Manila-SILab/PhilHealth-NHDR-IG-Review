@@ -1,6 +1,7 @@
 Profile: PH_Claim
 Parent: Claim
 Id: PH-Claim
+Title: "PH Claim"
 Description: "A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Claim"
 * insert MetaData

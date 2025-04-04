@@ -1,6 +1,7 @@
 Profile: PH_Goal
 Parent: Goal
 Id: PH-Goal
+Title: "PH Goal"
 Description: "Describes the intended objective(s) for a patient, group or organization care, for example, weight loss, restoring an activity of daily living, obtaining herd immunity via immunization, meeting a process improvement objective, etc."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Goal"
 * insert MetaData

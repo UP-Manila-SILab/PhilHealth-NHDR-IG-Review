@@ -1,6 +1,7 @@
 Profile: PH_Observation
 Parent: Observation
 Id: PH-Observation
+Title: "PH Observation"
 Description: "Measurements and simple assertions made about a patient, device or other subject."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Observation"
 * insert MetaData

@@ -1,6 +1,7 @@
 Profile: PH_MedicationStatement
 Parent: MedicationStatement
 Id: PH-MedicationStatement
+Title: "PH MedicationStatement"
 Description: "A record of a medication that is being consumed by a patient."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationStatement"
 * insert MetaData

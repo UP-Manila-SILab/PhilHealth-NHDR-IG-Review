@@ -1,6 +1,7 @@
 Profile: PH_Signature
 Parent: Signature
 Id: PH-Signature
+Title: "PH Signature"
 Description: "The signature of an individual."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Signature"
 * insert MetaData

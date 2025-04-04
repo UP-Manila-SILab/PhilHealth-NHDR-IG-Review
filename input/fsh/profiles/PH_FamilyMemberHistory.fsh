@@ -1,6 +1,7 @@
 Profile: PH_FamilyMemberHistory
 Parent: FamilyMemberHistory
 Id: PH-FamilyMemberHistory
+Title: "PH FamilyMemberHistory"
 Description: "Significant health conditions for a person related to the patient relevant in the context of care for the patient."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-FamilyMemberHistory"
 * insert MetaData

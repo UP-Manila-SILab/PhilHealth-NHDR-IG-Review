@@ -1,6 +1,7 @@
 Profile: PH_Address
 Parent: Address
 Id: PH-Address
+Title: "PH Address"
 Description: "An address for the individual."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address"
 * insert MetaData

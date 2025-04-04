@@ -1,6 +1,7 @@
 Profile: PH_Organization
 Parent: Organization
 Id: PH-Organization
+Title: "PH Organization"
 Description: "Refers to a formally or informally recognized grouping of people or entities that are formed to achieve a common goal, particularly in healthcare."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Organization"
 * insert MetaData

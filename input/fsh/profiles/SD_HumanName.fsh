@@ -1,6 +1,7 @@
 Profile: PH_HumanName
 Parent: HumanName
 Id: PH-HumanName
+Title: "PH HumanName"
 Description: "A name of a human."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName"
 * insert MetaData

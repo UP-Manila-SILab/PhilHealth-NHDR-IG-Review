@@ -1,6 +1,7 @@
 Profile: PH_CoverageEligibilityRequest
 Parent: CoverageEligibilityRequest
 Id: PH-CoverageEligibilityRequest
+Title: "PH CoverageEligibiityRequest"
 Description: "The CoverageEligibilityRequest provides patient and insurance coverage information to an insurer for them to respond, in the form of an CoverageEligibilityResponse, with information regarding whether the stated coverage is valid and in-force and optionally to provide the insurance details of the policy.	"
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-CoverageEligibilityRequest"
 * insert MetaData

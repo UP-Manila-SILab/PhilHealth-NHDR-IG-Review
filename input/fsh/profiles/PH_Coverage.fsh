@@ -1,6 +1,7 @@
 Profile: PH_Coverage
 Parent: Coverage
 Id: PH-Coverage
+Title: "PH Coverage"
 Description: "Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Coverage"
 * insert MetaData

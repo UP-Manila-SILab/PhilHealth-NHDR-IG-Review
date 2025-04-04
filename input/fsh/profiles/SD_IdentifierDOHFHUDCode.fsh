@@ -1,7 +1,7 @@
 Profile: DOHfhudCode
 Parent: Identifier
 Id: DOHfhudCode
-Title: "PDD Registration Number"
+Title: "DOH FHUD Code"
 Description: "Health Facility Code (HFC) from the National Health Facility Registry"
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/DOHfhudCode"
 * insert MetaData

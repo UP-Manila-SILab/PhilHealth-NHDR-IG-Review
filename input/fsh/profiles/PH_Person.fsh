@@ -1,6 +1,7 @@
 Profile: PH_Person
 Parent: Person
 Id: PH-Person
+Title: "PH Person"
 Description: "Demographics and administrative information about a person independent of a specific health-related context."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Person"
 * insert MetaData

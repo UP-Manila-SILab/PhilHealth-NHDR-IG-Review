@@ -1,7 +1,7 @@
 Extension: ExtAddress
 Id: ExtAddress
 Context: Observation
-Title: "Address"
+Title: "Address (Extension)"
 Description: "Address where the observation was made."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtAddress"
 * ^status = #draft

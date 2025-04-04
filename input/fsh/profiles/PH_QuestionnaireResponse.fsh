@@ -1,6 +1,7 @@
 Profile: PH_QuestionnaireResponse
 Parent: QuestionnaireResponse
 Id: PH-QuestionnaireResponse
+Title: "PH QuestionnaireResponse"
 Description: "A structured set of questions and their answers."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * insert MetaData

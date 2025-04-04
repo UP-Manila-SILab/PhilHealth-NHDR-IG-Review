@@ -1,6 +1,7 @@
 Profile: PH_Questionnaire
 Parent: Questionnaire
 Id: PH-Questionnaire
+Title: "PH Questionnaire"
 Description: "A structured set of questions intended to guide the collection of answers from end-users. Questionnaires provide detailed control over order, presentation, phraseology and grouping to allow coherent, consistent data collection."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Questionnaire"
 * insert MetaData

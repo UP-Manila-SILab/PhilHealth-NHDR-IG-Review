@@ -1,7 +1,7 @@
 Extension: ExtEncounter
 Id: ExtEncounter
 Context: MedicationAdministration, MedicationStatement
-Title: "Encounter"
+Title: "Encounter (Extension)"
 Description: "The encounter when the medicine was consumed or administered."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtEncounter"
 * ^status = #draft

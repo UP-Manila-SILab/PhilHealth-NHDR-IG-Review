@@ -1,6 +1,7 @@
 Profile: PH_Patient
 Parent: Patient
 Id: PH-Patient
+Title: "PH Patient"
 Description: "Captures key demographic and administrative information about individuals receiving care or other health-related services."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
 * insert MetaData

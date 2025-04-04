@@ -1,6 +1,7 @@
 Profile: PH_Procedure
 Parent: Procedure
 Id: PH-Procedure
+Title: "PH Procedure"
 Description: "An action that is or was performed on or for a patient, practitioner, device, organization, or location."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Procedure"
 * insert MetaData

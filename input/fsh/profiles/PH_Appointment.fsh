@@ -1,6 +1,7 @@
 Profile: PH_Appointment
 Parent: Appointment
 Id: PH-Appointment
+Title: "PH Appointment"
 Description: "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Appointment"
 * insert MetaData

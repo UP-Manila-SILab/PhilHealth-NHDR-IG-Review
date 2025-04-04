@@ -1,6 +1,7 @@
 Profile: PH_Immunization
 Parent: Immunization
 Id: PH-Immunization
+Title: "PH Immunization"
 Description: "Describes the event of a patient being administered a vaccine or a record of an immunization as reported by a patient, a clinician or another party."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Immunization"
 * insert MetaData

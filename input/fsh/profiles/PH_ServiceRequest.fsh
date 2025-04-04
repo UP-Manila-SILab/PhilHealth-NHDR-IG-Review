@@ -1,6 +1,7 @@
 Profile: PH_ServiceRequest
 Parent: ServiceRequest
 Id: PH-ServiceRequest
+Title: "PH ServiceRequest"
 Description: "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-ServiceRequest"
 * insert MetaData

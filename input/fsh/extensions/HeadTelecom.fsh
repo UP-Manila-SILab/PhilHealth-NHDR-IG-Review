@@ -1,7 +1,7 @@
 Extension: HeadTelecom
 Id: HeadTelecom
 Context: Organization
-Title: "Head Name"
+Title: "Organization's Head - Telecom"
 Description: "Contact information of the head of the facility."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/HeadTelecom"
 * ^status = #draft

@@ -1,6 +1,7 @@
 Profile: PH_DiagnosticReport
 Parent: DiagnosticReport
 Id: PH-DiagnosticReport
+Title: "PH DiagnosticReport"
 Description: "The findings and interpretation of diagnostic tests performed on patients, groups of patients, products, substances, devices, and locations, and/or specimens derived from these."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-DiagnosticReport"
 * insert MetaData

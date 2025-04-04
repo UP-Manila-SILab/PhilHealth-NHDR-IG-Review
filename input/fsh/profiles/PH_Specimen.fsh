@@ -1,6 +1,7 @@
 Profile: PH_Specimen
 Parent: Specimen
 Id: PH-Specimen
+Title: "PH Specimen"
 Description: "A sample to be used for analysis."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Specimen"
 * insert MetaData

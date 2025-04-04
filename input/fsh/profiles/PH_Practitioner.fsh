@@ -1,6 +1,7 @@
 Profile: PH_Practitioner
 Parent: Practitioner
 Id: PH-Practitioner
+Title: "PH Practitioner"
 Description: "A person who is directly or indirectly involved in the provisioning of healthcare or related services."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Practitioner"
 * insert MetaData

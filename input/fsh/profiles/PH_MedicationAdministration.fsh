@@ -1,6 +1,7 @@
 Profile: PH_MedicationAdministration
 Parent: MedicationAdministration
 Id: PH-MedicationAdministration
+Title: "PH MediationAdministration"
 Description: "Describes the event of a patient consuming or otherwise being administered a medication."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationAdministration"
 * insert MetaData

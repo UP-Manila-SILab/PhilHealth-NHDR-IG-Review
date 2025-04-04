@@ -1,6 +1,7 @@
 Profile: PH_EnrollmentRequest
 Parent: EnrollmentRequest
 Id: PH-EnrollmentRequest
+Title: "PH EnrollmentRequest"
 Description: "This resource provides the insurance enrollment details to the insurer regarding a specified coverage."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-EnrollmentRequest"
 * insert MetaData
