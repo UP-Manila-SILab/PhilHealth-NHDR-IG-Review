@@ -2,6 +2,7 @@
   "http://terminology.hl7.org/CodeSystem/designation-usage|null" : null,
   "http://hl7.org/fhir/fhir-types|null" : null,
   "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html|null" : null,
+  "http://hl7.org/fhir/tools/CodeSystem/obligation|null" : null,
   "https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html|null" : null,
   "http://nhdr.gov.ph/fhir/ValueSet/ConditionCodeValueSet|null" : null,
   "http://nhdr.gov.ph/fhir/ValueSet/ProcedureCodeValueSet|null" : null,

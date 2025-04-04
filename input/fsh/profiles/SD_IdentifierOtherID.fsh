@@ -9,7 +9,7 @@ Description: "List of other acceptable IDs"
 <html><style>table, thead, td{border:2px solid #ccc; border-collapse:collapse}</style></html>
 ## Combined:
 
-| **Code** | **Display** | **Use:** |
+| **Code** | **Display** | **Use** |
 |:---------|:------------|:---------|
 | TAX | TIN | Patient.identifier |
 | SB | SSS / GSIS | Patient.identifier |

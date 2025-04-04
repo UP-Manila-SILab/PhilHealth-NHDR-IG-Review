@@ -55,6 +55,8 @@ pages:
     title: Extensions
   search-parameters.md:
     title: Search Parameters
+  # use-cases.md:
+  #   title: Use Case Submission
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -101,6 +103,7 @@ menu:
   # Base: base.html
   # Clinical: clinical.html
   Extensions: extensions.html
+  # Use Cases: use-cases.html
   # Search Parameters: search-parameters.html
 
 

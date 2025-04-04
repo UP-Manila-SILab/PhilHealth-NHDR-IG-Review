@@ -9,7 +9,7 @@ In the case of the PHCDI Implementation Guide, these extensions allow for the re
 ### Extensions:
 ___
 
-| **Extension Name** | **Description** | **Used in:** |
+| **Extension Name** | **Description** | **Used in** |
 |:-------------------|:----------------|:-------------|
 |[Address (extension)](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-ExtAddress.html)| Address where the observation was made. | [PH_Observation](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Observation.html) |
 |[AgeDays](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-AgeDays.html)| Age of the patient in days. | [PH_Encounter](https://build.fhir.org/ig/UP-Manila-SILab/PhilHealth-NHDR-IG-Review/StructureDefinition-PH-Encounter.html) |
