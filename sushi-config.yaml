@@ -55,6 +55,10 @@ pages:
     title: Extensions
   search-parameters.md:
     title: Search Parameters
+  use-cases.md:
+    title: Use Cases
+  use-cases-CF1.md:
+    title: Claims Form 1
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -94,6 +98,7 @@ menu:
     Base Profiles: artifacts.html#base-profiles
     Clinical Profiles: artifacts.html#clinical-profiles
     Data Types: artifacts.html#data-types
+    Identifiers: artifacts.html#identifiers
     Extensions: artifacts.html#structures-extension-definitions
     Value Sets: artifacts.html#terminology-value-sets
     Code Systems: artifacts.html#terminology-code-systems
@@ -101,6 +106,7 @@ menu:
   # Base: base.html
   # Clinical: clinical.html
   Extensions: extensions.html
+  Use Cases: use-cases.html
   # Search Parameters: search-parameters.html
 
 
@@ -176,7 +182,6 @@ menu:
 groups:
   GroupA:
     name: Base Profiles
-    # description: Testing for Groups
     resources:
     - StructureDefinition/PH-Appointment
     - StructureDefinition/PH-Encounter
@@ -189,13 +194,13 @@ groups:
 
   GroupB:
     name: Clinical Profiles
-    # description: Testing for Groups
     resources:
     - StructureDefinition/PH-AllergyIntolerance
     - StructureDefinition/PH-CarePlan
     - StructureDefinition/PH-Condition
     - StructureDefinition/PH-DiagnosticReport
     - StructureDefinition/PH-FamilyMemberHistory
+    - StructureDefinition/PH-Goal
     - StructureDefinition/PH-Immunization
     - StructureDefinition/PH-Medication
     - StructureDefinition/PH-MedicationAdministration
@@ -208,12 +213,34 @@ groups:
     - StructureDefinition/PH-Specimen
 
   GroupC:
+    name: Financial Profiles
+    resources:
+    - StructureDefinition/PH-Claim
+    - StructureDefinition/PH-Coverage
+    - StructureDefinition/PH-CoverageEligibilityRequest
+    - StructureDefinition/PH-EnrollmentRequest
+
+  GroupD:
+    name: Specialized Profiles
+    resources:
+    - StructureDefinition/PH-Questionnaire
+
+  GroupE:
     name: Data Types
-    # description: Testing for Groups
     resources:
     - StructureDefinition/PH-Address
     - StructureDefinition/PH-HumanName
-    - StructureDefinition/PH-Period
+    - StructureDefinition/PH-Signature
+
+  GroupF:
+    name: Identifiers
+    resources:
+    - StructureDefinition/COVIDDataID
+    - StructureDefinition/COVIDPatientID
+    - StructureDefinition/DOHfhudCode
+    - StructureDefinition/OtherID
+    - StructureDefinition/PhilHealthID
+    - StructureDefinition/RegistrationNo
 
 #
 #

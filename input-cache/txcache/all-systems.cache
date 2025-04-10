@@ -107,7 +107,6 @@ v: {
   "code" : "en-US",
   "system" : "urn:ietf:bcp:47",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -207,7 +206,6 @@ v: {
   "error" : "The provided code 'http://loinc.org#76689-9' was not found in the value set 'http://hl7.org/fhir/ValueSet/usage-context-type|4.0.1'",
   "class" : "UNKNOWN",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -258,7 +256,6 @@ v: {
   "error" : "The provided code 'http://unitsofmeasure.org#mmol/L' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/ObservationValueVS|0.1.0'",
   "class" : "UNKNOWN",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -304,7 +301,6 @@ v: {
   "code" : "en-IN",
   "system" : "urn:ietf:bcp:47",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -5371,5 +5367,380 @@ e: {
   }
 },
   "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html",
+    "code" : "2036-2",
+    "display" : "Filipino"
+  }],
+  "text" : "Filipino"
+}, "url": "http://terminology.hl7.org/ValueSet/v3-Race", "version": "3.0.0", "langs":"und", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "und"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html' could not be found, so the code cannot be validated; No valid coding was found for the value set 'http://terminology.hl7.org/ValueSet/v3-Race|3.0.0'; The provided code 'https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html#2036-2 ('Filipino')' was not found in the value set 'http://terminology.hl7.org/ValueSet/v3-Race|3.0.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html#2036-2 ('Filipino')' was not found in the value set 'http://terminology.hl7.org/ValueSet/v3-Race|3.0.0'"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html' could not be found, so the code cannot be validated"
+    },
+    "location" : ["CodeableConcept.coding[0].system"],
+    "expression" : ["CodeableConcept.coding[0].system"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://terminology.hl7.org/ValueSet/v3-Race|3.0.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "code" : "1",
+  "display" : "REGION I"
+}, "url": "https://nhdr.gov.ph/fhir/ValueSet/RegionVS", "version": "0.1.0", "langs":"und", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "und"
+  }]
+}}####
+v: {
+  "code" : "1",
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated; The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1 ('REGION I')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/RegionVS|0.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated"
+    },
+    "location" : ["Coding.system"],
+    "expression" : ["Coding.system"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1 ('REGION I')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/RegionVS|0.1.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "code" : "1028",
+  "display" : "ILOCOS NORTE"
+}, "url": "https://nhdr.gov.ph/fhir/ValueSet/ProvinceVS", "version": "0.1.0", "langs":"und", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "und"
+  }]
+}}####
+v: {
+  "code" : "1028",
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated; The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1028 ('ILOCOS NORTE')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/ProvinceVS|0.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated"
+    },
+    "location" : ["Coding.system"],
+    "expression" : ["Coding.system"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1028 ('ILOCOS NORTE')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/ProvinceVS|0.1.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "code" : "102801",
+  "display" : "ADAMS"
+}, "url": "https://nhdr.gov.ph/fhir/ValueSet/CityVS", "version": "0.1.0", "langs":"und", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "und"
+  }]
+}}####
+v: {
+  "code" : "102801",
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated; The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801 ('ADAMS')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/CityVS|0.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated"
+    },
+    "location" : ["Coding.system"],
+    "expression" : ["Coding.system"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801 ('ADAMS')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/CityVS|0.1.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "code" : "102801001",
+  "display" : "ADAMS"
+}, "url": "https://nhdr.gov.ph/fhir/ValueSet/BarangayVS", "version": "0.1.0", "langs":"und", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "und"
+  }]
+}}####
+v: {
+  "code" : "102801001",
+  "system" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated; The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801001 ('ADAMS')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/BarangayVS|0.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS' could not be found, so the code cannot be validated"
+    },
+    "location" : ["Coding.system"],
+    "expression" : ["Coding.system"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801001 ('ADAMS')' was not found in the value set 'https://nhdr.gov.ph/fhir/ValueSet/BarangayVS|0.1.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
 }
 -------------------------------------------------------------------------------------

@@ -3,6 +3,7 @@
   "http://example.org/fhir/CodeSystem/ConditionBodySiteCodeSystem|null" : null,
   "http://example.org/fhir/practitioner-role-codes|null" : null,
   "http://example.org/fhir/CodeSystem/ProcedureCodeSystem|null" : null,
+  "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html|null" : null,
   "http://example.org/fhir/CodeSystem/DiagnosticReportCodeSystem|null" : null,
   "http://example.org/fhir/encounter-service-type-codes|null" : null,
   "http://example.org/fhir/CodeSystem/ProcedureStatusCodeSystem|null" : null,
@@ -15,6 +16,7 @@
   "http://example.org/fhir/encounter-type-codes|null" : null,
   "http://example.org/fhir/CodeSystem/MedicalAdministrationStatusCodeSystem|null" : null,
   "http://example.org/fhir/CodeSystem/ImmunizationStatusCodeSystem|null" : null,
+  "https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html|null" : null,
   "http://example.org/fhir/CodeSystem/EncounterDischargeDisposition|null" : null,
   "http://example.org/fhir/contact-relationship-codes|null" : null,
   "http://example.org/fhir/CodeSystem/SpecimenTypeCodeSystem|null" : null,
@@ -33,8 +35,10 @@
   "http://nhdr.gov.ph/fhir/ValueSet/ConditionCodeValueSet|null" : null,
   "http://nhdr.gov.ph/fhir/ValueSet/ProcedureCodeValueSet|null" : null,
   "http://example.org/fhir/CodeSystem/ImmunizationStatusReasonCodeSystem|null" : null,
+  "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS|null" : null,
   "http://hl7.org/fhir/fhir-types|null" : null,
   "http://example.org/fhir/CodeSystem/SpecimenProcessingProcedureCodeSystem|null" : null,
   "http://example.org/fhir/CodeSystem/ImmunizationReportOriginCodeSystem|null" : null,
-  "http://example.org/fhir/CodeSystem/ConditionVerificationStatusCodeSystem|null" : null
+  "http://example.org/fhir/CodeSystem/ConditionVerificationStatusCodeSystem|null" : null,
+  "https://psa.gov.ph/classification/psoc/unit|null" : null
 }

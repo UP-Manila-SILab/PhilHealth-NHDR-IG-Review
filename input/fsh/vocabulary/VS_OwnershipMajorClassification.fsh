@@ -1,7 +1,7 @@
 ValueSet: OwnershipMajorClassificationVS
 Id: OwnershipMajorClassificationVS
 Title: "Ownership Major Classification"
-Description: "A value set defining the different types of major classification of Ownership"
+Description: "A value set defining the different types of major classification of ownership"
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/OwnershipMajorClassificationVS"
 * ^version = "1.0.0"
 * ^status = #draft

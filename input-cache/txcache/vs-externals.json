@@ -37,6 +37,7 @@
   "http://example.org/fhir/CodeSystem/ImmunizationStatusReasonCodeSystem|null" : null,
   "http://psgc.psa.gov.ph" : null,
   "http://example.org/fhir/CodeSystem/SpecimenProcessingProcedureCodeSystem|null" : null,
+  "https://psa.gov.ph/classification/psoc/unit" : null,
   "http://example.org/fhir/CodeSystem/ImmunizationReportOriginCodeSystem|null" : null,
   "https://example.org/fhir/StructureDefinition/IndigenousGroupValueSet" : null,
   "http://example.org/fhir/CodeSystem/ConditionVerificationStatusCodeSystem|null" : null

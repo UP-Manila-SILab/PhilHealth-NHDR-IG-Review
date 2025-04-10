@@ -1,9 +1,16 @@
 Profile: PH_MedicationAdministration
 Parent: MedicationAdministration
 Id: PH-MedicationAdministration
+Title: "PH MediationAdministration"
 Description: "Describes the event of a patient consuming or otherwise being administered a medication."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationAdministration"
-* ^status = #draft
+* insert MetaData
+// * id ..0
+// * meta ..0
+* implicitRules ..0
+* language ..0
+* text ..0
+* contained ..0
 * extension contains
     ExtOrganization named extOrganization 0..* and
     ExtEncounter named extEncounter 0..* and
@@ -20,17 +27,25 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * extension[recordedDate] ^definition = "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR."
 * extension[recordedDate] ^comment = "This is an extension"
 * extension[recordedDate] ^isModifier = false
+* modifierExtension ..0
+// * identifier ..0
 * instantiates ..0
 * partOf ..0
-// * status from MedicalAdministrationStatus (required)
 * status from $YesNoVS (required)
 * statusReason ..0
 * category ..0
+* medication[x] only Reference(PH_Medication)
+* subject only Reference(PH_Patient)
 * context ..0
 * supportingInformation ..0
 * performer ..0
 * reasonCode ..1
 * reasonReference ..1
+* reasonReference only Reference(PH_Condition or PH_Observation or PH_DiagnosticReport)
+* request ..0
+* device ..0
+* note ..0
 * dosage ^definition = "Indicates how the medication is/was or should be taken by the patient."
 * dosage.extension ..0
+* dosage.id ..0
 * eventHistory ..0

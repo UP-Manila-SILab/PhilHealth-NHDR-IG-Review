@@ -22,9 +22,6 @@ Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatu
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
 
-
-
-
 Instance: Allergy-Intolerance-1
 InstanceOf: PH_AllergyIntolerance
 Usage: #example
@@ -32,19 +29,19 @@ Usage: #example
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtOrganization"
 * extension.valueReference = Reference(Organization/Organization-Lucena-General-Hospital)
 * clinicalStatus = $allergyintolerance-clinical#active "Active"
-* verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
-* type = #allergy
+// * verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
+// * type = #allergy
 * category = #medication
 * code = $sct#764146007 "Penicillin"
 * code.text = "Penicillin"
 * patient = Reference(Patient/Patient-1)
-* onsetDateTime = "2024-07-01T10:00:00+08:00"
-* reaction.substance = $sct#91936005 "Allergy to Penicillin"
-* reaction.substance.text = "Allergy to Penicillin"
+// * onsetDateTime = "2024-07-01T10:00:00+08:00"
+// * reaction.substance = $sct#91936005 "Allergy to Penicillin"
+// * reaction.substance.text = "Allergy to Penicillin"
 * reaction.manifestation = $sct#271807003 "Rash"
 * reaction.manifestation.text = "Rash"
 * reaction.description = "Patient developed a rash after taking penicillin."
-* reaction.onset = "2024-07-01T11:00:00+08:00"
+// * reaction.onset = "2024-07-01T11:00:00+08:00"
 * reaction.severity = #moderate
 
 Instance: Appointment-1
@@ -110,36 +107,10 @@ Usage: #example
 * conclusion = "Positive for rabies virus antibodies"
 * conclusionCode = $sct#14168008 "Rabies"
 
-
-// Instance: Condition-1
-// InstanceOf: PH_Condition
-// Usage: #example
-// * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Ext_Organization"
-// * extension.valueReference.reference = "Organization/example"
-// * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
-// * clinicalStatus.coding.code = #active
-// * clinicalStatus.coding.display = "Active"
-// * verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
-// * verificationStatus.coding.code = #confirmed
-// * verificationStatus.coding.display = "Confirmed"
-// * category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
-// * category.coding.code = #problem-list-item
-// * category.coding.display = "Problem List Item"
-// * severity.coding.system = "http://snomed.info/sct"
-// * severity.coding.code = #24484000
-// * severity.coding.display = "Severe"
-// * code.coding.system = "http://snomed.info/sct"
-// * code.coding.code = #44054006
-// * code.coding.display = "Diabetes mellitus type 2 (disorder)"
-// * code.text = "Diabetes mellitus type 2"
-// * subject.reference = "Patient/example"
-// * onsetDateTime = "2024-07-18T08:00:00+08:00"
-// * recordedDate = "2024-07-18T08:00:00+08:00"
-
 Instance: Encounter-1
 InstanceOf: PH_Encounter
 Usage: #example
-* meta.lastUpdated = "2024-07-18T06:52:48.696+00:00"
+// * meta.lastUpdated = "2024-07-18T06:52:48.696+00:00"
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/AgeYears"
 * extension[=].valueInteger = 30
@@ -179,7 +150,7 @@ Usage: #example
 * period.start = "2024-07-18T08:00:00+08:00"
 * period.end = "2024-07-18T10:00:00+08:00"
 * location.location = Reference(Location/Location-General-Hospital-Room-101) "General Hospital Room"
-* location.status = #completed
+// * location.status = #completed
 
 Instance: Encounter-2
 InstanceOf: PH_Encounter
@@ -205,6 +176,9 @@ Usage: #example
 * meta.lastUpdated = "2024-12-12T04:30:08.628+00:00"
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
+* identifier.type.coding.code = #COVID
+* identifier.type.text = "COVID Kaya issued number"
+* identifier.value = "CV567432"
 * type = $v3-ActCode#COVIDENC "COVID-19 Encounter"
 * subject = Reference(Patient/Patient-2)
 * class = $v3-ActCode#AMB "ambulatory"
@@ -327,10 +301,10 @@ Usage: #example
 // * meta.lastUpdated = "2024-07-18T06:57:37.403+00:00"
 * name = "General Hospital Room 101"
 // * physicalType = $location-physical-type#ro "Room"
-* address.use = #work
+// * address.use = #work
 * address.line = "1234 Health St."
-* address.city = "Health City"
-* address.state = "Health State"
+// * address.city = "Health City"
+// * address.state = "Health State"
 * address.postalCode = "12345"
 * address.country = "PH"
 
@@ -340,7 +314,7 @@ Usage: #example
 * meta.lastUpdated = "2024-12-10T21:44:29.157+00:00"
 * extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/DateUpdated"
 * extension[=].valueDateTime = "2024-12-10T20:00:00.157+00:00"
-* code.text = "Amoxicillin 500mg Capsule"
+// * code.text = "Amoxicillin 500mg Capsule"
 
 Instance: MedicationAdministration-Amoxicillin
 InstanceOf: PH_MedicationAdministration
@@ -353,8 +327,9 @@ Usage: #example
 * extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate"
 * extension[=].valueDateTime = "2024-07-18T10:00:00+08:00"
 * status = #completed
-* medicationCodeableConcept = $rxnorm#860975 "Amoxicillin 250mg/5ml Suspension"
-* medicationCodeableConcept.text = "Amoxicillin 250mg/5ml Suspension"
+// * medicationCodeableConcept = $rxnorm#860975 "Amoxicillin 250mg/5ml Suspension"
+// * medicationCodeableConcept.text = "Amoxicillin 250mg/5ml Suspension"
+* medicationReference = Reference(Medication/Medication-Amoxicillin)
 * subject = Reference(Patient/Patient-1)
 * effectiveDateTime = "2024-07-18T09:00:00+08:00"
 * reasonCode = $sct#65363002 "Infection"
@@ -550,7 +525,7 @@ Usage: #example
 Instance: Organization-1
 InstanceOf: PH_Organization
 Usage: #example
-* id = "12345"
+// * id = "12345"
 * meta.lastUpdated = "2024-07-18T06:40:29.709+00:00"
 * telecom[0].system = #phone
 * telecom[=].value = "(+1) 734-677-7777"
@@ -586,45 +561,70 @@ InstanceOf: PH_Patient
 Usage: #example
 * meta.lastUpdated = "2024-07-12T14:07:16.25+00:00"
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
-* language = #en-IN
-* identifier[0].use = #official
-* identifier[=].type.coding.code = #NIIP
-* identifier[=].value = "PH12345"
-* identifier[+].use = #secondary
-* identifier[=].type.coding.code = #DL
-* identifier[=].value = "DL12345"
-* identifier[+].use = #secondary
-* identifier[=].type.coding.code = #PPN
-* identifier[=].value = "PPN25"
+// * language = #en-US
+* identifier.type.coding.code = #NIIP
+* identifier.type.text = "PhilHealth Identification Number"
+* identifier.value = "PH12345"
 * active = true
-* name.text = "Example Patient"
-* name.family = "Patient"
-* name.given = "Example"
+* extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/IndigenousGroup"
+* extension[=].valueCodeableConcept.coding[0] = $IndigenousGroupCS#Kalinga "Kalinga"
+* extension[=].valueCodeableConcept.text = "Kalinga"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/IndigenousPeople"
+* extension[=].valueBoolean = true
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Occupation"
+* extension[=].valueCodeableConcept.coding[0] = https://psa.gov.ph/classification/psoc/unit#0110 "Commissioned Armed Forces Officers"
+* extension[=].valueCodeableConcept.text = "Commissioned Armed Forces Officers"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Occupation"
+* extension[=].valueInteger = 10
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Religion"
+* extension[=].valueCode = #1009 "Baptist"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/FatherName"
+* extension[=].valueHumanName.family = "Smith"
+* extension[=].valueHumanName.given[0] = "John"
+* extension[=].valueHumanName.given[=] = "Adams"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Race"
+* extension[=].valueCodeableConcept.coding[0] = https://terminology.hl7.org/6.2.0/CodeSystem-v3-Race.html#2036-2 "Filipino"
+* extension[=].valueCodeableConcept.text = "Filipino"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/MemberType"
+* extension[=].valueCodeableConcept.coding[0] = https://nhdr.gov.ph/fhir/CodeSystem/MemberTypeCS#MM "Member"
+* extension[=].valueCodeableConcept.text = "Member"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/MemberCategory"
+* extension[=].valueCodeableConcept.coding[0] = https://nhdr.gov.ph/fhir/CodeSystem/MemberCategoryCS#90 "SOLO PARENT"
+* extension[=].valueCodeableConcept.text = "SOLO PARENT"
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
+* extension[=].valueCode = #M "Male"
+* name.family = "Smith"
+* name.given = "Avery"
 * telecom.system = #phone
-* telecom.value = "abc"
-* telecom.use = #home
+* telecom.value = "9121542"
 * deceasedBoolean = false
-* address.use = #home
-* address.type = #both
-* address.text = "137 Nowhere Street, Erewhon 9132"
 * address.line = "137 Nowhere Street"
-* address.city = "Erewhon"
-* address.district = "Madison"
-* address.state = "abc"
-* address.postalCode = "9132"
-* address.country = "abc"
-* maritalStatus.text = "abc"
-* birthDate = 2025-12-12
-// * managingOrganization = Reference(12345) "12345"
+* address.district = "District III"
+* address.postalCode = "1110"
+* address.country = "Philippines"
+* address.extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Region"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1 "REGION I"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Province"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#1028 "ILOCOS NORTE"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/CityMunicipality"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801 "ADAMS"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Barangay"
+* address.extension[=].valueCoding = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS#102801001 "ADAMS"
+* maritalStatus.coding = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#W "Widowed"
+* maritalStatus.text = "Widowed"
+* birthDate = 1990-12-15
 
 Instance: Patient-2
 InstanceOf: PH_Patient
 Usage: #example
 * meta.lastUpdated = "2024-07-18T04:48:00.401+00:00"
-* identifier[0].use = #PhilhealthID
-* identifier[=].value = "12345"
-* identifier[+].use = #PhilsysID
-* identifier[=].value = "678910"
+// * identifier[0].use = #PhilhealthID
+// * identifier[=].value = "12345"
+// * identifier[+].use = #PhilsysID
+// * identifier[=].value = "678910"
+* identifier.type.coding.code = #DL
+* identifier.type.text = "Driver's License"
+* identifier.value = "DL12345"
 * active = true
 * name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
 * name.extension.valueString = "Rizal"
@@ -637,34 +637,31 @@ Usage: #example
 * telecom[=].value = "(03) 5555 6473"
 * telecom[+].system = #phone
 * telecom[=].value = "(0939) 929 3814"
-* telecom[=].use = #mobile
+// * telecom[=].use = #mobile
 
 Instance: Patient-3
 InstanceOf: PH_Patient
 Usage: #example
 * meta.lastUpdated = "2024-12-10T01:35:07.723+00:00"
-* meta.profile = "http://hl7.org.ph/fhir/StructureDefinition/PH_Patient"
-* identifier[0].system = "http://philsys.gov.ph/national-id"
-* identifier[=].value = "PH1234567890"
-* identifier[+].system = "http://hl7.org.ph/fhir/StructureDefinition/PhilHealthID"
-* identifier[=].value = "123456789012"
+* identifier.type.coding.code = #PDD
+* identifier.value = "PDD12435"
 // * name.use = #official
 * name.family = "Doe"
 * name.given[0] = "John"
 * name.given[+] = "A."
 * telecom[0].system = #phone
 * telecom[=].value = "+639171234567"
-* telecom[=].use = #mobile
+// * telecom[=].use = #mobile
 * telecom[+].system = #email
 * telecom[=].value = "john.doe@example.com"
-* telecom[=].use = #home
+// * telecom[=].use = #home
 // * gender = #male
 * birthDate = "1990-01-01"
-* address.use = #home
+// * address.use = #home
 * address.line = "123 Barangay Street"
-* address.city = "Quezon City"
+// * address.city = "Quezon City"
 * address.district = "District 1"
-* address.state = "Metro Manila"
+// * address.state = "Metro Manila"
 * address.postalCode = "1100"
 * address.country = "PH"
 * maritalStatus = $v3-MaritalStatus#M "Married"
@@ -675,8 +672,8 @@ Usage: #example
 * contact.telecom.value = "+639181234567"
 * contact.telecom.use = #mobile
 * contact.address.line = "456 Barangay Lane"
-* contact.address.city = "Pasig City"
-* contact.address.state = "Metro Manila"
+// * contact.address.city = "Pasig City"
+// * contact.address.state = "Metro Manila"
 * contact.address.postalCode = "1600"
 * contact.address.country = "PH"
 // * communication[0].language = urn:ietf:bcp:47#en "English"
@@ -690,21 +687,21 @@ Usage: #example
 * meta.lastUpdated = "2024-07-18T07:21:35.241+00:00"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
 * extension.valueCode = #male
-* name.use = #official
+// * name.use = #official
 * name.family = "Garcia"
 * name.given = "Juan"
-* name.prefix = "Mr."
+// * name.prefix = "Mr."
 * telecom[0].system = #phone
 * telecom[=].value = "+1234567890"
-* telecom[=].use = #mobile
+// * telecom[=].use = #mobile
 * telecom[+].system = #email
 * telecom[=].value = "juan.garcia@example.org"
-* telecom[=].use = #home
+// * telecom[=].use = #home
 * birthDate = "1990-01-01"
-* address.use = #home
+// * address.use = #home
 * address.line = "1234 Health St."
-* address.city = "Health City"
-* address.state = "Health State"
+// * address.city = "Health City"
+// * address.state = "Health State"
 * address.postalCode = "12345"
 * address.country = "PH"
 * link.target = Reference(Patient/Patient-3)
@@ -713,7 +710,7 @@ Instance: Person-2
 InstanceOf: PH_Person
 Usage: #example
 * meta.lastUpdated = "2024-12-10T08:52:07.402+00:00"
-* name.use = #official
+// * name.use = #official
 * name.family = "Doe"
 * name.given = "Jane"
 * birthDate = "1995-05-15"
@@ -726,7 +723,7 @@ Usage: #example
 * identifier.value = "12345"
 * name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
 * name.extension.valueString = "Rizal"
-* name.use = #official
+// * name.use = #official
 * name.family = "Dela Cruz"
 * name.given[0] = "Juan"
 * name.given[+] = "Pedro"
@@ -735,7 +732,7 @@ Usage: #example
 * telecom[=].value = "(03) 5555 6473"
 * telecom[+].system = #phone
 * telecom[=].value = "(0939) 929 3814"
-* telecom[=].use = #mobile
+// * telecom[=].use = #mobile
 
 Instance: Practitioner-2
 InstanceOf: PH_Practitioner
@@ -747,7 +744,7 @@ Usage: #example
 * identifier.value = "12345"
 * name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
 * name.extension.valueString = "Rizal"
-* name.use = #official
+// * name.use = #official
 * name.family = "Dela Cruz"
 * name.given[0] = "Juan"
 * name.given[+] = "Pedro"
@@ -756,7 +753,7 @@ Usage: #example
 * telecom[=].value = "(03) 5555 6473"
 * telecom[+].system = #phone
 * telecom[=].value = "(0939) 929 3814"
-* telecom[=].use = #mobile
+// * telecom[=].use = #mobile
 
 Instance: PractitionerRole-Physician
 InstanceOf: PH_PractitionerRole
@@ -800,7 +797,7 @@ Usage: #example
 // * subject = Reference(Person/Person-1)
 // * authored = "2024-12-10T12:00:00Z"
 * item.linkId = "1"
-* item.text = "Person is the member?"
+// * item.text = "Person is the member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-2
@@ -810,7 +807,7 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Person/Person-2)
 * item.linkId = "philhealth-member"
-* item.text = "Is a PhilHealth member?"
+// * item.text = "Is a PhilHealth member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-3
@@ -830,7 +827,7 @@ Usage: #example
 // * authored = "2024-12-10T12:00:00Z"
 // * author = Reference(Organization/Organization-2)
 * item.linkId = "1"
-* item.text = "Patient is the member?"
+// * item.text = "Patient is the member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-5
@@ -840,7 +837,7 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Person/Person-1)
 * item.linkId = "philhealth-member"
-* item.text = "Is a PhilHealth member?"
+// * item.text = "Is a PhilHealth member?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-6
@@ -867,7 +864,7 @@ Usage: #example
 * meta.lastUpdated = "2024-12-10T14:28:44.132+00:00"
 * status = #completed
 * item.linkId = "referral"
-* item.text = "Was the patient referred by another HCI?"
+// * item.text = "Was the patient referred by another HCI?"
 * item.answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-9
@@ -887,13 +884,13 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient received recent vaccinations?"
+// * item[=].text = "Has the patient received recent vaccinations?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Was the patient recently exposed to any infectious diseases?"
+// * item[=].text = "Was the patient recently exposed to any infectious diseases?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-COVID
@@ -903,16 +900,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Does the patient have a fever, cough, or difficulty breathing?"
+// * item[=].text = "Does the patient have a fever, cough, or difficulty breathing?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient been in close contact with a confirmed COVID-19 case?"
+// * item[=].text = "Has the patient been in close contact with a confirmed COVID-19 case?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient experienced loss of taste or smell?"
+// * item[=].text = "Has the patient experienced loss of taste or smell?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-Diphtheria
@@ -922,16 +919,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient reported symptoms of sore throat or difficulty breathing?"
+// * item[=].text = "Has the patient reported symptoms of sore throat or difficulty breathing?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced swelling in the neck or hoarseness of voice?"
+// * item[=].text = "Has the patient experienced swelling in the neck or hoarseness of voice?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Was the patient exposed to anyone diagnosed with diphtheria?"
+// * item[=].text = "Was the patient exposed to anyone diagnosed with diphtheria?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-HFMD
@@ -941,16 +938,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Does the patient have a fever and sores in the mouth?"
+// * item[=].text = "Does the patient have a fever and sores in the mouth?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Are there rashes or blisters on the hands, feet, or buttocks?"
+// * item[=].text = "Are there rashes or blisters on the hands, feet, or buttocks?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient been in close contact with another case of HFMD?"
+// * item[=].text = "Has the patient been in close contact with another case of HFMD?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Influenza
@@ -960,13 +957,13 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Does the patient have a history of recent travel to high-risk areas?"
+// * item[=].text = "Does the patient have a history of recent travel to high-risk areas?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced fever, cough, or difficulty in breathing?"
+// * item[=].text = "Has the patient experienced fever, cough, or difficulty in breathing?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-Leptospirosis
@@ -976,16 +973,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient been exposed to floodwaters or contaminated water sources?"
+// * item[=].text = "Has the patient been exposed to floodwaters or contaminated water sources?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced symptoms like fever, muscle pain, or headache?"
+// * item[=].text = "Has the patient experienced symptoms like fever, muscle pain, or headache?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient reported jaundice, reduced urine output, or respiratory distress?"
+// * item[=].text = "Has the patient reported jaundice, reduced urine output, or respiratory distress?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Malaria
@@ -995,16 +992,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient traveled to malaria-endemic areas recently?"
+// * item[=].text = "Has the patient traveled to malaria-endemic areas recently?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient experienced fever, chills, or night sweats?"
+// * item[=].text = "Has the patient experienced fever, chills, or night sweats?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient experienced any symptoms like vomiting, diarrhea, or headaches?"
+// * item[=].text = "Has the patient experienced any symptoms like vomiting, diarrhea, or headaches?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Meningococcal
@@ -1014,16 +1011,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Is the patient experiencing sudden fever, headache, or stiff neck?"
+// * item[=].text = "Is the patient experiencing sudden fever, headache, or stiff neck?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Has the patient been in close contact with a confirmed meningococcal case?"
+// * item[=].text = "Has the patient been in close contact with a confirmed meningococcal case?"
 * item[=].answer.valueBoolean = false
 * item[+].linkId = "4"
-* item[=].text = "Are there signs of rash or purpura on the patient?"
+// * item[=].text = "Are there signs of rash or purpura on the patient?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-NeonatalTetanus
@@ -1033,16 +1030,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Was the mother immunized with tetanus toxoid during pregnancy?"
+// * item[=].text = "Was the mother immunized with tetanus toxoid during pregnancy?"
 * item[=].answer.valueBoolean = false
 * item[+].linkId = "3"
-* item[=].text = "Was the delivery conducted under unhygienic conditions?"
+// * item[=].text = "Was the delivery conducted under unhygienic conditions?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Is the infant experiencing muscle stiffness or difficulty feeding?"
+// * item[=].text = "Is the infant experiencing muscle stiffness or difficulty feeding?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-NonNeonatalTetanus
@@ -1052,16 +1049,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Was the patient injured recently with potential exposure to contaminated objects?"
+// * item[=].text = "Was the patient injured recently with potential exposure to contaminated objects?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Is the patient experiencing muscle stiffness or spasms?"
+// * item[=].text = "Is the patient experiencing muscle stiffness or spasms?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "4"
-* item[=].text = "Has the patient been vaccinated against tetanus?"
+// * item[=].text = "Has the patient been vaccinated against tetanus?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-Pertussis
@@ -1071,16 +1068,16 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-2)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient reported prolonged coughing spells?"
+// * item[=].text = "Has the patient reported prolonged coughing spells?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Does the patient have a history of recent exposure to someone diagnosed with pertussis?"
+// * item[=].text = "Does the patient have a history of recent exposure to someone diagnosed with pertussis?"
 * item[=].answer.valueBoolean = false
 * item[+].linkId = "4"
-* item[=].text = "Is the patient experiencing symptoms like vomiting after coughing or difficulty breathing?"
+// * item[=].text = "Is the patient experiencing symptoms like vomiting after coughing or difficulty breathing?"
 * item[=].answer.valueBoolean = true
 
 Instance: QuestionnaireResponse-Rotavirus
@@ -1090,13 +1087,13 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-3)
 * item[0].linkId = "1"
-* item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].text = "Has the specimen been sent to RITM?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "2"
-* item[=].text = "Has the patient experienced diarrhea or vomiting?"
+// * item[=].text = "Has the patient experienced diarrhea or vomiting?"
 * item[=].answer.valueBoolean = true
 * item[+].linkId = "3"
-* item[=].text = "Is the patient currently dehydrated?"
+// * item[=].text = "Is the patient currently dehydrated?"
 * item[=].answer.valueBoolean = false
 
 Instance: QuestionnaireResponse-SARI
@@ -1106,7 +1103,7 @@ Usage: #example
 * status = #completed
 // * subject = Reference(Patient/Patient-1)
 * item.linkId = "1"
-* item.text = "Has the specimen been sent to RITM?"
+// * item.text = "Has the specimen been sent to RITM?"
 * item.answer.valueBoolean = true
 
 Instance: Service-Request-Fluid-Analysis
@@ -1265,7 +1262,7 @@ Instance: Specimen-Saliva
 InstanceOf: PH_Specimen
 Usage: #example
 * meta.lastUpdated = "2024-12-11T05:00:31.874+00:00"
-* status = #available
+// * status = #available
 * type = $sct#122555007 "Saliva specimen"
 * type.text = "Saliva specimen"
 * subject = Reference(Patient/Patient-3)
