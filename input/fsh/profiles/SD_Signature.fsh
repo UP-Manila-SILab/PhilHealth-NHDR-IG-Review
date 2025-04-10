@@ -14,5 +14,5 @@ Description: "The signature of an individual."
 * extension[signatureReason] ^isModifier = false
 * extension[signatureSubType] ^isModifier = false
 * extension[signatureThumbmark] ^isModifier = false
-* who only Reference(PH_Practitioner or PH_PractitionerRole)
-* onBehalfOf only Reference(PH_Practitioner or PH_PractitionerRole)
+* who only Reference(PH_Patient or PH_Organization or PH_Practitioner or PH_PractitionerRole or RelatedPerson or Device)
+* onBehalfOf only Reference(PH_Patient or PH_Organization or PH_Practitioner or PH_PractitionerRole or RelatedPerson or Device)
