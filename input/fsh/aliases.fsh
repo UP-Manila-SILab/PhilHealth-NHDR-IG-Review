@@ -36,7 +36,9 @@ Alias: $EncounterLocationPhysicalTypeCS = http://terminology.hl7.org/CodeSystem/
 Alias: $EncounterServiceTypeCS = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $EncounterTypeCS = http://terminology.hl7.org/CodeSystem/encounter-type
 Alias: $FacilityMajorTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/FacilityMajorTypeCS
-Alias: $ICD10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD10CS
+Alias: $FDACS = https://verification.fda.gov.ph //FDA Website
+// Alias: $ICD10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD10CS
+Alias: $ICD10CS = https://icdcdn.who.int/icd10/index.html //ICD Downloadable Link
 Alias: $IdentifierType = https://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html
 Alias: $ImmunizationRouteCS = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration
 Alias: $ImmunizationStatusCS = http://hl7.org/fhir/event-status
@@ -61,7 +63,8 @@ Alias: $PatientTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/PatientTypeCS
 Alias: $PractitionerRoleCS = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: $ProCS = https://nhdr.gov.ph/fhir/CodeSystem/ProCS
 Alias: $ProcedureStatusCS = http://hl7.org/fhir/event-status
-Alias: $PSGCCS = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS
+// Alias: $PSGCCS = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS
+Alias: $PSGCCS = https://psa.gov.ph/classification/psgc //PSA Website
 Alias: $ReasonMedicationGivenCS = http://terminology.hl7.org/CodeSystem/reason-medication-given
 Alias: $RoleCodeCS = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $RVSCodeCS = https://nhdr.gov.ph/fhir/CodeSystem/RVSCodeCS
@@ -70,6 +73,8 @@ Alias: $SNOMED = http://snomed.info/sct
 Alias: $SpecimenConditionCS = http://terminology.hl7.org/CodeSystem/v2-0493
 Alias: $SpecimenProcessingProcedureCS = http://terminology.hl7.org/CodeSystem/v2-0373
 Alias: $SpecimenTypeCS = http://terminology.hl7.org/CodeSystem/v2-0487
+Alias: $ObservationInterpretationCS = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $ObservationCategoryCS = http://terminology.hl7.org/CodeSystem/observation-category
 
 
 
@@ -84,7 +89,6 @@ Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
 Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
 Alias: $EducationalAttainmentVS = http://terminology.hl7.org/ValueSet/v3-EducationLevel
 Alias: $EncounterStatusVS = http://hl7.org/fhir/encounter-status
-Alias: $ICD10VS = https://nhdr.gov.ph/fhir/ValueSet/ICD10VS
 Alias: $ImmunizationOriginVS = http://hl7.org/fhir/ValueSet/immunization-origin
 Alias: $MaritalStatusVS = http://hl7.org/fhir/ValueSet/marital-status
 Alias: $MemberCategoryVS = https://nhdr.gov.ph/fhir/ValueSet/MemberCategoryVS
