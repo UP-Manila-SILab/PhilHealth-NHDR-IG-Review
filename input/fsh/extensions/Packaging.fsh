@@ -6,3 +6,4 @@ Description: "Detailed description on the medication packaging."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/Packaging"
 * ^status = #draft
 * value[x] only CodeableConcept
+* value[x] from $DrugCodesVS (required)

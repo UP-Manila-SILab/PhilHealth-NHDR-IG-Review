@@ -8,6 +8,9 @@
     "server" : "http://tx.fhir.org/r4",
     "filename" : "vs-10d28692-f326-4ea7-85fe-fe788bfb0ee1.json"
   },
+  "https://hl7.org/fhir/R4/v2/0493/index.html" : null,
   "https://psa.gov.ph/classification/psoc/unit" : null,
+  "https://hl7.org/fhir/R4/v2/0487/index.html" : null,
+  "http://hl7.org/fhir/appointmentstatus" : null,
   "http://terminology.hl7.org/CodeSystem/v2-0074|4.0.1" : null
 }

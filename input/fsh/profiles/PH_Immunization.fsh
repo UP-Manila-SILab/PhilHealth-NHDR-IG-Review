@@ -20,7 +20,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 // * identifier ..0
 * status from $ImmunizationStatusVS (required)
 * statusReason from $ImmunizationStatusReasonVS (required)
-* vaccineCode from ImmunizationVaccineCodeVS (required)
+* vaccineCode from $DrugCodesVS (required)
 * patient only Reference(PH_Patient)
 * encounter only Reference(PH_Encounter)
 // * occurrence[x] ..0

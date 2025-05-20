@@ -34,7 +34,8 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * status from $MedicationAdministrationStatusVS (required)
 * statusReason ..0
 * category ..0
-* medication[x] only Reference(PH_Medication)
+// * medication[x] only Reference(PH_Medication)
+* medication[x] from $DrugCodesVS (required)
 * subject only Reference(PH_Patient)
 * context ..0
 * supportingInformation ..0

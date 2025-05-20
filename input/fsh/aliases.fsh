@@ -18,6 +18,8 @@ Alias: $SignaturePosition = https://nhdr.gov.ph/fhir/StructureDefinition/Signatu
 Alias: $SignatureReason = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureReason
 Alias: $SignatureSubType = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureSubType
 Alias: $SignatureThumbmark = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureThumbmark
+Alias: $MaritalStatus = https://nhdr.gov.ph/fhir/StructureDefinition/MaritalStatus
+
 
 // CodeSystems
 // Alias: $ConditionCategoryCS = http://terminology.hl7.org/CodeSystem/condition-category //Deleted, created direct valueset
@@ -100,7 +102,7 @@ Alias: $YesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
 Alias: $AllergyIntoleranceCategoryVS = http://hl7.org/fhir/allergy-intolerance-category
 Alias: $AllergyIntoleranceClinicalStatusVS = http://terminology.hl7.org/ValueSet/allergyintolerance-clinical // Deleted fsh file
 Alias: $AllergyIntoleranceReactionSeverityVS = http://hl7.org/fhir/reaction-event-severity 
-Alias: $AppointmentStatusVS = http://hl7.org/fhir/appointmentstatus // check the local references and the forms, as the forms only use Y or N
+Alias: $AppointmentStatusVS = http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1 // check the local references and the forms, as the forms only use Y or N
 Alias: $ConditionCategoryVS = http://hl7.org/fhir/ValueSet/condition-category //  Deleted fsh file and CodeSystem in Aliases, direct bind to FHIR Valueset
 Alias: $ConditionClinicalStatusVS = http://hl7.org/fhir/ValueSet/condition-clinical
 Alias: $ConditionSeverityVS = http://terminology.hl7.org/ValueSet/v2-0421 //Deleted CS and VS fsh file
@@ -148,5 +150,7 @@ Alias: $RelationshipTypeVS = http://hl7.org/fhir/ValueSet/relatedperson-relation
 Alias: $ServiceRequestStatusVS = http://hl7.org/fhir/ValueSet/request-status
 Alias: $ServiceTypeVS = https://nhdr.gov.ph/fhir/ValueSet/ServiceTypeVS
 Alias: $SexVS = https://nhdr.gov.ph/fhir/ValueSet/SexVS
-Alias: $SpecimenConditionVS = http://terminology.hl7.org/ValueSet/v2-0493
-Alias: $SpecimenTypeVS = http://terminology.hl7.org/ValueSet/v2-0487
+Alias: $SpecimenConditionVS = http://terminology.hl7.org/ValueSet/v2-0493 
+Alias: $SpecimenTypeVS = http://terminology.hl7.org/ValueSet/v2-0487 
+// Alias: $SpecimenConditionVS = https://hl7.org/fhir/R4/v2/0493/index.html
+// Alias: $SpecimenTypeVS = https://hl7.org/fhir/R4/v2/0487/index.html

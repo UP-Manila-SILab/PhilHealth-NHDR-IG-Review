@@ -14,8 +14,8 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * extension ..0
 * modifierExtension ..0
 * identifier ..0
-* status from $YesNoVS (required)
-* status ^short = "Yes or No indicator if the patient have an appointment."
+* status from $AppointmentStatusVS (required)
+// * status ^short = "Yes or No indicator if the patient have an appointment."
 * cancelationReason ..0
 * serviceCategory ..0
 * serviceType ..0

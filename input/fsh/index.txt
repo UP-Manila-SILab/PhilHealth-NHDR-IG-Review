@@ -106,3 +106,4 @@ SpecimenProcessingProcedure                           ValueSet   valuesets\Speci
 SpecimenType                                          ValueSet   valuesets\SpecimenType.fsh
 SpouseName                                            Extension  extensions\SpouseName.fsh
 CalculatedValue                                       Extension  extensions\CalculatedValue.fsh
+MaritalStatus                                         Extension  extensions\MaritalStatus.fsh

@@ -47,7 +47,7 @@ Description: "An action that is or was performed on or for a patient, practition
 * reasonCode ..0
 * reasonReference ..0
 * bodySite from ProcedureBodySiteVS (required)
-// * outcome ..0
+* outcome from $ProcedureOutcomeVS (required)
 * report ..0
 * complication ..0
 * complicationDetail ..0

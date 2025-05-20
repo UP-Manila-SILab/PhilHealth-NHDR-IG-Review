@@ -27,6 +27,7 @@ Description: "Captures key demographic and administrative information about indi
     Race named race 0..1 and
     // MemberCategory named memberCategory 0..1 and
     MemberType named memberType 0..1 and
+    PatientType named patientType 0..1 and
     EducationalAttainment named educationalAttainment 0..1 and
     $Signature named signature 0..*
 * extension[signature] ^isModifier = false
@@ -77,6 +78,10 @@ Description: "Captures key demographic and administrative information about indi
 * extension[memberType] ^definition = "Patient's membership type."
 * extension[memberType] ^isModifier = false
 * extension[memberType] ^binding.description = "Membership type."
+* extension[patientType] ^short = "Type of Patient"
+* extension[patientType] ^definition = "Type of Patient"
+* extension[patientType] ^isModifier = false
+* extension[patientType] ^binding.description = "Patient Type"
 * extension[educationalAttainment] ^short = "Patient's educational attainment."
 * extension[educationalAttainment] ^definition = "Patient's educational attainment."
 * extension[educationalAttainment] ^isModifier = false
@@ -85,7 +90,8 @@ Description: "Captures key demographic and administrative information about indi
 * identifier only $PhilHealthID or $RegistrationNo or $OtherID 
 * identifier ^definition = "An identifier for this patient.\nA numeric or alphanumeric string that is associated with a single object or entity within a given system."
 // * active ..0
-* name only $SD_HumanName
+// * name only $
+* name
 * name.id ..0
 * name.use ..0
 * name.prefix ..0
