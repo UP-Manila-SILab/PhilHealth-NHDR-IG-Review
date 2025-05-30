@@ -22,7 +22,7 @@ Usage: #example
 * entry[=].request.url = "QuestionnaireResponse"
 
 Instance: CF1-Patient
-InstanceOf: Patient
+InstanceOf: PH_Patient
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
 * identifier.type.coding.code = #NIIP
@@ -34,13 +34,11 @@ Usage: #inline
 * name.given[0] = "Avery"
 * name.given[+] = "Adams"
 * name.suffix = "Mr."
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Adams"
 * birthDate = "1990-12-15"
 * contact.relationship = #E "Employer"
 
 Instance: CF1-Person
-InstanceOf: Person
+InstanceOf: PH_Person
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Person"
 * identifier.type.coding.code = #NIIP
@@ -50,8 +48,6 @@ Usage: #inline
 * name.given[0] = "John"
 * name.given[+] = "Cena"
 * name.suffix = "Mr."
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Cena"
 * birthDate = "1994-06-25"
 * address.line = "Wayward Road"
 * address.extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Barangay"
@@ -69,7 +65,7 @@ Usage: #inline
 * telecom[+].value = "johndoe@gmail.com"
 
 Instance: CF1-Organization
-InstanceOf: Organization
+InstanceOf: PH_Organization
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Organization"
 * identifier.type.coding.code = #EN
@@ -79,7 +75,7 @@ Usage: #inline
 * name = "PhilHealth"
 
 Instance: CF1-QuestionnaireResponse
-InstanceOf: QuestionnaireResponse
+InstanceOf: PH_QuestionnaireResponse
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * item.answer.valueBoolean = false
@@ -134,8 +130,6 @@ Usage: #inline
 * name.given[0] = "John"
 * name.given[+] = "Harris"
 * name.suffix = "Mr."
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Harris"
 
 Instance: CF2-Org
 InstanceOf: PH_Organization
@@ -220,8 +214,6 @@ Usage: #inline
 * name.family = "Dela Cruz"
 * name.given[0] = "Sheena"
 * name.given[+] = "Abesamis"
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Abesamis"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtSignature"
 * extension.valueSignature.when = "2025-04-15T10:30:00Z"
 * extension.valueSignature.data = "dGVzdFNpZ25hdHVyZQ=="

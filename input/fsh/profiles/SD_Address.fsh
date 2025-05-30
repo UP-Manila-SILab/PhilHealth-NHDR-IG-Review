@@ -5,6 +5,7 @@ Title: "PH Address"
 Description: "An address for the individual."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address"
 * insert MetaData
+* id ..0
 * extension contains
     Region named region 0..* and
     Province named province 0..* and
@@ -14,6 +15,7 @@ Description: "An address for the individual."
 * extension[province] ^isModifier = false
 * extension[cityMunicipality] ^isModifier = false
 * extension[barangay] ^isModifier = false
+// * line ..0
 * use ..0
 * type ..0
 * text ..0

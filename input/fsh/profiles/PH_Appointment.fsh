@@ -26,8 +26,8 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * priority ..0
 * description ..0
 * supportingInformation ..0
-// * start ..0
-// * end ..0    Enabled to fulfill constraint. Re-mapped in the next release.
+* start ..0
+* end ..0 
 * minutesDuration ..0
 * slot ..0
 * created ..0

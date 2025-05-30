@@ -18,8 +18,9 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * period ..0
 * practitioner ..0
 * organization ..0
+// * code ..0
 * code.coding from $PractitionerRoleVS (required)
-* specialty ..0
+// * specialty ..0
 * location ..0
 * healthcareService ..0
 * telecom ..0

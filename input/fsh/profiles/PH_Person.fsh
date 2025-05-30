@@ -32,8 +32,14 @@ Description: "Demographics and administrative information about a person indepen
 // * extension[occupation] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
-// * name only $SD_HumanName
-* name 
+* name
+* name.extension ..0
+* name.id ..0
+* name.use ..0
+* name.prefix ..0
+* name.period ..0
+* name.text ..0
+* telecom.id ..0
 * telecom.extension ..0
 * telecom.use ..0
 * telecom.rank ..0

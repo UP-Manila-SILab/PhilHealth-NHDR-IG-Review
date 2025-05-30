@@ -23,6 +23,8 @@ Description: "Describes the intended objective(s) for a patient, group or organi
 * start[x] ..0
 * target.extension ..0
 * target.modifierExtension ..0
+* target.id ..0
+* target.due[x] ..0
 * target.measure ..0
 * target.detail[x] only CodeableConcept
 * statusDate ..0

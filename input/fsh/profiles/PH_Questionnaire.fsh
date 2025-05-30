@@ -34,6 +34,9 @@ Description: "A structured set of questions intended to guide the collection of 
 * lastReviewDate ..0
 * effectivePeriod ..0
 * code ..0
+* item.id ..0
+* item.extension ..0
+* item.modifierExtension ..0
 // * item.linkId ..0    Can't disable elements that are mandatory by default
 * item.definition ..0
 * item.code ..0

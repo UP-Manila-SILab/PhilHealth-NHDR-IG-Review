@@ -7,12 +7,11 @@ Alias: $PhilHealthID = https://nhdr.gov.ph/fhir/StructureDefinition/PhilHealthID
 Alias: $RegistrationNo = https://nhdr.gov.ph/fhir/StructureDefinition/RegistrationNo
 
 //  DataType Profiles
-Alias: $SD_MiddleName = https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName
 Alias: $SD_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
-Alias: $SD_HumanName = https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName
 Alias: $SD_Signature = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Signature
 
 //  Extensions
+Alias: $RecordedDate = https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate
 Alias: $Signature = https://nhdr.gov.ph/fhir/StructureDefinition/ExtSignature
 Alias: $SignaturePosition = https://nhdr.gov.ph/fhir/StructureDefinition/SignaturePosition
 Alias: $SignatureReason = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureReason

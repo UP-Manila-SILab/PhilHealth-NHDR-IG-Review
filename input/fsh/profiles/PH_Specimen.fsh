@@ -7,27 +7,19 @@ Description: "A sample to be used for analysis."
 * insert MetaData
 // * id ..0
 // * meta ..0
+* meta.extension contains $RecordedDate named recordedDate 0..*
+* meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
-    RecordedDate named recordedDate 0..* and
     ResultDate named resultDate 0..* and
-    ExtOrganization named extOrganization 0..* and
     Species named species 0..*
-* extension[recordedDate] ^short = "The recordedDate represents when this particular Specimen record was uploaded into the NHDR."
-* extension[recordedDate] ^definition = "The recordedDate represents when this particular Specimen record was uploaded into the NHDR."
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
 * extension[resultDate] ^short = "The resultDate represents the date on which the outcome of the particular specimen was recorded."
 * extension[resultDate] ^definition = "The resultDate represents the date on which the outcome of the particular specimen was recorded.."
 * extension[resultDate] ^comment = "This is an extension"
 * extension[resultDate] ^isModifier = false
-* extension[extOrganization] ^short = "Health facility where the specimen was collected"
-* extension[extOrganization] ^definition = "Health facility where the specimen was collected"
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
 * extension[species] ^short = "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]"
 * extension[species] ^definition = "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]"
 * extension[species] ^comment = "This is an extension"
@@ -41,11 +33,11 @@ Description: "A sample to be used for analysis."
 // * receivedTime ..0
 * parent ..0
 * request ..0
-* collection.extension contains ReleaseDate named releaseDate 0..*
-* collection.extension[releaseDate] ^short = "Date the specimen was released"
-* collection.extension[releaseDate] ^definition = "Date the specimen was released"
-* collection.extension[releaseDate] ^comment = "This is an extension"
-* collection.extension[releaseDate] ^isModifier = false
+* collection.extension contains DateReleased named dateReleased 0..*
+* collection.extension[dateReleased] ^short = "Date the specimen was released"
+* collection.extension[dateReleased] ^definition = "Date the specimen was released"
+* collection.extension[dateReleased] ^comment = "This is an extension"
+* collection.extension[dateReleased] ^isModifier = false
 * collection.modifierExtension ..0
 // * collection.method from SpecimenCollectionMethodVS (required) //Reference still on hold
 * collection.bodySite ..0

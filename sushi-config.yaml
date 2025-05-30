@@ -102,6 +102,7 @@ menu:
   Home: index.html
   Artifacts Index:
     PHCDI Artifacts: artifacts.html
+    Foundation Profiles: artifacts.html#foundation-profiles
     Base Profiles: artifacts.html#base-profiles
     Clinical Profiles: artifacts.html#clinical-profiles
     Financial Profiles: artifacts.html#financial-profiles
@@ -193,6 +194,11 @@ menu:
 #
 groups:
   GroupA:
+    name: Foundation Profiles
+    resources:
+    - StructureDefinition/PH-Provenance
+
+  GroupB:
     name: Base Profiles
     resources:
     - StructureDefinition/PH-Appointment
@@ -204,11 +210,12 @@ groups:
     - StructureDefinition/PH-Practitioner
     - StructureDefinition/PH-PractitionerRole
 
-  GroupB:
+  GroupC:
     name: Clinical Profiles
     resources:
     - StructureDefinition/PH-AllergyIntolerance
     - StructureDefinition/PH-CarePlan
+    - StructureDefinition/PH-ClinicalImpression
     - StructureDefinition/PH-Condition
     - StructureDefinition/PH-DiagnosticReport
     - StructureDefinition/PH-FamilyMemberHistory
@@ -224,27 +231,25 @@ groups:
     - StructureDefinition/PH-ServiceRequest
     - StructureDefinition/PH-Specimen
 
-  GroupC:
+  GroupD:
     name: Financial Profiles
     resources:
     - StructureDefinition/PH-Claim
     - StructureDefinition/PH-Coverage
-    - StructureDefinition/PH-CoverageEligibilityRequest
     - StructureDefinition/PH-EnrollmentRequest
 
-  GroupD:
+  GroupE:
     name: Specialized Profiles
     resources:
     - StructureDefinition/PH-Questionnaire
 
-  GroupE:
+  GroupF:
     name: Data Types
     resources:
     - StructureDefinition/PH-Address
-    - StructureDefinition/PH-HumanName
     - StructureDefinition/PH-Signature
 
-  GroupF:
+  GroupG:
     name: Identifiers
     resources:
     - StructureDefinition/COVIDDataID

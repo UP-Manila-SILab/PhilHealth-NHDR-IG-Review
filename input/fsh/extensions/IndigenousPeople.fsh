@@ -1,6 +1,6 @@
 Extension: IndigenousPeople
 Id: IndigenousPeople
-Title: "Is indigenous?"
+Title: "Philippine Indigenous Status"
 Context: Patient
 Description: "If the patient is a member of an indigenous group."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/IndigenousPeople"

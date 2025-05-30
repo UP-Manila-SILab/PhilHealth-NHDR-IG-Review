@@ -41,6 +41,7 @@ Description: "A provider issued list of professional services and products which
 * insurance.extension ..0
 * insurance.modifierExtension ..0
 * accident ..0
+* item.id ..0
 * item.extension ..0
 * item.modifierExtension ..0
 // * item.sequence 0..0             Can't disable elements that are mandatory by default

@@ -6,4 +6,4 @@ Context: Patient
 * ^version = "1.0.0"
 * ^status = #draft
 * . ^definition = "Name of the patient's mother."
-* value[x] only $SD_HumanName
+* value[x] only HumanName

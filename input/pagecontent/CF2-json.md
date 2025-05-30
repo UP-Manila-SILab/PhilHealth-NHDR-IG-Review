@@ -55,12 +55,6 @@ Resources To Do:
                         ],
                         "suffix": [
                             "Mr."
-                        ],
-                        "extension": [
-                            {
-                                "url": "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName",
-                                "valueString": "Harris"
-                            }
                         ]
                     }
                 ]
@@ -376,12 +370,6 @@ Resources To Do:
                             "given": [
                                 "Sheena",
                                 "Abesamis"
-                            ],
-                            "extension": [
-                                {
-                                    "url": "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName",
-                                    "valueString": "Abesamis"
-                                }
                             ]
                         }
                     ],

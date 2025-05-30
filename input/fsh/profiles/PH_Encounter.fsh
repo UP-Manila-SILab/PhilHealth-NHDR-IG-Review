@@ -65,7 +65,6 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 // * class ..0
 * classHistory ..0
 * type ..0
-// * type from EncounterTypeVS (required) //Deleted from PHCDI / Master and Reference Data
 * serviceType from ServiceTypeVS (required)
 * priority ..0
 // * subject ..0

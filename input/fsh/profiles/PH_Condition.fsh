@@ -9,11 +9,7 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 * language ..0
 * text ..0
 * contained ..0
-* extension contains ExtOrganization named extOrganization 0..*
-* extension[extOrganization] ^short = "Health facility where the encounter was"
-* extension[extOrganization] ^definition = "Health facility where the encounter was"
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
+* extension ..0
 * modifierExtension ..0
 // * identifier ..0
 * verificationStatus from $ConditionVerificationStatusVS (required)
@@ -28,6 +24,9 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 // * recordedDate ..0
 * recorder ..0
 * asserter ..0
-* stage ..0
+// * stage ..0
+* stage.extension ..0
+* stage.modifierExtension ..0
+* stage.assessment ..0
 * evidence ..0
 // * note ..0

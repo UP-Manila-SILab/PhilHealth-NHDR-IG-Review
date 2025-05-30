@@ -11,11 +11,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * language ..0
 * text ..0
 * contained ..0
-* extension contains ExtOrganization named extOrganization 0..*
-* extension[extOrganization] ^short = "Organization where the immunization was conducted"
-* extension[extOrganization] ^definition = "Organization where the immunization was conducted."
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
+* extension ..0
 * modifierExtension ..0
 // * identifier ..0
 * status from $ImmunizationStatusVS (required)
@@ -34,7 +30,10 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * site ..0
 * route from $ImmunizationRouteVS (required)
 // * doseQuantity ..0
-* performer ..0
+// * performer ..0
+* performer.extension ..0
+* performer.modifierExtension ..0
+* performer.function ..0
 // * note ..0
 * reasonCode from $ImmunizationStatusReasonVS (required)
 * reasonReference ..0
@@ -47,5 +46,4 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * reaction.extension ..0
 * reaction.modifierExtension ..0
 * protocolApplied ..0
-
 

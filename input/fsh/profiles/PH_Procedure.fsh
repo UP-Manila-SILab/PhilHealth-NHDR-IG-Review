@@ -7,22 +7,14 @@ Description: "An action that is or was performed on or for a patient, practition
 * insert MetaData
 // * id ..0
 // * meta ..0
+* meta.extension contains $RecordedDate named recordedDate 0..*
+* meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
-    ExtOrganization named extOrganization 0..* and
-    RecordedDate named recordedDate 0..* and
     IllnessClass named illnessClass 0..*
-* extension[extOrganization] ^short = "The facility where the procedure was done"
-* extension[extOrganization] ^definition = "The facility where the procedure was done"
-* extension[extOrganization] ^comment = "This is an entension"
-* extension[extOrganization] ^isModifier = false
-* extension[recordedDate] ^short = "This is the date the procedure was recorded in NHDR"
-* extension[recordedDate] ^definition = "This is the date the procedure was recorded in NHDR"
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
 * extension[illnessClass] ^short = "Illness code of the disease as listed in Philhealth"
 * extension[illnessClass] ^definition = "Illness code of the disease as listed in Philhealth"
 * extension[illnessClass] ^comment = "This is an extension"
@@ -42,9 +34,14 @@ Description: "An action that is or was performed on or for a patient, practition
 * performed[x] only dateTime or Period
 * recorder ..0
 * asserter ..0
-* performer ..0
+// * performer ..0
+* performer.id ..0
+* performer.extension ..0
+* performer.modifierExtension ..0
+* performer.function ..0
+// * performer.actor ..0        Can't disable elements that are mandatory by default
 * location ..0
-* reasonCode ..0
+// * reasonCode ..0
 * reasonReference ..0
 // * bodySite from ProcedureBodySiteVS (required) //Reference still on hold
 * outcome from $ProcedureOutcomeVS (required)

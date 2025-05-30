@@ -44,7 +44,7 @@
 | Name of Patient (Last Name) | Patient.name.family | string | 0..* | 60 | --- |
 | Name of Patient (First Name) | Patient.name.given[0] | string | 0..* | 60 | --- |
 | Name of Patient (Name Extension) | Patient.name.suffix | string | 0..* | 5 | --- |
-| Name of Patient (Middle Name) | Patient.name.extension:middleName  Patient.name.given[1]  | String | 0..* | 60 | --- |
+| Name of Patient (Middle Name) | Patient.name.given[1]  | String | 0..* | 60 | --- |
 | Was Patient referred by another HCI? [Yes/No] | QuestionnaireResponse.item.answer.value[x] | boolean | 0..1 | 1 | --- |
 | Name of referring Health Care Institution | Encounter.hospitalization.origin | string | 0..1 | 12 | --- |
 | Address of referring HCI (Building Number and Street Name) | Organization.address.line | string | 0..* | --- | --- |
@@ -84,7 +84,7 @@
 | Practitioner Name (Last Name) | Practitioner.name.family | string | 0..1 | 60 | --- |
 | Practitioner Name (First Name) | Practitioner.name.given[0] | string | --- | --- | --- |
 | Practitioner Name (Name Extension) | Practitioner.name.suffix | string | --- | --- | --- |
-| Practitioner Name (Middle Name) | Practitioner.name.given[1]  Practitioner.name.extension:middleName | string | --- | --- | --- |
+| Practitioner Name (Middle Name) | Practitioner.name.given[1] | string | --- | --- | --- |
 | Practitioner Signature | Practitioner.extension:signature.data | ~~base64Binary~~ Signature | --- | --- | --- |
 | Date Signed (MM-DD-YYYY) | Practitioner.extension:signature.when | ~~instant~~ date | --- | --- | --- |
 | Co-Pay Details | Coverage.costToBeneficiary.type | CodeableConcept | 0..1 | ~~14~~ 1 | [Coverage Co-Pay Type](https://hl7.org/fhir/R4/valueset-coverage-copay-type.html) |

@@ -2,7 +2,7 @@ RuleSet: MetaData
 * ^status = #draft
 * ^version = "1.0.1"
 * ^publisher = "EA-NHDR"
-// * ^language = #en-US
+* ^language = #en-US
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #draft
 // * ^copyright = "Used by permission of HL7 International, all rights reserved Creative Commons License"

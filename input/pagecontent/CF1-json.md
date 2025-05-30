@@ -70,12 +70,6 @@ Resources To Do:
                         ],
                         "suffix": [
                             "Mrs."
-                        ],
-                        "extension": [
-                            {
-                            "url": "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName",
-                            "valueString": "Aberin"
-                            }
                         ]
                         }
                     ],
@@ -131,12 +125,6 @@ Resources To Do:
                         ],
                         "suffix": [
                             "Mrs."
-                        ],
-                        "extension": [
-                            {
-                            "url": "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName",
-                            "valueString": "Aberin"
-                            }
                         ]
                         }
                     ],

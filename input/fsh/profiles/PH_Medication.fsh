@@ -12,21 +12,12 @@ Description: "This resource is primarily used for the identification and definit
 * text ..0
 * contained ..0
 * extension contains
-    DosageInstruction named dosageInstruction 0..* and
     Packaging named packaging 0..* and
-    DateUpdated named dateUpdated 0..*
-* extension[dosageInstruction] ^short = "instruction on the medication dosage"
-* extension[dosageInstruction] ^definition = "instruction on the medication dosage"
-* extension[dosageInstruction] ^comment = "This is an extension"
-* extension[dosageInstruction] ^isModifier = false
+    MedicationType named medicationType 0..1
 * extension[packaging] ^short = "Detailed description on the medication packaging"
 * extension[packaging] ^definition = "Detailed description on the medication packaging"
 * extension[packaging] ^comment = "This is an extension"
 * extension[packaging] ^isModifier = false
-* extension[dateUpdated] ^short = "Date of last update"
-* extension[dateUpdated] ^definition = "Date of last update"
-* extension[dateUpdated] ^comment = "This is an extension"
-* extension[dateUpdated] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * code from $DrugCodesVS (required)  
@@ -40,3 +31,5 @@ Description: "This resource is primarily used for the identification and definit
 // * ingredient.item[x] 0..0    Can't disable elements that are mandatory by default
 * ingredient.isActive ..0
 * batch ..0
+
+//  Waiting for suggestion to consider ingredient.item[x]

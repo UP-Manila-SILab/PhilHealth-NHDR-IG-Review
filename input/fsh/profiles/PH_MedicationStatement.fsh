@@ -12,12 +12,7 @@ Description: "A record of a medication that is being consumed by a patient."
 * text ..0
 * contained ..0
 * extension contains
-    ExtOrganization named extOrganization 0..* and
     ExtEncounter named extEncounter 0..*
-* extension[extOrganization] ^short = "The health facility code where the medication was administered."
-* extension[extOrganization] ^definition = "The health facility code where the medication was administered."
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
 * extension[extEncounter] ^short = "The encounter when the medicine was consumed or administered."
 * extension[extEncounter] ^definition = "The encounter when the medicine was consumed or administered."
 * extension[extEncounter] ^comment = "This is an extension"
@@ -34,7 +29,7 @@ Description: "A record of a medication that is being consumed by a patient."
 * context ..0
 * effective[x] ..0
 * dateAsserted ..0
-* informationSource ..0
+// * informationSource ..0
 * derivedFrom ..0
 * reasonCode from $ICD10VS (required) 
 * reasonReference ..0
