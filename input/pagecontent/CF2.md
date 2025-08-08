@@ -22,3 +22,25 @@ This can be viewed as an instance [CF2 Bundle](Bundle-ClaimsForm2.html) to also 
 
 ---
 
+### Questionnaire Fields in CF2:
+
+```
+    {
+        "resourceType": "Questionnaire",
+        "id": "CF2-Questionnaire",
+        "meta": {
+            "profile": [
+                "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Questionnaire"
+            ]
+        },
+        "item": [
+            {
+                "linkId": "1",
+                "text": "A. Certification of Consumption of Benefits",
+                "type": "boolean"
+            }
+        ],
+        "status": "active"
+    }
+
+```

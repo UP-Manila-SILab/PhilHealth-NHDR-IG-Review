@@ -104,4 +104,25 @@ This can be viewed as instances ["Member is not the Patient"](Bundle-ClaimsForm1
 
 ---
 
+### Questionnaire Fields in CF1:
 
+```
+    {
+        "resourceType": "Questionnaire",
+        "id": "CF1-Questionnaire",
+        "meta": {
+            "profile": [
+                "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Questionnaire"
+            ]
+        },
+        "item": [
+            {
+                "linkId": "1",
+                "text": "Patient is the member? [Yes, Proceed to Part III | No, Proceed to Part II]",
+                "type": "boolean"
+            }
+        ],
+        "status": "active"
+    }
+
+```
