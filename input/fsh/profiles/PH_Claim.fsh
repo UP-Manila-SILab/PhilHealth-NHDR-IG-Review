@@ -91,7 +91,7 @@ Description: "A provider issued list of professional services and products which
 * item.programCode ..0
 // * item.serviced[x] ..0
 * item.location[x] ..0
-* item.quantity ..0
+// * item.quantity ..0
 * item.unitPrice ..0
 * item.factor ..0
 * item.udi ..0

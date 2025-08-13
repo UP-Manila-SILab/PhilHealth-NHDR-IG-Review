@@ -87,7 +87,7 @@ Alias: $SignatureTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/SignatureTypeCS
 
 Alias: $IndigenousGroupVS = https://nhdr.gov.ph/fhir/ValueSet/IndigenousGroupVS
 Alias: $MemberCategoryVS = https://nhdr.gov.ph/fhir/ValueSet/MemberCategoryVS
-Alias: $Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0
+Alias: $Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 // Alias: $ObservationMethodVS = https://nhdr.gov.ph/fhir/ValueSet/ObservationMethodVS
 Alias: $ProvinceVS = https://nhdr.gov.ph/fhir/ValueSet/ProvinceVS
 Alias: $RaceVS = http://terminology.hl7.org/ValueSet/v3-Race

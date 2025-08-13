@@ -17,7 +17,7 @@ Description: "Information about a person that is involved in the care for a pati
 // * identifier ..0
 * active ..0
 // * patient ..0    Can't disable elements that are mandatory by default
-* relationship ..0
+// * relationship ..0
 // * name ..0
 * name.extension ..0
 * name.id ..0
@@ -38,3 +38,5 @@ Description: "Information about a person that is involved in the care for a pati
 * photo ..0
 * period ..0
 * communication ..0
+
+// To add: OccupationLength, OccupationDuration

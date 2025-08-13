@@ -37,4 +37,4 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 // * participant ..0    Can't disable elements that are mandatory by default
 * participant.extension ..0
 * participant.modifierExtension ..0
-* requestedPeriod ..1
+* requestedPeriod ..*
