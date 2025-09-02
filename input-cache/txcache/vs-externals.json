@@ -16,5 +16,7 @@
   "https://psa.gov.ph/classification/psoc/unit" : null,
   "https://hl7.org/fhir/R4/v2/0487/index.html" : null,
   "http://hl7.org/fhir/appointmentstatus" : null,
-  "http://terminology.hl7.org/CodeSystem/v2-0074|4.0.1" : null
+  "Questionnaire/Questionnaire-1" : null,
+  "http://terminology.hl7.org/CodeSystem/v2-0074|4.0.1" : null,
+  "Questionnaire/Questionnaire-2" : null
 }
