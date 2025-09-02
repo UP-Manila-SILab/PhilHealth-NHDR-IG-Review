@@ -43,4 +43,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 * referenceRange ..0
 * hasMember ..0
 * derivedFrom ..0
-* component ..0
+// * component ..0
+* component.dataAbsentReason ..0
+* component.interpretation ..0
+* component.referenceRange ..0

@@ -13,7 +13,7 @@ Description: "An order or request for both supply of the medication and the inst
 * contained ..0
 * extension ..0
 * modifierExtension ..0
-* identifier ..0
+// * identifier ..0
 // * status ..0         //  Can't disable elements that are mandatory by default
 * statusReason ..0
 // * intent ..0         //  Can't disable elements that are mandatory by default
@@ -23,10 +23,10 @@ Description: "An order or request for both supply of the medication and the inst
 * reported[x] ..0
 // * medication[x] ..0  //  Can't disable elements that are mandatory by default
 // * subject ..0        //  Can't disable elements that are mandatory by default
-* encounter ..0
-* supportingInformation ..0
+// * encounter ..0
+// * supportingInformation ..0
 * authoredOn ..0
-* requester ..0
+// * requester ..0
 * performer ..0
 * performerType ..0
 * recorder ..0
@@ -55,7 +55,7 @@ Description: "An order or request for both supply of the medication and the inst
 * dosageInstruction.doseAndRate.id ..0
 * dosageInstruction.doseAndRate.extension ..0
 * dosageInstruction.doseAndRate.type ..0
-* dosageInstruction.doseAndRate.dose[x] ..0
+* dosageInstruction.doseAndRate.dose[x] only SimpleQuantity
 * dosageInstruction.doseAndRate.rate[x] only SimpleQuantity
 * dosageInstruction.maxDosePerPeriod ..0
 * dosageInstruction.maxDosePerAdministration ..0

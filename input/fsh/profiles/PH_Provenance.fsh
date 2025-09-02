@@ -21,7 +21,11 @@ Description: "Provenance of a resource is a record that describes entities and p
 * reason ..0
 * activity ..0
 // * agent ..0      Can't disable elements that are mandatory by default
+* agent.id ..0
+* agent.type ..0
+* agent.role ..0
 // * agent.who only Reference(PH_Practitioner or PH_PractitionerRole or PH_RelatedPerson or PH_Patient or Device or PH_Organization)
+* agent.onBehalfOf ..0
 // * agent.onBehalfOf only Reference(PH_Practitioner or PH_PractitionerRole or PH_RelatedPerson or PH_Patient or Device or PH_Organization)
 * entity ..0
 * signature only $SD_Signature

@@ -13,7 +13,7 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * contained ..0
 * extension ..0
 * modifierExtension ..0
-* identifier ..0
+// * identifier ..0
 * status from $AppointmentStatusVS (required)
 // * status ^short = "Yes or No indicator if the patient have an appointment."
 * cancelationReason ..0
@@ -30,11 +30,17 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * end ..0 
 * minutesDuration ..0
 * slot ..0
-* created ..0
+// * created ..0
 * comment ..0
 * patientInstruction ..0
 * basedOn ..0
 // * participant ..0    Can't disable elements that are mandatory by default
 * participant.extension ..0
 * participant.modifierExtension ..0
+* participant.type ..0
+* participant.required ..0
+* participant.period ..0
 * requestedPeriod ..*
+
+
+//  To Do: participant.status

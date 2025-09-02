@@ -42,7 +42,7 @@ Description: "A structured set of questions intended to guide the collection of 
 * item.code ..0
 * item.prefix ..0
 // * item.type ..0      Can't disable elements that are mandatory by default
-* item.enableWhen ..0
+// * item.enableWhen ..0
 * item.enableBehavior ..0
 * item.required ..0
 * item.repeats ..0

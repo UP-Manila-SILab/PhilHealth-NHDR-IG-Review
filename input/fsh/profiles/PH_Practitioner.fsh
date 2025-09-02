@@ -13,8 +13,9 @@ Description: "A person who is directly or indirectly involved in the provisionin
 * text ..0
 * contained ..0
 * extension contains
-    Sex named sex 0..*
-    // $MaritalStatus named maritalStatus 0..* //For Release02
+    Sex named sex 0..1 and
+    $Nationality named nationality 0..* and
+    $MaritalStatus named maritalStatus 0..* //For Release02
 * modifierExtension ..0
 * identifier ..1
 // * active ..0

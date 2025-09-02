@@ -32,13 +32,13 @@ Description: "A record of a request for service such as diagnostic investigation
 // * occurrence[x] ..0
 * asNeeded[x] ..0
 * authoredOn ..0
-* requester ..0
+// * requester ..0
 * performerType ..0
-* performer ..0
+// * performer ..0
 * locationCode ..0
 * locationReference ..0
 // * reasonCode ..0
-* reasonReference ..0
+// * reasonReference ..0
 * insurance ..0
 * supportingInfo ..0
 * specimen ..0

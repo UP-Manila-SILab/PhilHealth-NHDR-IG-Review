@@ -14,7 +14,7 @@ Description: "This resource is primarily used for the identification and definit
 * contained ..0
 * extension contains
     Packaging named packaging 0..* and
-    MedicationType named medicationType 0..1
+    MedicationType named type 0..1
 * extension[packaging] ^short = "Detailed description on the medication packaging"
 * extension[packaging] ^definition = "Detailed description on the medication packaging"
 * extension[packaging] ^comment = "This is an extension"

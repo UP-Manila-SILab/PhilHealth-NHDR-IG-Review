@@ -51,7 +51,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 // * period ..0
 // * length ..0
 // * reasonCode ..0
-* reasonReference ..0
+// * reasonReference ..0
 * diagnosis.extension ..0
 * diagnosis.modifierExtension ..0
 * diagnosis.use ..0

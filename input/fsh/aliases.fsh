@@ -15,9 +15,9 @@ Alias: $RecordedDate = https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate
 Alias: $Signature = https://nhdr.gov.ph/fhir/StructureDefinition/ExtSignature
 Alias: $SignaturePosition = https://nhdr.gov.ph/fhir/StructureDefinition/SignaturePosition
 Alias: $SignatureReason = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureReason
-Alias: $SignatureSubType = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureSubType
-Alias: $SignatureThumbmark = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureThumbmark
-// Alias: $MaritalStatus = https://nhdr.gov.ph/fhir/StructureDefinition/MaritalStatus //For Release02
+// Alias: $SignatureSubType = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureSubType
+// Alias: $SignatureThumbmark = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureThumbmark
+Alias: $MaritalStatus = https://nhdr.gov.ph/fhir/StructureDefinition/MaritalStatus //For Release02
 
 
 // CodeSystems

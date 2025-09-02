@@ -12,7 +12,11 @@ Description: "Information about a person that is involved in the care for a pati
 * text ..0
 * contained ..0
 // * extension ..0
-* extension contains Sex named sex 0..1
+* extension contains 
+    Sex named sex 0..1 and
+    Occupation named occupation 0..* and
+    $Nationality named nationality 0..* and
+    $MaritalStatus named maritalStatus 0..*
 * modifierExtension ..0
 // * identifier ..0
 * active ..0
