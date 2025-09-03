@@ -6,9 +6,7 @@ Description: "A sample to be used for analysis."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Specimen"
 * insert MetaData
 // * id ..0
-// * meta ..0
-* meta.extension contains $RecordedDate named recordedDate 0..*
-// * meta.extension[recordedDate] only $RecordedDate
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

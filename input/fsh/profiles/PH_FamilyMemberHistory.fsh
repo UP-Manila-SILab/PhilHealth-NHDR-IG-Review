@@ -6,7 +6,7 @@ Description: "Significant health conditions for a person related to the patient 
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-FamilyMemberHistory"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

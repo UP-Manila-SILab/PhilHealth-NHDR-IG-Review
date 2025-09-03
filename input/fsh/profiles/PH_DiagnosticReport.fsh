@@ -6,7 +6,7 @@ Description: "The findings and interpretation of diagnostic tests performed on p
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-DiagnosticReport"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

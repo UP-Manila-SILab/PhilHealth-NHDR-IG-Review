@@ -5,6 +5,7 @@ Title: "PH Condition"
 Description: "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Condition"
 * insert MetaData
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

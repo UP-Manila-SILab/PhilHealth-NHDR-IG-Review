@@ -6,7 +6,7 @@ Description: "An order or request for both supply of the medication and the inst
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationRequest"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

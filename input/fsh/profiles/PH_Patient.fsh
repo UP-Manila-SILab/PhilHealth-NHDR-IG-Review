@@ -8,8 +8,7 @@ Description: "Captures key demographic and administrative information about indi
 * . ^short = "Information about an individual receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
 // * id ..0
-// * meta ..0
-* meta.extension contains $RecordedDate named recordedDate 0..*
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

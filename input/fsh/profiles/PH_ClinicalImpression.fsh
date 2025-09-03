@@ -6,7 +6,7 @@ Description: "A record of a clinical assessment performed to determine what prob
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-ClinicalImpression"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

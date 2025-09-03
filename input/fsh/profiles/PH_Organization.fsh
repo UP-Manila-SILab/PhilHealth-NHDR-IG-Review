@@ -7,7 +7,7 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * insert MetaData
 * . ^definition = "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.\n\nAlternate Name: Health Facility Registry."
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -19,8 +19,8 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains
-    DOHFHUDCode 0..* and
-    PEN 0..* and
+    DOHFHUDCode 0..1 and
+    PEN 0..1 and
     PAN 0..1
 * identifier[DOHFHUDCode].system = "http://nhdr.gov.ph/fhir/Identifier/dohfhudcode-id"
 * identifier[DOHFHUDCode].type.coding from $HealthFacilityVS
@@ -29,6 +29,7 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * identifier[PAN].system = "http://nhdr.gov.ph/fhir/Identifier/philhealthaccreditationnumber"
 * identifier[PAN].type.coding = #AN
 // * active ..0
+* active ^short = "DOH statflag"
 * type from $OrganizationTypeVS (required)
 // * name ..0
 * alias ..0

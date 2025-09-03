@@ -6,7 +6,7 @@ Description: "Provenance of a resource is a record that describes entities and p
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Provenance"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

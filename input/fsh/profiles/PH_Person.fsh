@@ -6,7 +6,7 @@ Description: "Demographics and administrative information about a person indepen
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Person"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

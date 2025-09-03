@@ -6,7 +6,7 @@ Description: "Financial instrument which may be used to reimburse or pay for hea
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Coverage"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

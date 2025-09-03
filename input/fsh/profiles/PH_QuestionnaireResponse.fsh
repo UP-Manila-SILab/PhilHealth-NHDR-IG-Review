@@ -6,7 +6,7 @@ Description: "A structured set of questions and their answers."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

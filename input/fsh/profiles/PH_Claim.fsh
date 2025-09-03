@@ -6,13 +6,13 @@ Description: "A provider issued list of professional services and products which
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Claim"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 // * extension ..0
-* extension contains EncounterExtension named encounter ..*
+* extension contains EncounterExtension named encounter 1..*
 * modifierExtension ..0
 // * identifier ..0
 // * status 0..0                    Can't disable elements that are mandatory by default

@@ -6,7 +6,7 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-PractitionerRole"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -19,7 +19,7 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 // * practitioner ..0
 // * organization ..0
 // * code ..0
-* code.coding from $PractitionerRoleVS (required)
+* code from $PractitionerRoleVS (required)
 // * specialty ..0
 * location ..0
 * healthcareService ..0

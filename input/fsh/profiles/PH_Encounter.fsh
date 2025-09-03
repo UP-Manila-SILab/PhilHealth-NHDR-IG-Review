@@ -5,6 +5,7 @@ Title: "PH Encounter"
 Description: "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. Encounter is primarily used to record information about the actual activities that occurred, where Appointment is used to record planned activities."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * insert MetaData
+* insert MetaElement
 * extension contains
     AgeYears named ageYears 0..* and
     AgeMonths named ageMonths 0..* and
@@ -16,7 +17,6 @@ Description: "An interaction between a patient and healthcare provider(s) for th
     DateInvestigation named dateInvestigation 0..* and
     ReporterName named reporterName 0..*
 * modifierExtension ..0
-// * id ..0
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -27,8 +27,8 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * identifier ^slicing.rules = #open
 * identifier contains
     PhilHealthID 0..1 and
-    COVIDDataID 0..* and
-    COVIDPatientID 0..*
+    COVIDDataID 0..1 and
+    COVIDPatientID 0..1
 * identifier[PhilHealthID].system = "http://nhdr.gov.ph/fhir/Identifier/philhealth-id"
 * identifier[PhilHealthID].type.coding = #NIIP
 * identifier[COVIDDataID].system = "http://nhdr.gov.ph/fhir/Identifier/coviddata-id"

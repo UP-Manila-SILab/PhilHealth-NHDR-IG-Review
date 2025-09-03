@@ -7,6 +7,12 @@ RuleSet: MetaData
 * ^extension[=].valueCode = #draft
 * ^copyright = "Used by permission of HL7 International, all rights reserved Creative Commons License"
 
+RuleSet: MetaElement
+* meta.extension contains 
+    HFRecordedDate named hfRecordedDate 0..1 and 
+    HFLastUpdated named hfLastUpdated 0..*
+* meta.lastUpdated ^short = "When the resource was uploaded to the NHDR."
+
 //  Used for testing RuleSet in CS_RuleSetTest. Used on PSGC codes for easier filtering of ValueSets
 RuleSet: HierarchyValues
 * ^hierarchyMeaning = #is-a

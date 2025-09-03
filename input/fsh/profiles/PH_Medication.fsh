@@ -7,7 +7,7 @@ Description: "This resource is primarily used for the identification and definit
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Medication"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

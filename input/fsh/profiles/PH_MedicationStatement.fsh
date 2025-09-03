@@ -6,13 +6,13 @@ Description: "A record of a medication that is being consumed by a patient."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationStatement"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
-    EncounterExtension named medicationEncounter 0..*
+    EncounterExtension named encounter 1..*
 * modifierExtension ..0
 // * identifier ..0
 * basedOn ..0

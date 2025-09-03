@@ -6,7 +6,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Immunization"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
