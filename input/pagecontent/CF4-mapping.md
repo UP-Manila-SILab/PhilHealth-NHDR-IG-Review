@@ -1,22 +1,13 @@
 <html>
-    <style>
-        table, thead, td{
-            border:2px solid #ccc; 
-            border-collapse:collapse; 
-        }
-        table {
-            table-layout: fixed;
-            width: 100%;
-        }
-        table th:nth-child(4) { width: 10%; }
-        table th:nth-child(5) { width: 10%; }
-    </style>
+    {% include table-header.html -%}
     <ul class="nav nav-tabs">
         <li><a href="CF4.html">Content</a></li>
         <li class="active"><a href="#">Mappings</a></li>
         <li><a href="CF4-json.html">Sample JSON Bundles</a></li>
     </ul>
 </html>
+
+### Mapped Fields
 
 | <center>Form Field</center> | <center>Use-Case Mapping<br>/ Target Element</center> | <center>Data Type</center> | <center>Cardinality</center> | <center>ValueSet <br><i>(if any)</i></center> |
 |:---------|:---------|:--------|:--------:|:----------:|
@@ -153,7 +144,7 @@
 
 ### Mandatory Elements Not in the Form
 
-| <center>Use-Case Mapping<br>/ Target Element</center> | <center>Data Type</center> | <center>Notes</center> |
+| <center>Use-Case Mapping / Target Element</center> | <center>Data Type</center> | <center>Notes</center> |
 |:---------|:---------|:--------|
 | Provenance.target | Reference([PH_Claim](StructureDefinition-PH-Claim.html)) | Reference the intact Claim resource |
 | Provenance.recorded | instant | Must be system-generated timestamp |
@@ -175,3 +166,5 @@
 | Questionnaire.status | code | Use expected value 'active' |
 | Questionnaire.item.linkId | string | Expected incrementing value per questionnaire item. |
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
+
+{% include datatables.js -%}
