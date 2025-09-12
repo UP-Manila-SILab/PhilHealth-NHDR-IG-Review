@@ -190,4 +190,5 @@
 | Questionnaire.item.linkId | string | Expected incrementing value per questionnaire item. |
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
 
-{% include datatables.js -%}
+<!-- {% include datatables.js -%} -->
+<script src="/includes/datatables.js"></script>
