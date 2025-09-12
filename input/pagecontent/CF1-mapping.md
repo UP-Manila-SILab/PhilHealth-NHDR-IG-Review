@@ -1,5 +1,5 @@
 <html>
-    {% include table-header.html -%}
+    <!-- {% include table-header.html -%} -->
     <ul class="nav nav-tabs">
         <li><a href="CF1.html">Content</a></li>
         <li class="active"><a href="#">Mappings</a></li>
