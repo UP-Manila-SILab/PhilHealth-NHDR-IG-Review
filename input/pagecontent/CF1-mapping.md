@@ -1,5 +1,5 @@
 <html>
-    {% include table-header.html -%}
+    <!-- {% include table-header.html -%} -->
     {% include tables.css -%}
     <ul class="nav nav-tabs">
         <li><a href="CF1.html">Content</a></li>
@@ -132,5 +132,4 @@
 | Questionnaire.item.linkId | string | Expected incrementing value per questionnaire item. |
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
 
-<!-- {% include datatables.js -%} -->
-<script src="input\includes\datatables.js"></script>
+{% include datatables.js -%}
