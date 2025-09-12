@@ -191,4 +191,3 @@
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
 
 <!-- {% include datatables.js -%} -->
-<script src="/includes/datatables.js"></script>
