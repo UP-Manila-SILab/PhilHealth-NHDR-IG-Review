@@ -1,6 +1,5 @@
 <html>
-    <!-- {% include table-header.html -%} -->
-    {% include tables.css -%}
+    {% include table.css %}
     <ul class="nav nav-tabs">
         <li><a href="CF3.html">Content</a></li>
         <li class="active"><a href="#">Mappings</a></li>

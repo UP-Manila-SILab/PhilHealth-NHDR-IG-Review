@@ -1,6 +1,5 @@
 <html>
-    <!-- {% include table-header.html -%} -->
-    {% include tables.css -%}
+    {% include table.css %}
     <ul class="nav nav-tabs">
         <li><a href="CF1.html">Content</a></li>
         <li class="active"><a href="#">Mappings</a></li>
@@ -131,5 +130,3 @@
 | Questionnaire.status | code | Use expected value 'active' |
 | Questionnaire.item.linkId | string | Expected incrementing value per questionnaire item. |
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
-
-<!-- {% include datatables.js -%} -->
