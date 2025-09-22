@@ -1,12 +1,9 @@
-<!-- Outdated -->
-<html>
-    <style>table, thead, td{border:2px solid #ccc; border-collapse:collapse}</style>
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Content</a></li>
-        <li><a href="CF1-mapping.html">Mappings</a></li>
-        <li><a href="CF1-1.html">Sample JSON Bundles</a></li>
-    </ul>
-</html>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">Content</a></li>
+    <li><a href="CF1-mapping.html">Mappings</a></li>
+    <li><a href="CF1-1.html">Sample JSON Bundles</a></li>
+</ul>
+
 
 This is a sample representation of the **Use Case** implementation guide for **Claims Form 1**
 

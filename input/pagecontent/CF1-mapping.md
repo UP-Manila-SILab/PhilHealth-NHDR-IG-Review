@@ -1,12 +1,10 @@
-<html>
-    {% include table.css %}
-    <ul class="nav nav-tabs">
-        <li><a href="CF1.html">Content</a></li>
-        <li class="active"><a href="#">Mappings</a></li>
-        <li><a href="CF1-1.html">Sample JSON Bundles</a></li>
-        <!-- <li><a href="CF1-2-json.html">JSON 2</a></li> -->
-    </ul>
-</html>
+{% include table-layout.html %}
+{% include form-popup.html %}
+<ul class="nav nav-tabs">
+    <li><a href="CF1.html">Content</a></li>
+    <li class="active"><a href="#">Mappings</a></li>
+    <li><a href="CF1-1.html">Sample JSON Bundles</a></li>
+</ul>
 
 ### Mapped Fields
 
@@ -68,8 +66,7 @@
 | <center>►</center> | Patient.name.given[**1**] | string | 0..* | Use second instance of `name.given` |
 | Date of Birth | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
 | <center>►</center> | Patient.birthDate | date | 0..1 | |
-| Relationship to Member | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
-| <center>►</center> | Patient.contact.relationship | CodeableConcept | 0..1 | ValueSet: [Contact Relationship](http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype) |
+| Relationship to Member | RelatedPerson.relationship | CodeableConcept | 0..* | ValueSet: [Contact Relationship](http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype) | 
 | Sex | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
 | <center>►</center> | Patient.extension:sex | code | 0..1 | ValueSet: [Sex](ValueSet-SexVS.html) |
 | **Part III - Member Certification** | | | | |
@@ -130,3 +127,6 @@
 | Questionnaire.status | code | Use expected value 'active' |
 | Questionnaire.item.linkId | string | Expected incrementing value per questionnaire item. |
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
+
+<!-- | Relationship to Member | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
+| <center>►</center> | Patient.contact.relationship | CodeableConcept | 0..1 | ValueSet: [Contact Relationship](http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype) | -->

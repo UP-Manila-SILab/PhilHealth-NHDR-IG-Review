@@ -1,11 +1,10 @@
-<html>
-    {% include table.css %}
-    <ul class="nav nav-tabs">
-        <li><a href="CF4.html">Content</a></li>
-        <li class="active"><a href="#">Mappings</a></li>
-        <li><a href="CF4-json.html">Sample JSON Bundles</a></li>
-    </ul>
-</html>
+{% include table-layout.html %}
+{% include form-popup.html %}
+<ul class="nav nav-tabs">
+    <li><a href="CF4.html">Content</a></li>
+    <li class="active"><a href="#">Mappings</a></li>
+    <li><a href="CF4-json.html">Sample JSON Bundles</a></li>
+</ul>
 
 ### Mapped Fields
 
@@ -166,5 +165,3 @@
 | Questionnaire.status | code | Use expected value 'active' |
 | Questionnaire.item.linkId | string | Expected incrementing value per questionnaire item. |
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
-
-<!-- {% include datatables.js -%} -->

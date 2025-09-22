@@ -1,11 +1,8 @@
-<html>
-    <style>table, thead, td{border:2px solid #ccc; border-collapse:collapse}</style>
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Content</a></li>
-        <li><a href="CF3-mapping.html">Mappings</a></li>
-        <li><a href="CF3-json.html">Sample JSON Bundles</a></li>
-    </ul>
-</html>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">Content</a></li>
+    <li><a href="CF3-mapping.html">Mappings</a></li>
+    <li><a href="CF3-json.html">Sample JSON Bundles</a></li>
+</ul>
 
 This is a sample representation of the **Use Case** implementation guide for **Claims Form 3**
 
