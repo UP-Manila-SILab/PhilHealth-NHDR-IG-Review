@@ -13,7 +13,7 @@
 | Series #| Claim.identifier | Identifier | 0..* | |
 | **Part I - Member Information** | | | | |
 | PhilHealth Identification Number (PIN) of Member | Claim.payee.party | Reference([PH RelatedPerson](StructureDefinition-PH-RelatedPerson.html)) | 0..1 | |
-| <center>►</center> | RelatedPerson.identifier | Identifier | 0..* | |
+| <center>►</center> | RelatedPerson.identifier | Identifier | | |
 | Name of Member (Last Name) | Claim.payee.party | Reference([PH RelatedPerson](StructureDefinition-PH-RelatedPerson.html)) | 0..1 | |
 | <center>►</center> | RelatedPerson.name.family | string | 0..1 | |
 | Name of Member (First Name) | Claim.payee.party | Reference([PH RelatedPerson](StructureDefinition-PH-RelatedPerson.html)) | 0..1 | |
@@ -66,7 +66,8 @@
 | <center>►</center> | Patient.name.given[**1**] | string | 0..* | Use second instance of `name.given` |
 | Date of Birth | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
 | <center>►</center> | Patient.birthDate | date | 0..1 | |
-| Relationship to Member | RelatedPerson.relationship | CodeableConcept | 0..* | ValueSet: [Contact Relationship](http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype) | 
+| Relationship to Member | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
+| <center>►</center> | Patient.contact.relationship | CodeableConcept | 0..1 | ValueSet: [Contact Relationship](http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype) |
 | Sex | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
 | <center>►</center> | Patient.extension:sex | code | 0..1 | ValueSet: [Sex](ValueSet-SexVS.html) |
 | **Part III - Member Certification** | | | | |
@@ -127,6 +128,3 @@
 | Questionnaire.status | code | Use expected value 'active' |
 | Questionnaire.item.linkId | string | Expected incrementing value per questionnaire item. |
 | Questionnaire.item.type | code | Indicates expected data type for the questionnaire item. |
-
-<!-- | Relationship to Member | Claim.patient | Reference([PH Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
-| <center>►</center> | Patient.contact.relationship | CodeableConcept | 0..1 | ValueSet: [Contact Relationship](http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype) | -->

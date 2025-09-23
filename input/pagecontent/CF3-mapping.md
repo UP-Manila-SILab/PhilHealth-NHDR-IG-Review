@@ -12,7 +12,7 @@
 |:---------|:---------|:--------|:--------:|:----------:|
 | **Part I - Patient's Clinical Record** |||||
 | PhilHealth Accreditation No. (PAN) - Institutional Health Care Provider | Claim.provider | Reference([PH_Organization](StructureDefinition-PH-Organization.html)) | 1..1 | |
-| <center>►</center> | Organization.identifier | Identifier | 0..* |
+| <center>►</center> | Organization.identifier | Identifier | |
 | Name of Patient (Last Name) | Claim.patient | Reference([PH_Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
 | <center>►</center> | Patient.name.family | string | 0..1 | |
 | Name of Patient (First Name) | Claim.patient | Reference([PH_Patient](StructureDefinition-PH-Patient.html)) | 1..1 | |
@@ -65,63 +65,110 @@
 | **Part II - Maternity Care Package** |||||
 | 1. Initial Prenatal Consultation (MM-DD-YYYY) | Claim.item.servicedDate | date | 0..1 | |
 | 2. Clinical History and Physical Examination: a. Vital signs are normal | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 |
-| <center>►</center> | Observation.interpretation | CodeableConcept | 0..* | |
+| <center>►</center> | Observation.component.interpretation | CodeableConcept | 0..* | |
 | 2. Clinical History and Physical Examination: b. Ascertain the present Pregnancy is low-Risk | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 |
-| <center>►</center> | Observation.valueBoolean <br>~~valueCodeableConcept~~ | boolean | 0..1 | | 
-| 2. Clinical History and Physical Examination: c. Menstrual History LMP (MM-DD-YYYY) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 |
-| <center>►</center> | Observation.valueDateTime | dateTime | 0..1 | |
-| 2. Clinical History and Physical Examination: d. Menstrual History (Age of Menarche) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html))| 0..1 |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
-| 2. Obstetric History (G) | ClaimsupportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
-| 2. Obstetric History (P) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
+| <center>►</center> | Observation.component.valueBoolean | boolean | 0..1 | | 
+| 2. Clinical History and Physical Examination: c. Menstrual History **LMP** (MM-DD-YYYY) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Clinical History and Physical Examination: c. Menstrual History LMP (**MM-DD-YYYY**) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 |
+| <center>►</center> | Observation.component.valueDateTime | dateTime | 0..1 | |
+| 2. Clinical History and Physical Examination: d. Menstrual History **(Age of Menarche)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html))| 0..1 |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Clinical History and Physical Examination: d. Menstrual History (Age of Menarche) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html))| 0..1 |
+| <center>►</center> | Observation.component.valueInteger | integer | 0..1 | |
+| 2. Obstetric History **(G)** | ClaimsupportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Obstetric History (G) **(value)** | ClaimsupportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueInteger | integer | 0..1 | |
+| 2. Obstetric History **(P)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Obstetric History (P) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueInteger | integer | 0..1 | |
 | 2. Obstetric History (P)**[T]** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Obstetric History (P)**[T] (value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueInteger | integer | 0..1 | |
 | 2. Obstetric History (P)**[P]** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Obstetric History (P)**[P] (value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueInteger | integer | 0..1 | |
 | 2. Obstetric History (P)**[A]** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Obstetric History (P)**[A] (value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueInteger | integer | 0..1 | |
 | 2. Obstetric History (P)**[L]** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 2. Obstetric History (P)**[L] (value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueInteger | integer | 0..1 | |
 | 3. Obstetric risk factors (Check notes for options) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueCodeableConcept | CodeableConcept | 0..1 | |
+| <center>►</center> | Observation.code | CodeableConcept | 1..1 | |
 | 4. Medical / Surgical risk factors (Check notes for options) | Claim.diagnosis.diagnosisCodeableConcept | CodeableConcept | 1..1 | |
 | 5. Admitting Diagnosis | Claim.diagnosis.diagnosisReference | Reference([PH_Condition](StructureDefinition-PH-Condition.html)) | 1..1 | |
 | 6. Orientation to MCP / Availment of Benefits (Yes / No) | Questionnaire.item.text | string | 0..1 | |
 | 6. Expected date of delivery (MM-DD-YYYY) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
 | <center>►</center> | Observation.effectiveDateTime | dateTime | 0..1 | |
-| 7. Prenatal Consultation No. | Claim.item.sequence | positiveInt | 1..1 | |
-| 7. Date of visit (MM-DD-YYYY) | Claim.item.servicedDate | date | 0..1 | |
-| 7. AOG in weeks | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| 7a. Prenatal Consultation No. | Claim.item.sequence | positiveInt | 1..1 | |
+| 7b. Date of visit (MM-DD-YYYY) | Claim.item.servicedDate | date | 0..1 | |
+| 7c. AOG in weeks | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
 | <center>►</center> | Observation.valueInteger | integer | 0..1 | |
-| 7.1 Weight | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
-| 7.2 Cardiac Rate | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
-| 7.3 Respiratory Rate | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
-| 7.4 Blood Pressure | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
-| 7.5 Temperature | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
+| 7d. Weight and Vital Signs | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.valcodeueInteger | CodeableConcept | 1..1 | |
+| 7d.1 **Weight** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 7d.1 Weight **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueQuantity | Quantity | 0..1 | |
+| 7d.2 **Cardiac Rate** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 7d.2 Cardiac Rate **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 7d.3 **Respiratory Rate** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 7d.3 Respiratory Rate **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 7d.4 **Blood Pressure** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 7d.4 Blood Pressure **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 7d.5 **Temperature** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 7d.5 Temperature **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueQuantity | Quantity | 0..1 | |
 | **Part II - Maternity Care Package (Delivery Outcome)** | | | | |
 | 8. Date of Delivery (MM-DD-YYYY)(AM/PM)[HH:MM] | Claim.item.servicedDate | date | 0..1 | |
-| 9. Maternal Outcome (Obstetric Index) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
-| 9. Pregnancy Uterine (AOG by LMP) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
-| 9. Pregnancy Uterine (Manner of Delivery) | Claim.item.productOrService | CodeableConcept | 1..1 | |
-| 9. Pregnancy Uterine (Presentation) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueCodeableConcept | CodeableConcept | 0..1 | |
-| 10. Birth Outcome (Fetal Outcome) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueString | string | 0..1 | |
-| 10. Birth Outcome (Sex) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueCodeableConcept | CodeableConcept | 0..1 | |
-| 10. Birth Outcome (Birth Weight (grm)) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
-| 10. Birth Outcome (APGAR Score) | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | | 
-| <center>►</center> | Observation.valueInteger | integer | 0..1 | |
+| 9. Maternal Outcome **(Obstetric Index)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 9. Maternal Outcome (Obstetric Index) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 9. Pregnancy Uterine **(AOG by LMP)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 9. Pregnancy Uterine (AOG by LMP) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 9. Pregnancy Uterine **(Manner of Delivery)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 9. Pregnancy Uterine (Manner of Delivery) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 9. Pregnancy Uterine **(Presentation)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 9. Pregnancy Uterine (Presentation) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 10. **Birth Outcome** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.code | CodeableConcept | 1..1 | |
+| 10. Birth Outcome **(Fetal Outcome)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 10. Birth Outcome (Fetal Outcome) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 10. Birth Outcome **(Sex)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 10. Birth Outcome (Sex) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 10. Birth Outcome **(Birth Weight (grm))** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 10. Birth Outcome (Birth Weight (grm)) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
+| 10. Birth Outcome **(APGAR Score)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | | 
+| <center>►</center> | Observation.component.code | CodeableConcept | 1..1 | |
+| 10. Birth Outcome (APGAR Score) **(value)** | Claim.supportingInfo.valueReference | Reference([PH_Observation](StructureDefinition-PH-Observation.html)) | 0..1 | |
+| <center>►</center> | Observation.component.valueString | string | 0..1 | |
 | 11. Scheduled Postpartum follow-up consultation 1 week after delivery | Claim.extension:encounter | Reference([PH_Encounter](StructureDefinition-PH-Encounter.html)) | | |
 | <center>►</center> | Encounter.period.start | dateTime | | |
 | 12. Date of Discharge | Claim.extension:encounter | Reference([PH_Encounter](StructureDefinition-PH-Encounter.html)) | | |

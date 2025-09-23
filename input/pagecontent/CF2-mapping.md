@@ -13,7 +13,7 @@
 | Series # | Claim.identifier | Identifier | 0..* | |
 | **Part I - Health Care Institution (HCI) Information** | | | | |
 | PhilHealth Accreditation Number (PAN) of Health Care Institution | Claim.provider | Reference([PH_Organization](StructureDefinition-PH-Organization.html)) | 1..1 | |
-| <center>►</center> | Organization.identifier | Identifier | 0..* | |
+| <center>►</center> | Organization.identifier | Identifier | | |
 | Name of Health Care Institution | Claim.provider | Reference([PH_Organization](StructureDefinition-PH-Organization.html)) | 1..1 | |
 | <center>►</center> | Organization.name | string | 0..1 | |
 | Address (Building Number and Street Name) | Claim.provider | Reference([PH_Organization](StructureDefinition-PH-Organization.html)) | 1..1 | |
