@@ -22,7 +22,7 @@ Description: "A provider issued list of professional services and products which
 // * patient 0..0                   Can't disable elements that are mandatory by default
 * billablePeriod ..0
 // * created 0..0                   Can't disable elements that are mandatory by default
-* created ^description = "The date when the claim document was created in the facility."
+* created ^Description = "The date when the claim document was created in the facility."
 * enterer ..0
 * insurer ..0
 // * provider 0..0                  Can't disable elements that are mandatory by default
