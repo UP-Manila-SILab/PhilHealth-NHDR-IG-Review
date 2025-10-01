@@ -25,6 +25,7 @@ Description: "Captures key demographic and administrative information about indi
     PatientType named type 0..1 and
     EducationalAttainment named educationalAttainment 0..1
 * modifierExtension ..0
+* identifier obeys PH-00002
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -37,6 +38,7 @@ Description: "Captures key demographic and administrative information about indi
     PassportNumber 0..1
 * identifier[PhilHealthID].system = "http://nhdr.gov.ph/fhir/Identifier/philhealth-id"
 * identifier[PhilHealthID].type.coding = #NIIP
+* identifier[PhilHealthID].value obeys PH-00001
 * identifier[PDD].system = "http://nhdr.gov.ph/fhir/Identifier/pdd-id"
 * identifier[PDD].type.coding = #PDD
 * identifier[TIN].system = "http://nhdr.gov.ph/fhir/Identifier/tin-id"
