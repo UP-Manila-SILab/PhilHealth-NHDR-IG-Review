@@ -7,6 +7,7 @@
   },
   "https://terminology.hl7.org/6.5.0/ValueSet-v2-0001.html" : null,
   "http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0" : null,
+  "https://terminology.hl7.org/6.2.0/ValueSet-v3-ReligiousAffiliation.html" : null,
   "http://terminology.hl7.org/CodeSystem/v2-0074|4.0.1" : null,
   "http://terminology.hl7.org/ValueSet/v2-0487|2.9" : {
     "server" : "http://tx.fhir.org/r4",

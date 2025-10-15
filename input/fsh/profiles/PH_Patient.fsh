@@ -15,7 +15,7 @@ Description: "Captures key demographic and administrative information about indi
 * contained ..0
 * extension contains
     $Nationality named nationality 0..* and
-    Religion named religion 0..* and
+    $Religion named religion 0..* and
     IndigenousGroup named indigenousGroup 0..* and
     IndigenousPeople named indigenousPeople 0..* and
     Occupation named occupation 0..* and
@@ -24,6 +24,7 @@ Description: "Captures key demographic and administrative information about indi
     MemberType named memberType 0..1 and
     PatientType named type 0..1 and
     EducationalAttainment named educationalAttainment 0..1
+* extension[religion].value[x] from $ReligionVS (required)
 * modifierExtension ..0
 * identifier obeys PH-00002
 * identifier ^slicing.discriminator.type = #value

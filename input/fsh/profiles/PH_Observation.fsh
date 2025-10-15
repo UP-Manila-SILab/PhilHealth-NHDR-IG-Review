@@ -31,7 +31,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 * performer only Reference(PH_Practitioner)
 * value[x] only Quantity or CodeableConcept or string or dateTime or integer or Ratio or boolean
 * value[x] from ObservationValueVS (required)
-* dataAbsentReason ..0
+// * dataAbsentReason ..0
 // * interpretation ..0
 // * note ..0
 // * bodySite ..0
@@ -43,5 +43,5 @@ Description: "Measurements and simple assertions made about a patient, device or
 * derivedFrom ..0
 // * component ..0
 * component.dataAbsentReason ..0
-* component.interpretation ..0
+// * component.interpretation ..0
 * component.referenceRange ..0
