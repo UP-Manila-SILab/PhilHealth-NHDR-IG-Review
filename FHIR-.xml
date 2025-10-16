@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="" url="https://nhdr.gov.ph/fhir">
+<version code="current" url=""/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/ExtAddress" key="StructureDefinition-ExtAddress" name="Address (Extension)"/>
+<artifact id="StructureDefinition/AgeDays" key="StructureDefinition-AgeDays" name="Age in Days"/>
+<artifact id="StructureDefinition/AgeMonths" key="StructureDefinition-AgeMonths" name="Age in Months"/>
+<artifact id="StructureDefinition/AgeYears" key="StructureDefinition-AgeYears" name="Age in Years"/>
+<artifact id="StructureDefinition/Barangay" key="StructureDefinition-Barangay" name="Barangay Code"/>
+<artifact id="ValueSet/BarangayVS" key="ValueSet-BarangayVS" name="Barangay Codes"/>
+<artifact id="StructureDefinition/CityMunicipality" key="StructureDefinition-CityMunicipality" name="City Code"/>
+<artifact id="ValueSet/CityVS" key="ValueSet-CityVS" name="City Codes"/>
+<artifact id="Bundle/ClaimsForm1-1" key="Bundle-ClaimsForm1-1" name="ClaimsForm1-1"/>
+<artifact id="Bundle/ClaimsForm1-2" key="Bundle-ClaimsForm1-2" name="ClaimsForm1-2"/>
+<artifact id="Bundle/ClaimsForm2" key="Bundle-ClaimsForm2" name="ClaimsForm2"/>
+<artifact id="CodeSystem/CoverageCopayTypeLocalCS" key="CodeSystem-CoverageCopayTypeLocalCS" name="Coverage Co-Payment Type - Local"/>
+<artifact id="ValueSet/CoverageCoPayTypeVS" key="ValueSet-CoverageCoPayTypeVS" name="Coverage Copay Type"/>
+<artifact id="StructureDefinition/DateInterview" key="StructureDefinition-DateInterview" name="Date of Interview"/>
+<artifact id="StructureDefinition/DateInvestigation" key="StructureDefinition-DateInvestigation" name="Date of Investigation"/>
+<artifact id="StructureDefinition/ResultDate" key="StructureDefinition-ResultDate" name="Date of result"/>
+<artifact id="ValueSet/DrugCodesVS" key="ValueSet-DrugCodesVS" name="Drug Codes"/>
+<artifact id="CodeSystem/DrugCodesCS" key="CodeSystem-DrugCodesCS" name="Drug Codes"/>
+<artifact id="StructureDefinition/EducationalAttainment" key="StructureDefinition-EducationalAttainment" name="Educational Attainment"/>
+<artifact id="ValueSet/EducationalAttainmentVS" key="ValueSet-EducationalAttainmentVS" name="Educational Attainment"/>
+<artifact id="StructureDefinition/EncounterExtension" key="StructureDefinition-EncounterExtension" name="Encounter (Extension)"/>
+<artifact id="ValueSet/FacilityMajorTypeVS" key="ValueSet-FacilityMajorTypeVS" name="Facility Major Type"/>
+<artifact id="CodeSystem/FacilityMajorTypeCS" key="CodeSystem-FacilityMajorTypeCS" name="Facility Major Type"/>
+<artifact id="ValueSet/HealthFacilityVS" key="ValueSet-HealthFacilityVS" name="Health Facility Codes"/>
+<artifact id="ValueSet/ICD10VS" key="ValueSet-ICD10VS" name="ICD-10 Codes"/>
+<artifact id="StructureDefinition/IndigenousGroup" key="StructureDefinition-IndigenousGroup" name="Indigenous Group"/>
+<artifact id="ValueSet/IndigenousGroupVS" key="ValueSet-IndigenousGroupVS" name="Indigenous Groups"/>
+<artifact id="CodeSystem/IndigenousGroupCS" key="CodeSystem-IndigenousGroupCS" name="Indigenous Groups"/>
+<artifact id="StructureDefinition/Interviewer" key="StructureDefinition-Interviewer" name="Interviewer"/>
+<artifact id="StructureDefinition/InvestigatorName" key="StructureDefinition-InvestigatorName" name="Investigator"/>
+<artifact id="ValueSet/LHIOVS" key="ValueSet-LHIOVS" name="Local Health Insurance Office"/>
+<artifact id="CodeSystem/LHIOCS" key="CodeSystem-LHIOCS" name="Local Health Insurance Office"/>
+<artifact id="StructureDefinition/MaritalStatus" key="StructureDefinition-MaritalStatus" name="Marital Status"/>
+<artifact id="StructureDefinition/MedicationType" key="StructureDefinition-MedicationType" name="Medication Type"/>
+<artifact id="StructureDefinition/MemberType" key="StructureDefinition-MemberType" name="Member Type"/>
+<artifact id="ValueSet/MemberTypeVS" key="ValueSet-MemberTypeVS" name="Member Type"/>
+<artifact id="CodeSystem/MemberTypeCS" key="CodeSystem-MemberTypeCS" name="Member Type"/>
+<artifact id="StructureDefinition/PatientModel" key="StructureDefinition-PatientModel" name="Minimum Required Patient Data"/>
+<artifact id="CodeSystem/NHFRCS" key="CodeSystem-NHFRCS" name="NHFR Codes"/>
+<artifact id="ValueSet/ObservationValueVS" key="ValueSet-ObservationValueVS" name="Observation Value"/>
+<artifact id="CodeSystem/ObservationValueCS" key="CodeSystem-ObservationValueCS" name="Observation Value"/>
+<artifact id="StructureDefinition/Occupation" key="StructureDefinition-Occupation" name="Occupation / In Years"/>
+<artifact id="ValueSet/OccupationClassificationVS" key="ValueSet-OccupationClassificationVS" name="Occupation Classification"/>
+<artifact id="CodeSystem/OrganizationTypeLocalCS" key="CodeSystem-OrganizationTypeLocalCS" name="Organization Types - Local"/>
+<artifact id="CodeSystem/OwnershipMajorClassificationCS" key="CodeSystem-OwnershipMajorClassificationCS" name="Ownership Major Classification"/>
+<artifact id="StructureDefinition/PH-Address" key="StructureDefinition-PH-Address" name="PH Address"/>
+<artifact id="StructureDefinition/PH-AllergyIntolerance" key="StructureDefinition-PH-AllergyIntolerance" name="PH AllergyIntolerance"/>
+<artifact id="StructureDefinition/PH-Appointment" key="StructureDefinition-PH-Appointment" name="PH Appointment"/>
+<artifact id="StructureDefinition/PH-CarePlan" key="StructureDefinition-PH-CarePlan" name="PH CarePlan"/>
+<artifact id="StructureDefinition/PH-Claim" key="StructureDefinition-PH-Claim" name="PH Claim"/>
+<artifact id="StructureDefinition/PH-Claim-dummy" key="StructureDefinition-PH-Claim-dummy" name="PH Claim - dummy"/>
+<artifact id="StructureDefinition/PH-ClinicalImpression" key="StructureDefinition-PH-ClinicalImpression" name="PH ClinicalImpression"/>
+<artifact id="StructureDefinition/PH-Condition" key="StructureDefinition-PH-Condition" name="PH Condition"/>
+<artifact id="StructureDefinition/PH-Coverage" key="StructureDefinition-PH-Coverage" name="PH Coverage"/>
+<artifact id="StructureDefinition/PH-DiagnosticReport" key="StructureDefinition-PH-DiagnosticReport" name="PH DiagnosticReport"/>
+<artifact id="StructureDefinition/PH-Encounter" key="StructureDefinition-PH-Encounter" name="PH Encounter"/>
+<artifact id="StructureDefinition/PH-EnrollmentRequest" key="StructureDefinition-PH-EnrollmentRequest" name="PH EnrollmentRequest"/>
+<artifact id="StructureDefinition/PH-FamilyMemberHistory" key="StructureDefinition-PH-FamilyMemberHistory" name="PH FamilyMemberHistory"/>
+<artifact id="StructureDefinition/PH-Goal" key="StructureDefinition-PH-Goal" name="PH Goal"/>
+<artifact id="StructureDefinition/PH-Immunization" key="StructureDefinition-PH-Immunization" name="PH Immunization"/>
+<artifact id="StructureDefinition/PH-Medication" key="StructureDefinition-PH-Medication" name="PH Medication"/>
+<artifact id="StructureDefinition/PH-MedicationAdministration" key="StructureDefinition-PH-MedicationAdministration" name="PH MedicationAdministration"/>
+<artifact id="StructureDefinition/PH-MedicationDispense" key="StructureDefinition-PH-MedicationDispense" name="PH MedicationDispense"/>
+<artifact id="StructureDefinition/PH-MedicationRequest" key="StructureDefinition-PH-MedicationRequest" name="PH MedicationRequest"/>
+<artifact id="StructureDefinition/PH-MedicationStatement" key="StructureDefinition-PH-MedicationStatement" name="PH MedicationStatement"/>
+<artifact id="StructureDefinition/PH-Observation" key="StructureDefinition-PH-Observation" name="PH Observation"/>
+<artifact id="StructureDefinition/PH-Organization" key="StructureDefinition-PH-Organization" name="PH Organization"/>
+<artifact id="StructureDefinition/PH-Patient" key="StructureDefinition-PH-Patient" name="PH Patient"/>
+<artifact id="StructureDefinition/PH-Person" key="StructureDefinition-PH-Person" name="PH Person"/>
+<artifact id="StructureDefinition/PH-Practitioner" key="StructureDefinition-PH-Practitioner" name="PH Practitioner"/>
+<artifact id="StructureDefinition/PH-PractitionerRole" key="StructureDefinition-PH-PractitionerRole" name="PH PractitionerRole"/>
+<artifact id="StructureDefinition/PH-Procedure" key="StructureDefinition-PH-Procedure" name="PH Procedure"/>
+<artifact id="StructureDefinition/PH-Provenance" key="StructureDefinition-PH-Provenance" name="PH Provenance"/>
+<artifact id="StructureDefinition/PH-Questionnaire" key="StructureDefinition-PH-Questionnaire" name="PH Questionnaire"/>
+<artifact id="StructureDefinition/PH-QuestionnaireResponse" key="StructureDefinition-PH-QuestionnaireResponse" name="PH QuestionnaireResponse"/>
+<artifact id="StructureDefinition/PH-RelatedPerson" key="StructureDefinition-PH-RelatedPerson" name="PH RelatedPerson"/>
+<artifact id="StructureDefinition/PH-ServiceRequest" key="StructureDefinition-PH-ServiceRequest" name="PH ServiceRequest"/>
+<artifact id="StructureDefinition/PH-Signature" key="StructureDefinition-PH-Signature" name="PH Signature"/>
+<artifact id="StructureDefinition/PH-Specimen" key="StructureDefinition-PH-Specimen" name="PH Specimen"/>
+<artifact id="CodeSystem/PSCEDCS" key="CodeSystem-PSCEDCS" name="PSCED Codes"/>
+<artifact id="CodeSystem/PSGCCS" key="CodeSystem-PSGCCS" name="PSGC Codes"/>
+<artifact id="CodeSystem/PSOCCS" key="CodeSystem-PSOCCS" name="PSOC Codes"/>
+<artifact id="StructureDefinition/Packaging" key="StructureDefinition-Packaging" name="Package description"/>
+<artifact id="StructureDefinition/PatientClassification" key="StructureDefinition-PatientClassification" name="Patient Classification"/>
+<artifact id="StructureDefinition/PatientType" key="StructureDefinition-PatientType" name="Patient Type"/>
+<artifact id="ValueSet/PatientTypeVS" key="ValueSet-PatientTypeVS" name="Patient Type"/>
+<artifact id="CodeSystem/PatientTypeCS" key="CodeSystem-PatientTypeCS" name="Patient Type"/>
+<artifact id="ValueSet/ProVS" key="ValueSet-ProVS" name="PhilHealth Regional Offices"/>
+<artifact id="CodeSystem/ProCS" key="CodeSystem-ProCS" name="PhilHealth Regional Offices"/>
+<artifact id="StructureDefinition/IndigenousPeople" key="StructureDefinition-IndigenousPeople" name="Philippine Indigenous Status"/>
+<artifact id="StructureDefinition/SignaturePosition" key="StructureDefinition-SignaturePosition" name="Position of the Signatory"/>
+<artifact id="ValueSet/PractitionerRoleVS" key="ValueSet-PractitionerRoleVS" name="Practitioner Role"/>
+<artifact id="ValueSet/ProcedureCodeVS" key="ValueSet-ProcedureCodeVS" name="Procedure Code"/>
+<artifact id="StructureDefinition/Province" key="StructureDefinition-Province" name="Province"/>
+<artifact id="ValueSet/ProvinceVS" key="ValueSet-ProvinceVS" name="Province Codes"/>
+<artifact id="StructureDefinition/Race" key="StructureDefinition-Race" name="Race"/>
+<artifact id="StructureDefinition/SignatureReason" key="StructureDefinition-SignatureReason" name="Reason for the Signature"/>
+<artifact id="ValueSet/RegionVS" key="ValueSet-RegionVS" name="Region Codes"/>
+<artifact id="StructureDefinition/Region" key="StructureDefinition-Region" name="Region code"/>
+<artifact id="CodeSystem/RVSCodeCS" key="CodeSystem-RVSCodeCS" name="Relative Value Scale (RVS) Codes"/>
+<artifact id="StructureDefinition/Religion" key="StructureDefinition-Religion" name="Religion"/>
+<artifact id="StructureDefinition/ReporterName" key="StructureDefinition-ReporterName" name="Reporter"/>
+<artifact id="ValueSet/ServiceTypeVS" key="ValueSet-ServiceTypeVS" name="Service Type"/>
+<artifact id="ValueSet/SexVS" key="ValueSet-SexVS" name="Sex"/>
+<artifact id="StructureDefinition/Sex" key="StructureDefinition-Sex" name="Sex at birth"/>
+<artifact id="ValueSet/SignatureTypeVS" key="ValueSet-SignatureTypeVS" name="Signature Type"/>
+<artifact id="CodeSystem/SignatureTypeCS" key="CodeSystem-SignatureTypeCS" name="Signature Type - Local"/>
+<artifact id="StructureDefinition/DateReleased" key="StructureDefinition-DateReleased" name="Specimen release date"/>
+<artifact id="Bundle/Test-Bundle" key="Bundle-Test-Bundle" name="Test-Bundle"/>
+<artifact id="StructureDefinition/HFLastUpdated" key="StructureDefinition-HFLastUpdated" name="The date indicating when the record was last updated by the health facility."/>
+<artifact id="StructureDefinition/HFRecordedDate" key="StructureDefinition-HFRecordedDate" name="The recorded date indicating when the record was uploaded by the health facility."/>
+<artifact id="StructureDefinition/Species" key="StructureDefinition-Species" name="Type of species"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="CF1-1" name="CF1 Sample JSON Bundle - Member is not the Patient"/>
+<page key="CF1-2" name="CF1 Sample JSON Bundle - Member is the Patient"/>
+<page key="CF1" name="Claims Form 1"/>
+<page key="CF2" name="Claims Form 2"/>
+<page key="CF3" name="Claims Form 3"/>
+<page key="CF4" name="Claims Form 4"/>
+<page key="extensions" name="Extensions"/>
+<page key="CF1-mapping" name="Mapping of Claims Form 1 to FHIR"/>
+<page key="CF2-mapping" name="Mapping of Claims Form 2 to FHIR"/>
+<page key="CF3-mapping" name="Mapping of Claims Form 3 to FHIR"/>
+<page key="CF4-mapping" name="Mapping of Claims Form 4 to FHIR"/>
+<page key="index" name="PHCDI Implementation Guide"/>
+<page key="CF2-json" name="Sample CF2 Bundle"/>
+<page key="CF3-json" name="Sample CF3 Bundle"/>
+<page key="CF4-json" name="Sample CF4 Bundle"/>
+<page key="search-parameters" name="Search Parameters"/>
+<page key="toc" name="Table of Contents"/>
+<page key="use-cases" name="Use Cases"/>
+</specification>

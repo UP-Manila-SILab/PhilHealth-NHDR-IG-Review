@@ -6,7 +6,7 @@ Description: "Describes the intention of how one or more practitioners intend to
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-CarePlan"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

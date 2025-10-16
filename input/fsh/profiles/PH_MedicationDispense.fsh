@@ -6,7 +6,7 @@ Description: "Indicates that a medication product is to be or has been dispensed
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationDispense"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

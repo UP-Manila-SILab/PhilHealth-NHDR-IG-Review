@@ -5,6 +5,7 @@ Title: "PH AllergyIntolerance"
 Description: "Risk of harmful or undesirable physiological response which is specific to an individual and associated with exposure to a substance."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-AllergyIntolerance"
 * insert MetaData
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0

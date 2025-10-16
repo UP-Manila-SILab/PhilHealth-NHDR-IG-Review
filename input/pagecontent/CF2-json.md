@@ -1,11 +1,8 @@
-<html>
-    <style>table, thead, td{border:2px solid #ccc; border-collapse:collapse}</style>
-    <ul class="nav nav-tabs">
-        <li><a href="CF2.html">Content</a></li>
-        <li><a href="CF2-mapping.html">Mappings</a></li>
-        <li class="active"><a href="#">JSON</a></li>
-    </ul>
-</html>
+<ul class="nav nav-tabs">
+    <li><a href="CF2.html">Content</a></li>
+    <li><a href="CF2-mapping.html">Mappings</a></li>
+    <li class="active"><a href="#">JSON</a></li>
+</ul>
 
 ```json
     {

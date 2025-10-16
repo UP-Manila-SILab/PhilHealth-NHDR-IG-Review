@@ -6,15 +6,13 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-MedicationAdministration"
 * insert MetaData
 // * id ..0
-// * meta ..0
-* meta.extension contains $RecordedDate named recordedDate 0..*
-// * meta.extension[recordedDate] only $RecordedDate
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
-    EncounterExtension named medicationEncounter 0..*
+    EncounterExtension named encounter 1..*
 * modifierExtension ..0
 // * identifier ..0
 * instantiates ..0
@@ -32,8 +30,8 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * performer.modifierExtension ..0
 * performer.function ..0
 * performer.actor only Reference(PH_Practitioner or PH_PractitionerRole or PH_Patient or PH_RelatedPerson or Device)
-* reasonCode ..1
-* reasonReference ..1
+* reasonCode ..*
+* reasonReference ..*
 * reasonReference only Reference(PH_Condition or PH_Observation or PH_DiagnosticReport)
 * request ..0
 * device ..0

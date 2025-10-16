@@ -7,9 +7,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 * insert MetaData
 * . ^definition = "Measurements and simple assertions made about a patient, device or other subject.\nUses: Vital signs such as body weight, blood pressure, and temperature; Laboratory Data like blood glucose, or an estimated GFR; Imaging results like bone density or fetal measurements; Clinical Findings* such as abdominal tenderness; Device measurements such as EKG data or Pulse Oximetry data; Clinical assessment tools such as APGAR or a Glasgow Coma Score; Personal characteristics: such as eye-color; Social history like tobacco use, family support, or cognitive status; Core characteristics like pregnancy status, or a death assertion.\nAlternate Name: Vital Signs; Measurement; Results; Tests"
 // * id ..0
-// * meta ..0
-* meta.extension contains $RecordedDate named recordedDate 0..*
-// * meta.extension[recordedDate] only $RecordedDate
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -33,7 +31,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 * performer only Reference(PH_Practitioner)
 * value[x] only Quantity or CodeableConcept or string or dateTime or integer or Ratio or boolean
 * value[x] from ObservationValueVS (required)
-* dataAbsentReason ..0
+// * dataAbsentReason ..0
 // * interpretation ..0
 // * note ..0
 // * bodySite ..0
@@ -43,4 +41,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 * referenceRange ..0
 * hasMember ..0
 * derivedFrom ..0
-* component ..0
+// * component ..0
+* component.dataAbsentReason ..0
+// * component.interpretation ..0
+* component.referenceRange ..0

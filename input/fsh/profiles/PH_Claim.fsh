@@ -6,13 +6,13 @@ Description: "A provider issued list of professional services and products which
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Claim"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 // * extension ..0
-* extension contains EncounterExtension named claimEncounter ..*
+* extension contains EncounterExtension named encounter 1..*
 * modifierExtension ..0
 // * identifier ..0
 // * status 0..0                    Can't disable elements that are mandatory by default
@@ -22,6 +22,7 @@ Description: "A provider issued list of professional services and products which
 // * patient 0..0                   Can't disable elements that are mandatory by default
 * billablePeriod ..0
 // * created 0..0                   Can't disable elements that are mandatory by default
+* created ^definition = "The date when the claim document was created in the facility."
 * enterer ..0
 * insurer ..0
 // * provider 0..0                  Can't disable elements that are mandatory by default
@@ -36,7 +37,10 @@ Description: "A provider issued list of professional services and products which
 * payee.modifierExtension ..0
 // * referral ..0
 * facility ..0
-* careTeam ..0
+// * careTeam ..0
+* careTeam.responsible ..0
+* careTeam.role ..0
+* careTeam.qualification ..0
 // * supportingInfo ..0
 * supportingInfo.id ..0
 * supportingInfo.extension ..0
@@ -91,7 +95,7 @@ Description: "A provider issued list of professional services and products which
 * item.programCode ..0
 // * item.serviced[x] ..0
 * item.location[x] ..0
-* item.quantity ..0
+// * item.quantity ..0
 * item.unitPrice ..0
 * item.factor ..0
 * item.udi ..0
@@ -113,19 +117,19 @@ Description: "A provider issued list of professional services and products which
 * item.detail.factor ..0
 // * item.detail.net ..0
 * item.detail.udi ..0
-// * item.detail.subDetail
-* item.detail.subDetail.id ..0
-* item.detail.subDetail.extension ..0
-* item.detail.subDetail.modifierExtension ..0
+* item.detail.subDetail ..0
+// * item.detail.subDetail.id ..0
+// * item.detail.subDetail.extension ..0
+// * item.detail.subDetail.modifierExtension ..0
 // * item.detail.subDetail.sequence ..0     Can't disable elements that are mandatory by default
-* item.detail.subDetail.revenue ..0
-* item.detail.subDetail.category ..0
+// * item.detail.subDetail.revenue ..0
+// * item.detail.subDetail.category ..0
 // * item.detail.subDetail.productOrService ..0
-* item.detail.subDetail.modifier ..0
-* item.detail.subDetail.programCode ..0
-* item.detail.subDetail.quantity ..0
-* item.detail.subDetail.unitPrice ..0
-* item.detail.subDetail.factor ..0
-* item.detail.subDetail.net ..0
-* item.detail.subDetail.udi ..0
+// * item.detail.subDetail.modifier ..0
+// * item.detail.subDetail.programCode ..0
+// * item.detail.subDetail.quantity ..0
+// * item.detail.subDetail.unitPrice ..0
+// * item.detail.subDetail.factor ..0
+// * item.detail.subDetail.net ..0
+// * item.detail.subDetail.udi ..0
 // * total ..0

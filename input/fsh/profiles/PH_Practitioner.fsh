@@ -7,14 +7,15 @@ Description: "A person who is directly or indirectly involved in the provisionin
 * insert MetaData
 * . ^definition = "A person who is directly involved in the provisioning of healthcare."
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
-    Sex named sex 0..*
-    // $MaritalStatus named maritalStatus 0..* //For Release02
+    Sex named sex 0..1 and
+    $Nationality named nationality 0..* and
+    $MaritalStatus named maritalStatus 0..* //For Release02
 * modifierExtension ..0
 * identifier ..1
 // * active ..0

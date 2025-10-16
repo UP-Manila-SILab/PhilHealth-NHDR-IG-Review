@@ -1,6 +1,6 @@
 Extension: Sex
 Id: Sex
-Context: Practitioner, Patient, Person
+Context: Practitioner, Patient, Person, RelatedPerson
 Title: "Sex at birth"
 Description: "Extension to capture the sex of a patient, practitioner, or person."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"

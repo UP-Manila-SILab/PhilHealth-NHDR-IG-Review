@@ -7,10 +7,10 @@ Description: "An address for the individual."
 * insert MetaData
 * id ..0
 * extension contains
-    Region named region 0..* and
-    Province named province 0..* and
-    CityMunicipality named cityMunicipality 0..* and
-    Barangay named barangay 0..*
+    Region named region 0..1 and
+    Province named province 0..1 and
+    CityMunicipality named cityMunicipality 0..1 and
+    Barangay named barangay 0..1
 // * line ..0
 * use ..0
 * type ..0

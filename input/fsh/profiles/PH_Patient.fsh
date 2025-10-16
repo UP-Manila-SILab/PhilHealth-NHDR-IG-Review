@@ -8,15 +8,14 @@ Description: "Captures key demographic and administrative information about indi
 * . ^short = "Information about an individual receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
 // * id ..0
-// * meta ..0
-* meta.extension contains $RecordedDate named recordedDate 0..*
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
     $Nationality named nationality 0..* and
-    Religion named religion 0..* and
+    $Religion named religion 0..* and
     IndigenousGroup named indigenousGroup 0..* and
     IndigenousPeople named indigenousPeople 0..* and
     Occupation named occupation 0..* and
@@ -25,7 +24,9 @@ Description: "Captures key demographic and administrative information about indi
     MemberType named memberType 0..1 and
     PatientType named type 0..1 and
     EducationalAttainment named educationalAttainment 0..1
+* extension[religion].value[x] from $ReligionVS (required)
 * modifierExtension ..0
+* identifier obeys PH-00002
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -38,6 +39,7 @@ Description: "Captures key demographic and administrative information about indi
     PassportNumber 0..1
 * identifier[PhilHealthID].system = "http://nhdr.gov.ph/fhir/Identifier/philhealth-id"
 * identifier[PhilHealthID].type.coding = #NIIP
+* identifier[PhilHealthID].value obeys PH-00001
 * identifier[PDD].system = "http://nhdr.gov.ph/fhir/Identifier/pdd-id"
 * identifier[PDD].type.coding = #PDD
 * identifier[TIN].system = "http://nhdr.gov.ph/fhir/Identifier/tin-id"

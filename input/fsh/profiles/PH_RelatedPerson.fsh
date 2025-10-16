@@ -6,18 +6,22 @@ Description: "Information about a person that is involved in the care for a pati
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-RelatedPerson"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 // * extension ..0
-* extension contains Sex named sex 0..1
+* extension contains 
+    Sex named sex 0..1 and
+    Occupation named occupation 0..* and
+    $Nationality named nationality 0..* and
+    $MaritalStatus named maritalStatus 0..*
 * modifierExtension ..0
 // * identifier ..0
 * active ..0
 // * patient ..0    Can't disable elements that are mandatory by default
-* relationship ..0
+// * relationship ..0
 // * name ..0
 * name.extension ..0
 * name.id ..0
@@ -38,3 +42,5 @@ Description: "Information about a person that is involved in the care for a pati
 * photo ..0
 * period ..0
 * communication ..0
+
+// To add: OccupationLength, OccupationDuration

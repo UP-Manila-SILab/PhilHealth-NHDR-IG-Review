@@ -7,14 +7,14 @@ Description: "This resource is primarily used for the identification and definit
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Medication"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
     Packaging named packaging 0..* and
-    MedicationType named medicationType 0..1
+    MedicationType named type 0..1
 * extension[packaging] ^short = "Detailed description on the medication packaging"
 * extension[packaging] ^definition = "Detailed description on the medication packaging"
 * extension[packaging] ^comment = "This is an extension"

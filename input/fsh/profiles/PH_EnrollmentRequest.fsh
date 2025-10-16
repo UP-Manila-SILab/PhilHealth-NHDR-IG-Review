@@ -6,7 +6,7 @@ Description: "This resource provides the insurance enrollment details to the ins
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-EnrollmentRequest"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -16,7 +16,7 @@ Description: "This resource provides the insurance enrollment details to the ins
 // * identifier ..0
 * status ..0
 // * created ..0
-* insurer ..0
+// * insurer ..0
 * provider ..0
-* candidate ..0
-* coverage ..0
+// * candidate ..0
+// * coverage ..0

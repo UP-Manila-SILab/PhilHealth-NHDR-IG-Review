@@ -1,23 +1,22 @@
 //  Identifier Profiles
-Alias: $COVIDDataID = https://nhdr.gov.ph/fhir/StructureDefinition/COVIDDataID
-Alias: $COVIDPatientID = https://nhdr.gov.ph/fhir/StructureDefinition/COVIDPatientID
-Alias: $FHUDCode = https://nhdr.gov.ph/fhir/StructureDefinition/DOHfhudCode
-Alias: $OtherID = https://nhdr.gov.ph/fhir/StructureDefinition/OtherID
-Alias: $PhilHealthID = https://nhdr.gov.ph/fhir/StructureDefinition/PhilHealthID
-Alias: $RegistrationNo = https://nhdr.gov.ph/fhir/StructureDefinition/RegistrationNo
+// Alias: $COVIDDataID = https://nhdr.gov.ph/fhir/StructureDefinition/COVIDDataID
+// Alias: $COVIDPatientID = https://nhdr.gov.ph/fhir/StructureDefinition/COVIDPatientID
+// Alias: $FHUDCode = https://nhdr.gov.ph/fhir/StructureDefinition/DOHfhudCode
+// Alias: $OtherID = https://nhdr.gov.ph/fhir/StructureDefinition/OtherID
+// Alias: $PhilHealthID = https://nhdr.gov.ph/fhir/StructureDefinition/PhilHealthID
+// Alias: $RegistrationNo = https://nhdr.gov.ph/fhir/StructureDefinition/RegistrationNo
 
 //  DataType Profiles
 Alias: $SD_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
 Alias: $SD_Signature = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Signature
 
 //  Extensions
-Alias: $RecordedDate = https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate
+Alias: $MaritalStatus = https://nhdr.gov.ph/fhir/StructureDefinition/MaritalStatus
+Alias: $Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+Alias: $Religion = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias: $Signature = https://nhdr.gov.ph/fhir/StructureDefinition/ExtSignature
 Alias: $SignaturePosition = https://nhdr.gov.ph/fhir/StructureDefinition/SignaturePosition
 Alias: $SignatureReason = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureReason
-Alias: $SignatureSubType = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureSubType
-Alias: $SignatureThumbmark = https://nhdr.gov.ph/fhir/StructureDefinition/SignatureThumbmark
-// Alias: $MaritalStatus = https://nhdr.gov.ph/fhir/StructureDefinition/MaritalStatus //For Release02
 
 
 // CodeSystems
@@ -87,7 +86,6 @@ Alias: $SignatureTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/SignatureTypeCS
 
 Alias: $IndigenousGroupVS = https://nhdr.gov.ph/fhir/ValueSet/IndigenousGroupVS
 Alias: $MemberCategoryVS = https://nhdr.gov.ph/fhir/ValueSet/MemberCategoryVS
-Alias: $Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0
 // Alias: $ObservationMethodVS = https://nhdr.gov.ph/fhir/ValueSet/ObservationMethodVS
 Alias: $ProvinceVS = https://nhdr.gov.ph/fhir/ValueSet/ProvinceVS
 Alias: $RaceVS = http://terminology.hl7.org/ValueSet/v3-Race

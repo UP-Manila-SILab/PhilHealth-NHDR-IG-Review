@@ -6,7 +6,7 @@ Description: "Describes the intended objective(s) for a patient, group or organi
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Goal"
 * insert MetaData
 // * id ..0
-// * meta ..0
+* insert MetaElement
 * implicitRules ..0
 * language ..0
 * text ..0
